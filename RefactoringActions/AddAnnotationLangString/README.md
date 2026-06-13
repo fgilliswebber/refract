@@ -1,1 +1,18 @@
+# AddAnnotationLangString
+**URI:** `https://semanticweb.tools/ont/refract#AddAnnotationLangString`
 
+An annotation action that adds a language-tagged string annotation to an ontology element.
+
+For full documentation including parameters, see the [REFrACT vocabulary](https://semanticweb.tools/ont/refract#AddAnnotationLangString).
+
+## Shapes Graph
+- [ShapeAddAnnotationLangString.ttl](ShapeAddAnnotationLangString.ttl)
+
+## Examples
+- [Example TMF](AddAnnotationLangString.ttl)
+
+## Used in use cases
+- Ontology Refactoring: [RC3](../../UseCases/OntologyRefactoring/RC3/README.md)
+- Ontology Evolution: [EC1](../../UseCases/OntologyEvolution/EC1/README.md), [EC2](../../UseCases/OntologyEvolution/EC2/README.md), [EC3](../../UseCases/OntologyEvolution/EC3/README.md)
+- Ontology Transformation: [TC2](../../UseCases/OntologyTransformation/TC2/README.md)
+- Ontology Localisation: [LC1](../../UseCases/OntologyLocalisation/LC1/README.md), [LC2](../../UseCases/OntologyLocalisation/LC2/README.md)
