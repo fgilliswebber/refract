@@ -1,4 +1,4 @@
-# AddAnnotation
+# Add annotation
 
 **URI:** `https://semanticweb.tools/ont/refract#AddAnnotation`
 
@@ -6,7 +6,7 @@ A catch-all annotation action that adds an annotation to an ontology element. Fo
 
 For full documentation including parameters, see the [REFrACT vocabulary](https://semanticweb.tools/ont/refract#AddAnnotation).
 
-## Shapes Graph
+## Shapes graph
 
 - [ShapeAddAnnotation.ttl](ShapeAddAnnotation.ttl)
 
@@ -18,3 +18,7 @@ For full documentation including parameters, see the [REFrACT vocabulary](https:
 
 - Ontology Evolution: [EC2](../../UseCases/OntologyEvolution/EC2/README.md)
 - Ontology Transformation: [TC1](../../UseCases/OntologyTransformation/TC1/README.md), [TC2](../../UseCases/OntologyTransformation/TC2/README.md)
+
+---
+
+<sub>The example TMF and shapes graph were generated with the assistance of Claude Sonnet 4.6 by Anthropic. If you identify any discrepancies, please see the [project README](../../README.md).</sub>
