@@ -1,6 +1,9 @@
 # Add annotation - langString
 **URI:** `https://semanticweb.tools/ont/refract#AddAnnotationLangString`
 
+**Type:** [Annotation action](../../Definitions/AnnotationAction.md) · [Atomic action](../../Definitions/AtomicAction.md) \
+**Scope:** [Local action](../../Definitions/LocalAction.md)
+
 An annotation action that adds a language-tagged string annotation to an ontology element.
 
 For full documentation including parameters, see the [REFrACT vocabulary](https://semanticweb.tools/ont/refract#AddAnnotationLangString).
