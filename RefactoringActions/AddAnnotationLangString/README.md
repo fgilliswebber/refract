@@ -16,3 +16,7 @@ For full documentation including parameters, see the [REFrACT vocabulary](https:
 - Ontology Evolution: [EC1](../../UseCases/OntologyEvolution/EC1/README.md), [EC2](../../UseCases/OntologyEvolution/EC2/README.md), [EC3](../../UseCases/OntologyEvolution/EC3/README.md)
 - Ontology Transformation: [TC2](../../UseCases/OntologyTransformation/TC2/README.md)
 - Ontology Localisation: [LC1](../../UseCases/OntologyLocalisation/LC1/README.md), [LC2](../../UseCases/OntologyLocalisation/LC2/README.md)
+
+---
+
+<sub>The example TMF and shapes graph were generated with the assistance of Claude Sonnet 4.6 by Anthropic. If you identify any discrepancies, please see the [project README](../../README.md).</sub>
