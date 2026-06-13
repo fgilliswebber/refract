@@ -8,12 +8,13 @@ For full documentation including parameters, see the [REFrACT vocabulary](https:
 
 ## Shapes Graph
 
-[ShapeAddAnnotation.ttl](ShapeAddAnnotation.ttl)
+- [ShapeAddAnnotation.ttl](ShapeAddAnnotation.ttl)
 
 ## Examples
 
-- [Example TMF](example-TMF.ttl)
+- [Example TMF](AddAnnotation.ttl)
 
 ## Used in use cases
 
-- Evolution: [EC2](../../UseCases/OntologyEvolution/EC2/README.md)
+- Ontology Evolution: [EC2](../../UseCases/OntologyEvolution/EC2/README.md)
+- Ontology Transformation: [TC1](../../UseCases/OntologyTransformation/TC1/README.md), [TC2](../../UseCases/OntologyTransformation/TC2/README.md)
