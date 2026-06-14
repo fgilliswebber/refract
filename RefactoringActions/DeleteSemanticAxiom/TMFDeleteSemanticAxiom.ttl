@@ -1,0 +1,17 @@
+@prefix ref: <http://semanticweb.tools/ont/refract#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix shape: <https://semanticweb.tools/rdf/shapes/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix sweetfr: <https://example.org/sweet/fr#> .
+
+ref:tmf_DeleteSemanticAxiom a ref:Manifest ;
+    ref:transformationType ref:OntologyLocalisationProcess ;
+    ref:transformationSource <https://example.org/sweet/fr> ;
+    ref:hasURIRelationshipToSource ref:SameVersioned ;
+    ref:hasAction ref:action_DeleteSemanticAxiom_1 .
+
+ref:action_DeleteSemanticAxiom_1 a ref:DeleteSemanticAxiom ;
+    ref:sourceNode sweetfr:Riviere ;
+    ref:axiomType owl:disjointWith ;
+    ref:targetNode sweetfr:Fleuve ;
+    dash:shape shape:ShapeDeleteSemanticAxiom .
