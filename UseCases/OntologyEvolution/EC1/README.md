@@ -1,12 +1,11 @@
 # Semantic drift – expansion of 'intelligence' to include distributed human-AI cognition
 
-## Artefacts
-
+- ## Artefacts
 - Source ontology: [fragment](Files/source.ttl) from [Experimental Factor Ontology (EFO)](https://bioportal.bioontology.org/ontologies/EFO)
 - Target ontology: [revised fragment](Files/target.ttl)
 - SPARQL for CQs: [CQ1](Files/CQ1.rq) | [CQ2](Files/CQ2.rq) | [CQ3](Files/CQ3.rq) | [CQ4](Files/CQ4.rq)
 - TMF for target viewpoint: [JSON-LD](Files/TMF.json) | [Turtle](Files/TMF.ttl)
-- Shapes graphs: [ShapeEvolution](https://semanticweb.tools/rdf/shapes/ShapeEvolution.ttl) (macro) | [ShapeAddClass](https://semanticweb.tools/rdf/shapes/ShapeAddClass.ttl) | [ShapeAddEquivalentClassSet](https://semanticweb.tools/rdf/shapes/ShapeAddEquivalentClassSet.ttl) | [ShapeAddAnnotationLangString](https://semanticweb.tools/rdf/shapes/ShapeAddAnnotationLangString.ttl) (micro)
+- Shapes graphs: [ShapeEvolution](../../ShapesGraphs/ShapeEvolution/README.md) (macro) | [ShapeAddClass](../../RefactoringActions/AddClass/ShapeAddClass.ttl) | [ShapeAddEquivalentClassSet](../../RefactoringActions/AddEquivalentClassSet/ShapeAddEquivalentClassSet.ttl) | [ShapeAddAnnotationLangString](../../RefactoringActions/AddAnnotationLangString/ShapeAddAnnotationLangString.ttl) (micro)
 
 ## Description
 
