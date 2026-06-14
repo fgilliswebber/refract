@@ -9,7 +9,7 @@ A semantic action that adds a set-based equivalent class assertion to a class in
 For full documentation including parameters, see the [REFrACT vocabulary](https://semanticweb.tools/ont/refract#AddEquivalentClassSet).
 
 ## Shapes graph
-- [ShapeAddEquivalentClassSet.ttl (local instance)](ShapeAddEquivalentClassSet.ttl)
+- [ShapeAddEquivalentClassSet.ttl](ShapeAddEquivalentClassSet.ttl) (local instance)
 - URI: `https://semanticweb.tools/rdf/shapes/ShapeAddEquivalentClassSet.ttl`
 
 ## Examples
