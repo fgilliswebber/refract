@@ -9,7 +9,7 @@ A semantic action that adds a named individual to the ontology as an instance of
 For full documentation including parameters, see the [REFrACT vocabulary](https://semanticweb.tools/ont/refract#AddInstance).
 
 ## Shapes graph
-- [ShapeAddInstance.ttl (local instance)](ShapeAddInstance.ttl)
+- [ShapeAddInstance.ttl](ShapeAddInstance.ttl) (local instance)
 - URI: `https://semanticweb.tools/rdf/shapes/ShapeAddInstance.ttl`
 
 ## Examples
