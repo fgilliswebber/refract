@@ -15,7 +15,7 @@ For full documentation including parameters, see the [REFrACT vocabulary](https:
 
 ## Examples
 
-- [Example TMF](AddAnnotation.ttl)
+- [Example TMF](TMFAddAnnotation.ttl)
 
 ## Used in use cases
 
