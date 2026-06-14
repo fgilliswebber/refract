@@ -1,0 +1,18 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix ref: <http://semanticweb.tools/ont/refract#> .
+@prefix shape: <https://semanticweb.tools/rdf/shapes/> .
+
+shape:ShapeAddSubPropertyChainOf
+    a sh:NodeShape ;
+    sh:targetClass ref:AddSubPropertyChainOf ;
+    sh:property [
+        sh:path ref:sourceNode ;
+        sh:nodeKind sh:IRI ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ref:targetMembers ;
+        sh:nodeKind sh:BlankNodeOrIRI ;
+        sh:minCount 1 ;
+    ] .
