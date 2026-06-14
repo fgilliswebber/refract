@@ -1,0 +1,19 @@
+# Add data property
+**URI:** `https://semanticweb.tools/ont/refract#AddDataProperty`
+
+**Type:** [Structural action](../../Definitions/StructuralAction.md) · [Atomic action](../../Definitions/AtomicAction.md) \
+**Scope:** [Local action](../../Definitions/LocalAction.md)
+
+A structural action that adds a data property to the ontology.
+
+For full documentation including parameters, see the [REFrACT vocabulary](https://semanticweb.tools/ont/refract#AddDataProperty).
+
+## Shapes graph
+- [ShapeAddDataProperty.ttl](ShapeAddDataProperty.ttl) (local instance)
+- URI: `https://semanticweb.tools/rdf/shapes/ShapeAddDataProperty.ttl`
+
+## Examples
+- [Example TMF](TMFAddDataProperty.ttl)
+
+---
+<sub>The example TMF and shapes graph were generated with the assistance of Claude Sonnet 4.6 by Anthropic. If you identify any discrepancies, please see the [project README](../../README.md).</sub>
