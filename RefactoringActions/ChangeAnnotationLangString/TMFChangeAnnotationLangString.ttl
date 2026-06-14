@@ -1,0 +1,21 @@
+@prefix ref: <http://semanticweb.tools/ont/refract#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix shape: <https://semanticweb.tools/rdf/shapes/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex: <http://example.org/ontology#> .
+
+ref:tmf_ChangeAnnotationLangString a ref:Manifest ;
+    ref:transformationType ref:OntologyRefactoringProcess ;
+    ref:transformationSource <http://example.org/ontology> ;
+    ref:hasURIRelationshipToSource ref:SameVersioned ;
+    ref:hasAction ref:action_ChangeAnnotationLangString_1 .
+
+ref:action_ChangeAnnotationLangString_1 a ref:ChangeAnnotationLangString ;
+    ref:sourceNode ex:River ;
+    ref:targetAnnotation rdfs:label ;
+    ref:targetLanguageTag "en" ;
+    ref:targetAnnotationValue "Natural Waterbody" ;
+    ref:targetLanguageTagNew "en-ZA" ;
+    ref:checkForAnnotation ref:IfFalseStop ;
+    ref:checkForAnnotation ref:IfMultipleStop ;
+    dash:shape shape:ShapeChangeAnnotationLangString .
