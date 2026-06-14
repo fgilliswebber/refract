@@ -1,0 +1,12 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix ref: <http://semanticweb.tools/ont/refract#> .
+@prefix shape: <https://semanticweb.tools/rdf/shapes/> .
+
+shape:ShapeDeprecateClass
+    a sh:NodeShape ;
+    sh:targetClass ref:DeprecateClass ;
+    sh:property [
+        sh:path ref:sourceNode ;
+        sh:nodeKind sh:IRI ;
+        sh:minCount 1 ;
+    ] .
