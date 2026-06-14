@@ -1,0 +1,16 @@
+@prefix ref: <http://semanticweb.tools/ont/refract#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix shape: <https://semanticweb.tools/rdf/shapes/> .
+@prefix vo: <http://purl.obolibrary.org/obo/> .
+@prefix ex: <https://example.org/vo/> .
+
+ref:tmf_AddSuperclassAssertion a ref:Manifest ;
+    ref:transformationType ref:OntologyEvolutionProcess ;
+    ref:transformationSource <http://purl.obolibrary.org/obo/vo.owl> ;
+    ref:hasURIRelationshipToSource ref:SameVersioned ;
+    ref:hasAction ref:action_AddSuperclassAssertion_1 .
+
+ref:action_AddSuperclassAssertion_1 a ref:AddSuperclassAssertion ;
+    ref:sourceNode vo:VO_0005198 ;
+    ref:targetParent ex:mRNAVaccine ;
+    dash:shape shape:ShapeAddSuperclassAssertion .
