@@ -1,0 +1,16 @@
+@prefix ref: <http://semanticweb.tools/ont/refract#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix shape: <https://semanticweb.tools/rdf/shapes/> .
+@prefix sweetfr: <https://example.org/sweet/fr#> .
+@prefix ex: <https://example.org/sweet/fr/instances#> .
+
+ref:tmf_ChangeInstanceAssertion a ref:Manifest ;
+    ref:transformationType ref:OntologyLocalisationProcess ;
+    ref:transformationSource <https://example.org/sweet/fr> ;
+    ref:hasURIRelationshipToSource ref:SameVersioned ;
+    ref:hasAction ref:action_ChangeInstanceAssertion_1 .
+
+ref:action_ChangeInstanceAssertion_1 a ref:ChangeInstanceAssertion ;
+    ref:sourceNode ex:Seine ;
+    ref:targetNode sweetfr:Fleuve ;
+    dash:shape shape:ShapeChangeInstanceAssertion .
