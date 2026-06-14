@@ -1,0 +1,31 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix ref: <http://semanticweb.tools/ont/refract#> .
+@prefix shape: <https://semanticweb.tools/rdf/shapes/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+shape:ShapeDeprecateClassWithSuccessor
+    a sh:NodeShape ;
+    sh:targetClass ref:DeprecateClassWithSuccessor ;
+    sh:property [
+        sh:path ref:hasAction ;
+        sh:nodeKind sh:IRI ;
+        sh:minCount 2 ;
+        sh:node [
+            sh:property [
+                sh:path ref:actionSequence ;
+                sh:datatype xsd:integer ;
+                sh:minCount 1 ;
+                sh:maxCount 1 ;
+            ]
+        ]
+    ] ;
+    sh:property [
+        sh:path ref:hasAction ;
+        sh:qualifiedValueShape [ sh:class ref:DeprecateClass ] ;
+        sh:qualifiedMinCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ref:hasAction ;
+        sh:qualifiedValueShape [ sh:class ref:AddClass ] ;
+        sh:qualifiedMinCount 1 ;
+    ] .
