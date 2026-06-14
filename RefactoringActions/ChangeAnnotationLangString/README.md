@@ -9,7 +9,7 @@ An annotation action that changes the value and/or language tag of an existing l
 For full documentation including parameters, see the [REFrACT vocabulary](https://semanticweb.tools/ont/refract#ChangeAnnotationLangString).
 
 ## Shapes graph
-- [ShapeChangeAnnotationLangString.ttl (local instance)](ShapeChangeAnnotationLangString.ttl)
+- [ShapeChangeAnnotationLangString.ttl](ShapeChangeAnnotationLangString.ttl) (local instance)
 - URI: `https://semanticweb.tools/rdf/shapes/ShapeChangeAnnotationLangString.ttl`
 
 ## Examples
