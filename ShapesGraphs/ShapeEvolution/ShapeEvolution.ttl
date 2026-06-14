@@ -1,0 +1,28 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix ref: <http://semanticweb.tools/ont/refract#> .
+@prefix shape: <https://semanticweb.tools/rdf/shapes/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+shape:ShapeEvolution
+    a sh:NodeShape ;
+    sh:target [
+        a dash:HasValueTarget ;
+        dash:predicate ref:transformationType ;
+        dash:object ref:OntologyEvolutionProcess ;
+    ] ;
+    sh:property [
+        sh:path ref:transformationSource ;
+        sh:nodeKind sh:IRI ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ref:hasURIRelationshipToSource ;
+        sh:nodeKind sh:IRI ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ref:versionManifest ;
+        sh:nodeKind sh:IRI ;
+        sh:minCount 1 ;
+    ] .
