@@ -1,0 +1,16 @@
+@prefix ref: <http://semanticweb.tools/ont/refract#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix shape: <https://semanticweb.tools/rdf/shapes/> .
+@prefix ex: <http://example.org/ontology#> .
+
+ref:tmf_ChangeSuperclassAssertion a ref:Manifest ;
+    ref:transformationType ref:OntologyRefactoringProcess ;
+    ref:transformationSource <http://example.org/ontology> ;
+    ref:hasURIRelationshipToSource ref:SameVersioned ;
+    ref:hasAction ref:action_ChangeSuperclassAssertion_1 .
+
+ref:action_ChangeSuperclassAssertion_1 a ref:ChangeSuperclassAssertion ;
+    ref:sourceNode ex:Fleuve ;
+    ref:sourceParent ex:River ;
+    ref:targetParent ex:NaturalWaterBody ;
+    dash:shape shape:ShapeChangeSuperclassAssertion .
