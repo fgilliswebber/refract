@@ -1,0 +1,35 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix ref: <http://semanticweb.tools/ont/refract#> .
+@prefix shape: <https://semanticweb.tools/rdf/shapes/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+shape:ShapeAddPropertyDomainRange
+    a sh:NodeShape ;
+    sh:targetClass ref:AddPropertyDomainRange ;
+    sh:property [
+        sh:path ref:sourceNode ;
+        sh:nodeKind sh:IRI ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ref:targetNode ;
+        sh:nodeKind sh:IRI ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ref:axiomType ;
+        sh:nodeKind sh:IRI ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:in (rdfs:domain rdfs:range) ;
+    ] ;
+    sh:property [
+        sh:path ref:propertyType ;
+        sh:nodeKind sh:IRI ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:in (owl:ObjectProperty owl:DatatypeProperty) ;
+    ] .
