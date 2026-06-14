@@ -1,0 +1,15 @@
+@prefix ref: <http://semanticweb.tools/ont/refract#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix shape: <https://semanticweb.tools/rdf/shapes/> .
+@prefix ex: <https://example.org/vo/> .
+
+ref:tmf_DeleteInstance a ref:Manifest ;
+    ref:transformationType ref:OntologyEvolutionProcess ;
+    ref:transformationSource <http://purl.obolibrary.org/obo/vo.owl> ;
+    ref:hasURIRelationshipToSource ref:SameVersioned ;
+    ref:hasAction ref:action_DeleteInstance_1 .
+
+ref:action_DeleteInstance_1 a ref:DeleteInstance ;
+    ref:sourceNode ex:PfizerBioNTech ;
+    ref:checkForAssertion ref:IfTrueStop ;
+    dash:shape shape:ShapeDeleteInstance .
