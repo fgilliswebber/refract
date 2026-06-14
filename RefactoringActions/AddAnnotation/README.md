@@ -12,6 +12,7 @@ For full documentation including parameters, see the [REFrACT vocabulary](https:
 ## Shapes graph
 
 - [ShapeAddAnnotation.ttl (local instance)](ShapeAddAnnotation.ttl)
+- URI: `https://semanticweb.tools/rdf/shapes/ShapeAddAnnotation.ttl`
 
 ## Examples
 
