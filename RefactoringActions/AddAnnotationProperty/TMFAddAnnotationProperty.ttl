@@ -1,0 +1,17 @@
+@prefix ref: <http://semanticweb.tools/ont/refract#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix shape: <https://semanticweb.tools/rdf/shapes/> .
+@prefix ex: <http://example.org/ontology#> .
+
+ref:tmf_AddAnnotationProperty a ref:Manifest ;
+    ref:transformationType ref:OntologyRefactoringProcess ;
+    ref:transformationSource <http://example.org/ontology> ;
+    ref:hasURIRelationshipToSource ref:SameVersioned ;
+    ref:hasAction ref:action_AddAnnotationProperty_1 .
+
+ref:action_AddAnnotationProperty_1 a ref:AddAnnotationProperty ;
+    ref:targetIdentifier ex:hasLocalName ;
+    ref:targetParent ex:hasName ;
+    ref:targetLabel "has local name" ;
+    ref:targetLanguageTag "en" ;
+    dash:shape shape:ShapeAddAnnotationProperty .
