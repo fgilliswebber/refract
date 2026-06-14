@@ -9,7 +9,7 @@ A semantic action that adds a sub-property chain axiom to an object property in 
 For full documentation including parameters, see the [REFrACT vocabulary](https://semanticweb.tools/ont/refract#AddSubPropertyChainOf).
 
 ## Shapes graph
-- [ShapeAddSubPropertyChainOf.ttl (local instance)](ShapeAddSubPropertyChainOf.ttl)
+- [ShapeAddSubPropertyChainOf.ttl](ShapeAddSubPropertyChainOf.ttl) (local instance)
 - URI: `https://semanticweb.tools/rdf/shapes/ShapeAddSubPropertyChainOf.ttl`
 
 ## Examples
