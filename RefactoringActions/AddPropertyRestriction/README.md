@@ -1,0 +1,23 @@
+# Add property restriction
+**URI:** `https://semanticweb.tools/ont/refract#AddPropertyRestriction`
+
+**Type:** [Semantic action](../../Definitions/SemanticAction.md) · [Atomic action](../../Definitions/AtomicAction.md) \
+**Scope:** [Local action](../../Definitions/LocalAction.md)
+
+A semantic action that adds an existential or universal property restriction to a class in the ontology, using either an object or data property.
+
+For full documentation including parameters, see the [REFrACT vocabulary](https://semanticweb.tools/ont/refract#AddPropertyRestriction).
+
+## Shapes graph
+- [ShapeAddPropertyRestriction.ttl (local instance)](ShapeAddPropertyRestriction.ttl)
+- URI: `https://semanticweb.tools/rdf/shapes/ShapeAddPropertyRestriction.ttl`
+
+## Examples
+- [Example TMF](TMFAddPropertyRestriction.ttl)
+
+## Used in use cases
+- Ontology Evolution: [EC3](../../UseCases/OntologyEvolution/EC3/README.md)
+- Ontology Localisation: [LC3](../../UseCases/OntologyLocalisation/LC3/README.md)
+
+---
+<sub>The example TMF and shapes graph were generated with the assistance of Claude Sonnet 4.6 by Anthropic. If you identify any discrepancies, please see the [project README](../../README.md).</sub>
