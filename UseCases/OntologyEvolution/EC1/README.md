@@ -2,12 +2,11 @@
 
 ## Artefacts
 
-- Source ontology: [fragment](EC1/source.ttl) from [Experimental Factor Ontology (EFO)](https://bioportal.bioontology.org/ontologies/EFO)
-- Target ontology: [revised fragment](EC1/target.ttl)
-- SPARQL for CQs: [CQ1](EC1/CQ1.rq) | [CQ2](EC1/CQ2.rq) | [CQ3](EC1/CQ3.rq) | [CQ4](EC1/CQ4.rq)
-- TMF for target viewpoint: [JSON-LD](EC1/TMF.json) | [Turtle](EC1/TMF.ttl)
+- Source ontology: [fragment](Files/source.ttl) from [Experimental Factor Ontology (EFO)](https://bioportal.bioontology.org/ontologies/EFO)
+- Target ontology: [revised fragment](Files/target.ttl)
+- SPARQL for CQs: [CQ1](Files/CQ1.rq) | [CQ2](Files/CQ2.rq) | [CQ3](Files/CQ3.rq) | [CQ4](Files/CQ4.rq)
+- TMF for target viewpoint: [JSON-LD](Files/TMF.json) | [Turtle](Files/TMF.ttl)
 - Shapes graphs: [ShapeEvolution](https://semanticweb.tools/rdf/shapes/ShapeEvolution.ttl) (macro) | [ShapeAddClass](https://semanticweb.tools/rdf/shapes/ShapeAddClass.ttl) | [ShapeAddEquivalentClassSet](https://semanticweb.tools/rdf/shapes/ShapeAddEquivalentClassSet.ttl) | [ShapeAddAnnotationLangString](https://semanticweb.tools/rdf/shapes/ShapeAddAnnotationLangString.ttl) (micro)
-- [Download all](EC1/EC1.zip)
 
 ## Description
 
