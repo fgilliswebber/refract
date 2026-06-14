@@ -1,0 +1,17 @@
+@prefix ref: <http://semanticweb.tools/ont/refract#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix shape: <https://semanticweb.tools/rdf/shapes/> .
+@prefix ex: <http://example.org/ontology#> .
+
+ref:tmf_AddObjectProperty a ref:Manifest ;
+    ref:transformationType ref:OntologyRefactoringProcess ;
+    ref:transformationSource <http://example.org/ontology> ;
+    ref:hasURIRelationshipToSource ref:SameVersioned ;
+    ref:hasAction ref:action_AddObjectProperty_1 .
+
+ref:action_AddObjectProperty_1 a ref:AddObjectProperty ;
+    ref:targetIdentifier ex:flowsInto ;
+    ref:targetParent ex:hasWaterflow ;
+    ref:targetLabel "flows into" ;
+    ref:targetLanguageTag "en" ;
+    dash:shape shape:ShapeAddObjectProperty .
