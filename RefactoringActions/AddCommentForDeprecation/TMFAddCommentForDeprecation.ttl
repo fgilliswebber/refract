@@ -1,0 +1,34 @@
+@prefix ref: <http://semanticweb.tools/ont/refract#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix shape: <https://semanticweb.tools/rdf/shapes/> .
+@prefix uct: <https://example.org/uct#> .
+
+ref:tmf_AddCommentForDeprecation a ref:Manifest ;
+    ref:transformationType ref:OntologyRefactoringProcess ;
+    ref:transformationSource <https://example.org/uct> ;
+    ref:hasURIRelationshipToSource ref:SameVersioned ;
+    ref:hasAction ref:action_rc4_1 .
+
+ref:action_rc4_1 a ref:DeprecateClassWithSuccessor ;
+    ref:hasAction ref:action_rc4_1a ;
+    ref:hasAction ref:action_rc4_1b ;
+    ref:hasAction ref:action_rc4_1c ;
+    dash:shape shape:ShapeDeprecateClassWithSuccessor .
+
+ref:action_rc4_1a a ref:DeprecateClass ;
+    ref:sourceNode uct:SchoolOfLibraryStudies ;
+    ref:actionSequence 1 ;
+    dash:shape shape:ShapeDeprecateClass .
+
+ref:action_rc4_1b a ref:AddClass ;
+    ref:targetIdentifier uct:DepartmentOfKnowledgeAndInformationStewardship ;
+    ref:targetParent uct:HumanitiesFaculty ;
+    ref:targetLabel "Department of Knowledge and Information Stewardship" ;
+    ref:targetLanguageTag "en" ;
+    ref:actionSequence 2 ;
+    dash:shape shape:ShapeAddClass .
+
+ref:action_rc4_1c a ref:AddCommentForDeprecation ;
+    ref:sourceNode uct:SchoolOfLibraryStudies ;
+    ref:actionSequence 3 ;
+    dash:shape shape:ShapeAddCommentForDeprecation .
