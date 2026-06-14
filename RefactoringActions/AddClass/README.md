@@ -9,7 +9,8 @@ A structural and semantic action that adds a class to the ontology.
 For full documentation including parameters, see the [REFrACT vocabulary](https://semanticweb.tools/ont/refract#AddClass).
 
 ## Shapes graph
-- [ShapeAddClass.ttl](ShapeAddClass.ttl)
+- [ShapeAddClass.ttl (local instance)](ShapeAddClass.ttl)
+- URI: `https://semanticweb.tools/rdf/shapes/ShapeAddClass.ttl`
 
 ## Examples
 - [Example TMF](TMFAddClass.ttl)
