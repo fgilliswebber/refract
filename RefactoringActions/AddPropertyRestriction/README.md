@@ -9,7 +9,7 @@ A semantic action that adds an existential or universal property restriction to 
 For full documentation including parameters, see the [REFrACT vocabulary](https://semanticweb.tools/ont/refract#AddPropertyRestriction).
 
 ## Shapes graph
-- [ShapeAddPropertyRestriction.ttl (local instance)](ShapeAddPropertyRestriction.ttl)
+- [ShapeAddPropertyRestriction.ttl](ShapeAddPropertyRestriction.ttl) (local instance)
 - URI: `https://semanticweb.tools/rdf/shapes/ShapeAddPropertyRestriction.ttl`
 
 ## Examples
