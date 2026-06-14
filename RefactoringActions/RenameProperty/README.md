@@ -1,0 +1,19 @@
+# Rename property
+**URI:** `https://semanticweb.tools/ont/refract#RenameProperty`
+
+**Type:** [Structural action](../../Definitions/StructuralAction.md) · [Atomic action](../../Definitions/AtomicAction.md) \
+**Scope:** [Local action](../../Definitions/LocalAction.md)
+
+A structural action that renames a property (object, data, or annotation) in the ontology by replacing its URI (or fragment identifier) with a new URI.
+
+For full documentation including parameters, see the [REFrACT vocabulary](https://semanticweb.tools/ont/refract#RenameProperty).
+
+## Shapes graph
+- [ShapeRenameProperty.ttl](ShapeRenameProperty.ttl) (local instance)
+- URI: `https://semanticweb.tools/rdf/shapes/ShapeRenameProperty.ttl`
+
+## Examples
+- [Example TMF](TMFRenameProperty.ttl)
+
+---
+<sub>The example TMF and shapes graph were generated with the assistance of Claude Sonnet 4.6 by Anthropic. If you identify any discrepancies, please see the [project README](../../README.md).</sub>
