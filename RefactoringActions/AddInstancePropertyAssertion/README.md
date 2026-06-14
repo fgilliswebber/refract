@@ -9,7 +9,7 @@ A semantic action that adds an object or data property assertion to a named indi
 For full documentation including parameters, see the [REFrACT vocabulary](https://semanticweb.tools/ont/refract#AddInstancePropertyAssertion).
 
 ## Shapes graph
-- [ShapeAddInstancePropertyAssertion.ttl (local instance)](ShapeAddInstancePropertyAssertion.ttl)
+- [ShapeAddInstancePropertyAssertion.ttl](ShapeAddInstancePropertyAssertion.ttl) (local instance)
 - URI: `https://semanticweb.tools/rdf/shapes/ShapeAddInstancePropertyAssertion.ttl`
 
 ## Examples
