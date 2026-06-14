@@ -9,7 +9,7 @@ A catch-all semantic action that adds a binary semantic axiom between two ontolo
 For full documentation including parameters, see the [REFrACT vocabulary](https://semanticweb.tools/ont/refract#AddSemanticAxiom).
 
 ## Shapes graph
-- [ShapeAddSemanticAxiom.ttl (local instance)](ShapeAddSemanticAxiom.ttl)
+- [ShapeAddSemanticAxiom.ttl](ShapeAddSemanticAxiom.ttl) (local instance)
 - URI: `https://semanticweb.tools/rdf/shapes/ShapeAddSemanticAxiom.ttl`
 
 ## Examples
