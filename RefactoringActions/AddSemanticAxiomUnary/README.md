@@ -9,7 +9,7 @@ A catch-all semantic action that adds a unary semantic axiom to a single ontolog
 For full documentation including parameters, see the [REFrACT vocabulary](https://semanticweb.tools/ont/refract#AddSemanticAxiomUnary).
 
 ## Shapes graph
-- [ShapeAddSemanticAxiomUnary.ttl (local instance)](ShapeAddSemanticAxiomUnary.ttl)
+- [ShapeAddSemanticAxiomUnary.ttl](ShapeAddSemanticAxiomUnary.ttl) (local instance)
 - URI: `https://semanticweb.tools/rdf/shapes/ShapeAddSemanticAxiomUnary.ttl`
 
 ## Examples
