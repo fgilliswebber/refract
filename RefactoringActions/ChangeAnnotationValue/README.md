@@ -9,7 +9,8 @@ An annotation action that changes the value of an existing annotation on an onto
 For full documentation including parameters, see the [REFrACT vocabulary](https://semanticweb.tools/ont/refract#ChangeAnnotationValue).
 
 ## Shapes graph
-- [ShapeChangeAnnotationValue.ttl](ShapeChangeAnnotationValue.ttl)
+- [ShapeChangeAnnotationValue.ttl (local instance)](ShapeChangeAnnotationValue.ttl)
+- URI: `https://semanticweb.tools/rdf/shapes/ShapeChangeAnnotationValue.ttl`
 
 ## Examples
 - [Example TMF](TMFChangeAnnotationValue.ttl)
