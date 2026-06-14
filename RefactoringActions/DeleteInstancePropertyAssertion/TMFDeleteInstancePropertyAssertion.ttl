@@ -1,0 +1,16 @@
+@prefix ref: <http://semanticweb.tools/ont/refract#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix shape: <https://semanticweb.tools/rdf/shapes/> .
+@prefix ex: <http://example.org/> .
+
+ref:tmf_DeleteInstancePropertyAssertion a ref:Manifest ;
+    ref:transformationType ref:OntologyEvolutionProcess ;
+    ref:transformationSource <http://example.org/ontology> ;
+    ref:hasURIRelationshipToSource ref:SameVersioned ;
+    ref:hasAction ref:action_DeleteInstancePropertyAssertion_1 .
+
+ref:action_DeleteInstancePropertyAssertion_1 a ref:DeleteInstancePropertyAssertion ;
+    ref:sourceNode ex:PfizerBioNTech ;
+    ref:targetObject ex:hasManufacturer ;
+    ref:targetObjectValue ex:PfizerInc ;
+    dash:shape shape:ShapeDeleteInstancePropertyAssertion .
