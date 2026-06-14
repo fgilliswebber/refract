@@ -11,7 +11,7 @@ For full documentation including parameters, see the [REFrACT vocabulary](https:
 
 ## Shapes graph
 
-- [ShapeAddAnnotation.ttl](ShapeAddAnnotation.ttl)
+- [ShapeAddAnnotation.ttl (local instance)](ShapeAddAnnotation.ttl)
 
 ## Examples
 
