@@ -9,7 +9,7 @@ An annotation action that changes both the value and the datatype of an existing
 For full documentation including parameters, see the [REFrACT vocabulary](https://semanticweb.tools/ont/refract#ChangeAnnotation).
 
 ## Shapes graph
-- [ShapeChangeAnnotation.ttl (local instance)](ShapeChangeAnnotation.ttl)
+- [ShapeChangeAnnotation.ttl](ShapeChangeAnnotation.ttl) (local instance)
 - URI: `https://semanticweb.tools/rdf/shapes/ShapeChangeAnnotation.ttl`
 
 ## Examples
