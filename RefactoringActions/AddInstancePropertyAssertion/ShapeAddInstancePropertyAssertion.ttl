@@ -1,0 +1,30 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix ref: <http://semanticweb.tools/ont/refract#> .
+@prefix shape: <https://semanticweb.tools/rdf/shapes/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+shape:ShapeAddInstancePropertyAssertion
+    a sh:NodeShape ;
+    sh:targetClass ref:AddInstancePropertyAssertion ;
+    sh:or (
+        [ sh:property [ sh:path ref:sourceNode ; sh:nodeKind sh:IRI ; sh:minCount 1 ; sh:maxCount 1 ; ] ]
+        [ sh:property [ sh:path ref:targetNode ; sh:nodeKind sh:IRI ; sh:minCount 1 ; sh:maxCount 1 ; ] ]
+    ) ;
+    sh:property [
+        sh:path ref:targetObject ;
+        sh:nodeKind sh:IRI ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ref:targetObjectValue ;
+        sh:nodeKind sh:IRI ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ref:propertyType ;
+        sh:nodeKind sh:IRI ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:in (owl:ObjectProperty owl:DatatypeProperty) ;
+    ] .

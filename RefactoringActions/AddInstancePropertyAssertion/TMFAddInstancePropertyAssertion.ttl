@@ -1,0 +1,18 @@
+@prefix ref: <http://semanticweb.tools/ont/refract#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix shape: <https://semanticweb.tools/rdf/shapes/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ex: <http://example.org/> .
+
+ref:tmf_AddInstancePropertyAssertion a ref:Manifest ;
+    ref:transformationType ref:OntologyEvolutionProcess ;
+    ref:transformationSource <http://example.org/ontology> ;
+    ref:hasURIRelationshipToSource ref:SameVersioned ;
+    ref:hasAction ref:action_AddInstancePropertyAssertion_1 .
+
+ref:action_AddInstancePropertyAssertion_1 a ref:AddInstancePropertyAssertion ;
+    ref:targetNode ex:PfizerBioNTech ;
+    ref:targetObject ex:hasManufacturer ;
+    ref:targetObjectValue ex:PfizerInc ;
+    ref:propertyType owl:ObjectProperty ;
+    dash:shape shape:ShapeAddInstancePropertyAssertion .
