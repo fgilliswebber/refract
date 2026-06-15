@@ -1,0 +1,9 @@
+PREFIX mola: <https://ontology.londisizwe.org/mola#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+ASK {
+    mola:Region rdfs:subClassOf ?restriction .
+    ?restriction a owl:Restriction ;
+        owl:onProperty mola:hasCoordinate ;
+        owl:minQualifiedCardinality ?cardinality .
+}

@@ -1,0 +1,7 @@
+PREFIX mola: <https://ontology.londisizwe.org/mola#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+ASK {
+    mola:hasMember rdfs:domain ?domain .
+    ?domain owl:unionOf ?list .
+}

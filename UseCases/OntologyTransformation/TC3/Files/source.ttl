@@ -1,0 +1,36 @@
+@prefix mola: <https://ontology.londisizwe.org/mola#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semanticweb.tools/ont/mola>
+    a owl:Ontology ;
+    rdfs:label "MoLA Ontology"@en .
+
+mola:DialectCluster a owl:Class ;
+    rdfs:label "Dialect cluster"@en .
+
+mola:LanguageFamily a owl:Class ;
+    rdfs:label "Language family"@en .
+
+mola:GeographicCoordinate a owl:Class ;
+    rdfs:label "Geographic coordinate"@en .
+
+mola:Region a owl:Class ;
+    rdfs:label "Region"@en ;
+    rdfs:subClassOf [
+        a owl:Restriction ;
+        owl:onProperty mola:hasCoordinate ;
+        owl:minQualifiedCardinality "3"^^xsd:nonNegativeInteger ;
+        owl:onClass mola:GeographicCoordinate
+    ] .
+
+mola:hasMember a owl:ObjectProperty ;
+    rdfs:label "has member"@en ;
+    rdfs:domain [
+        a owl:Class ;
+        owl:unionOf ( mola:DialectCluster mola:LanguageFamily )
+    ] .
+
+mola:hasCoordinate a owl:ObjectProperty ;
+    rdfs:label "has coordinate"@en .
