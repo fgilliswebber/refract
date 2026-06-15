@@ -1,0 +1,1991 @@
+@prefix : <http://www.w3.org/ns/shacl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/ns/shacl#annotationValue
+# 
+# http://www.w3.org/ns/shacl#defaultValue
+# 
+# http://www.w3.org/ns/shacl#description
+# 
+# http://www.w3.org/ns/shacl#focusNode
+# 
+# http://www.w3.org/ns/shacl#labelTemplate
+# 
+# http://www.w3.org/ns/shacl#name
+# 
+# http://www.w3.org/ns/shacl#object
+# 
+# http://www.w3.org/ns/shacl#predicate
+# 
+# http://www.w3.org/ns/shacl#prefixes
+# 
+# http://www.w3.org/ns/shacl#resultMessage
+# 
+# http://www.w3.org/ns/shacl#sourceConstraint
+# 
+# http://www.w3.org/ns/shacl#subject
+# 
+# http://www.w3.org/ns/shacl#targetNode
+# 
+# http://www.w3.org/ns/shacl#value
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/ns/shacl#alternativePath
+# 
+# http://www.w3.org/ns/shacl#and
+# 
+# http://www.w3.org/ns/shacl#annotationProperty
+# 
+# http://www.w3.org/ns/shacl#class
+# 
+# http://www.w3.org/ns/shacl#condition
+# 
+# http://www.w3.org/ns/shacl#datatype
+# 
+# http://www.w3.org/ns/shacl#declare
+# 
+# http://www.w3.org/ns/shacl#detail
+# 
+# http://www.w3.org/ns/shacl#disjoint
+# 
+# http://www.w3.org/ns/shacl#entailment
+# 
+# http://www.w3.org/ns/shacl#equals
+# 
+# http://www.w3.org/ns/shacl#filterShape
+# 
+# http://www.w3.org/ns/shacl#group
+# 
+# http://www.w3.org/ns/shacl#ignoredProperties
+# 
+# http://www.w3.org/ns/shacl#in
+# 
+# http://www.w3.org/ns/shacl#inversePath
+# 
+# http://www.w3.org/ns/shacl#js
+# 
+# http://www.w3.org/ns/shacl#jsLibrary
+# 
+# http://www.w3.org/ns/shacl#languageIn
+# 
+# http://www.w3.org/ns/shacl#lessThan
+# 
+# http://www.w3.org/ns/shacl#lessThanOrEquals
+# 
+# http://www.w3.org/ns/shacl#node
+# 
+# http://www.w3.org/ns/shacl#nodeKind
+# 
+# http://www.w3.org/ns/shacl#nodeValidator
+# 
+# http://www.w3.org/ns/shacl#not
+# 
+# http://www.w3.org/ns/shacl#oneOrMorePath
+# 
+# http://www.w3.org/ns/shacl#or
+# 
+# http://www.w3.org/ns/shacl#parameter
+# 
+# http://www.w3.org/ns/shacl#path
+# 
+# http://www.w3.org/ns/shacl#property
+# 
+# http://www.w3.org/ns/shacl#propertyValidator
+# 
+# http://www.w3.org/ns/shacl#qualifiedValueShape
+# 
+# http://www.w3.org/ns/shacl#result
+# 
+# http://www.w3.org/ns/shacl#resultAnnotation
+# 
+# http://www.w3.org/ns/shacl#resultPath
+# 
+# http://www.w3.org/ns/shacl#resultSeverity
+# 
+# http://www.w3.org/ns/shacl#returnType
+# 
+# http://www.w3.org/ns/shacl#rule
+# 
+# http://www.w3.org/ns/shacl#severity
+# 
+# http://www.w3.org/ns/shacl#shapesGraph
+# 
+# http://www.w3.org/ns/shacl#sourceConstraintComponent
+# 
+# http://www.w3.org/ns/shacl#sourceShape
+# 
+# http://www.w3.org/ns/shacl#sparql
+# 
+# http://www.w3.org/ns/shacl#suggestedShapesGraph
+# 
+# http://www.w3.org/ns/shacl#target
+# 
+# http://www.w3.org/ns/shacl#targetClass
+# 
+# http://www.w3.org/ns/shacl#targetObjectsOf
+# 
+# http://www.w3.org/ns/shacl#targetSubjectsOf
+# 
+# http://www.w3.org/ns/shacl#validator
+# 
+# http://www.w3.org/ns/shacl#xone
+# 
+# http://www.w3.org/ns/shacl#zeroOrMorePath
+# 
+# http://www.w3.org/ns/shacl#zeroOrOnePath
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/ns/shacl#annotationVarName
+# 
+# http://www.w3.org/ns/shacl#ask
+# 
+# http://www.w3.org/ns/shacl#closed
+# 
+# http://www.w3.org/ns/shacl#conforms
+# 
+# http://www.w3.org/ns/shacl#construct
+# 
+# http://www.w3.org/ns/shacl#deactivated
+# 
+# http://www.w3.org/ns/shacl#flags
+# 
+# http://www.w3.org/ns/shacl#jsFunctionName
+# 
+# http://www.w3.org/ns/shacl#jsLibraryURL
+# 
+# http://www.w3.org/ns/shacl#maxCount
+# 
+# http://www.w3.org/ns/shacl#maxLength
+# 
+# http://www.w3.org/ns/shacl#minCount
+# 
+# http://www.w3.org/ns/shacl#minLength
+# 
+# http://www.w3.org/ns/shacl#namespace
+# 
+# http://www.w3.org/ns/shacl#optional
+# 
+# http://www.w3.org/ns/shacl#pattern
+# 
+# http://www.w3.org/ns/shacl#prefix
+# 
+# http://www.w3.org/ns/shacl#qualifiedMaxCount
+# 
+# http://www.w3.org/ns/shacl#qualifiedMinCount
+# 
+# http://www.w3.org/ns/shacl#qualifiedValueShapesDisjoint
+# 
+# http://www.w3.org/ns/shacl#select
+# 
+# http://www.w3.org/ns/shacl#shapesGraphWellFormed
+# 
+# http://www.w3.org/ns/shacl#uniqueLang
+# 
+# http://www.w3.org/ns/shacl#update
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/1999/02/22-rdf-syntax-ns#List
+# 
+# http://www.w3.org/1999/02/22-rdf-syntax-ns#Property
+# 
+# http://www.w3.org/2000/01/rdf-schema#Class
+# 
+# http://www.w3.org/2000/01/rdf-schema#Datatype
+# 
+# http://www.w3.org/2000/01/rdf-schema#Resource
+# 
+# http://www.w3.org/2002/07/owl#Ontology
+# 
+# http://www.w3.org/ns/shacl#AbstractResult
+# 
+# http://www.w3.org/ns/shacl#ConstraintComponent
+# 
+# http://www.w3.org/ns/shacl#Function
+# 
+# http://www.w3.org/ns/shacl#JSConstraint
+# 
+# http://www.w3.org/ns/shacl#JSExecutable
+# 
+# http://www.w3.org/ns/shacl#JSFunction
+# 
+# http://www.w3.org/ns/shacl#JSLibrary
+# 
+# http://www.w3.org/ns/shacl#JSRule
+# 
+# http://www.w3.org/ns/shacl#JSTarget
+# 
+# http://www.w3.org/ns/shacl#JSTargetType
+# 
+# http://www.w3.org/ns/shacl#JSValidator
+# 
+# http://www.w3.org/ns/shacl#NodeKind
+# 
+# http://www.w3.org/ns/shacl#NodeShape
+# 
+# http://www.w3.org/ns/shacl#Parameter
+# 
+# http://www.w3.org/ns/shacl#Parameterizable
+# 
+# http://www.w3.org/ns/shacl#PrefixDeclaration
+# 
+# http://www.w3.org/ns/shacl#PropertyGroup
+# 
+# http://www.w3.org/ns/shacl#PropertyShape
+# 
+# http://www.w3.org/ns/shacl#ResultAnnotation
+# 
+# http://www.w3.org/ns/shacl#Rule
+# 
+# http://www.w3.org/ns/shacl#SPARQLAskExecutable
+# 
+# http://www.w3.org/ns/shacl#SPARQLAskValidator
+# 
+# http://www.w3.org/ns/shacl#SPARQLConstraint
+# 
+# http://www.w3.org/ns/shacl#SPARQLConstructExecutable
+# 
+# http://www.w3.org/ns/shacl#SPARQLExecutable
+# 
+# http://www.w3.org/ns/shacl#SPARQLFunction
+# 
+# http://www.w3.org/ns/shacl#SPARQLRule
+# 
+# http://www.w3.org/ns/shacl#SPARQLSelectExecutable
+# 
+# http://www.w3.org/ns/shacl#SPARQLSelectValidator
+# 
+# http://www.w3.org/ns/shacl#SPARQLTarget
+# 
+# http://www.w3.org/ns/shacl#SPARQLTargetType
+# 
+# http://www.w3.org/ns/shacl#SPARQLUpdateExecutable
+# 
+# http://www.w3.org/ns/shacl#Severity
+# 
+# http://www.w3.org/ns/shacl#Shape
+# 
+# http://www.w3.org/ns/shacl#Target
+# 
+# http://www.w3.org/ns/shacl#TargetType
+# 
+# http://www.w3.org/ns/shacl#TripleRule
+# 
+# http://www.w3.org/ns/shacl#ValidationReport
+# 
+# http://www.w3.org/ns/shacl#ValidationResult
+# 
+# http://www.w3.org/ns/shacl#Validator
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#boolean
+# 
+# http://www.w3.org/2001/XMLSchema#integer
+# 
+# http://www.w3.org/2001/XMLSchema#string
+# 
+# http://www.w3.org/ns/shacl#
+# 
+# http://www.w3.org/ns/shacl#AndConstraintComponent
+# 
+# http://www.w3.org/ns/shacl#AndConstraintComponent-and
+# 
+# http://www.w3.org/ns/shacl#BlankNode
+# 
+# http://www.w3.org/ns/shacl#BlankNodeOrIRI
+# 
+# http://www.w3.org/ns/shacl#BlankNodeOrLiteral
+# 
+# http://www.w3.org/ns/shacl#ClassConstraintComponent
+# 
+# http://www.w3.org/ns/shacl#ClassConstraintComponent-class
+# 
+# http://www.w3.org/ns/shacl#ClosedConstraintComponent
+# 
+# http://www.w3.org/ns/shacl#ClosedConstraintComponent-closed
+# 
+# http://www.w3.org/ns/shacl#ClosedConstraintComponent-ignoredProperties
+# 
+# http://www.w3.org/ns/shacl#DatatypeConstraintComponent
+# 
+# http://www.w3.org/ns/shacl#DatatypeConstraintComponent-datatype
+# 
+# http://www.w3.org/ns/shacl#DisjointConstraintComponent
+# 
+# http://www.w3.org/ns/shacl#DisjointConstraintComponent-disjoint
+# 
+# http://www.w3.org/ns/shacl#EqualsConstraintComponent
+# 
+# http://www.w3.org/ns/shacl#EqualsConstraintComponent-equals
+# 
+# http://www.w3.org/ns/shacl#ExpressionConstraintComponent
+# 
+# http://www.w3.org/ns/shacl#ExpressionConstraintComponent-expression
+# 
+# http://www.w3.org/ns/shacl#HasValueConstraintComponent
+# 
+# http://www.w3.org/ns/shacl#HasValueConstraintComponent-hasValue
+# 
+# http://www.w3.org/ns/shacl#IRI
+# 
+# http://www.w3.org/ns/shacl#IRIOrLiteral
+# 
+# http://www.w3.org/ns/shacl#InConstraintComponent
+# 
+# http://www.w3.org/ns/shacl#InConstraintComponent-in
+# 
+# http://www.w3.org/ns/shacl#Info
+# 
+# http://www.w3.org/ns/shacl#JSConstraint-js
+# 
+# http://www.w3.org/ns/shacl#JSConstraintComponent
+# 
+# http://www.w3.org/ns/shacl#LanguageInConstraintComponent
+# 
+# http://www.w3.org/ns/shacl#LanguageInConstraintComponent-languageIn
+# 
+# http://www.w3.org/ns/shacl#LessThanConstraintComponent
+# 
+# http://www.w3.org/ns/shacl#LessThanConstraintComponent-lessThan
+# 
+# http://www.w3.org/ns/shacl#LessThanOrEqualsConstraintComponent
+# 
+# http://www.w3.org/ns/shacl#LessThanOrEqualsConstraintComponent-lessThanOrEquals
+# 
+# http://www.w3.org/ns/shacl#Literal
+# 
+# http://www.w3.org/ns/shacl#MaxCountConstraintComponent
+# 
+# http://www.w3.org/ns/shacl#MaxCountConstraintComponent-maxCount
+# 
+# http://www.w3.org/ns/shacl#MaxExclusiveConstraintComponent
+# 
+# http://www.w3.org/ns/shacl#MaxExclusiveConstraintComponent-maxExclusive
+# 
+# http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent
+# 
+# http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent-maxInclusive
+# 
+# http://www.w3.org/ns/shacl#MaxLengthConstraintComponent
+# 
+# http://www.w3.org/ns/shacl#MaxLengthConstraintComponent-maxLength
+# 
+# http://www.w3.org/ns/shacl#MinCountConstraintComponent
+# 
+# http://www.w3.org/ns/shacl#MinCountConstraintComponent-minCount
+# 
+# http://www.w3.org/ns/shacl#MinExclusiveConstraintComponent
+# 
+# http://www.w3.org/ns/shacl#MinExclusiveConstraintComponent-minExclusive
+# 
+# http://www.w3.org/ns/shacl#MinInclusiveConstraintComponent
+# 
+# http://www.w3.org/ns/shacl#MinInclusiveConstraintComponent-minInclusive
+# 
+# http://www.w3.org/ns/shacl#MinLengthConstraintComponent
+# 
+# http://www.w3.org/ns/shacl#MinLengthConstraintComponent-minLength
+# 
+# http://www.w3.org/ns/shacl#NodeConstraintComponent
+# 
+# http://www.w3.org/ns/shacl#NodeConstraintComponent-node
+# 
+# http://www.w3.org/ns/shacl#NodeKindConstraintComponent
+# 
+# http://www.w3.org/ns/shacl#NodeKindConstraintComponent-nodeKind
+# 
+# http://www.w3.org/ns/shacl#NotConstraintComponent
+# 
+# http://www.w3.org/ns/shacl#NotConstraintComponent-not
+# 
+# http://www.w3.org/ns/shacl#OrConstraintComponent
+# 
+# http://www.w3.org/ns/shacl#OrConstraintComponent-or
+# 
+# http://www.w3.org/ns/shacl#PatternConstraintComponent
+# 
+# http://www.w3.org/ns/shacl#PatternConstraintComponent-flags
+# 
+# http://www.w3.org/ns/shacl#PatternConstraintComponent-pattern
+# 
+# http://www.w3.org/ns/shacl#PropertyConstraintComponent
+
+<http://www.w3.org/ns/shacl#> a owl:Ontology, owl:NamedIndividual;
+  rdfs:comment "This vocabulary defines terms used in SHACL, the W3C Shapes Constraint Language."@en;
+  rdfs:label "W3C Shapes Constraint Language (SHACL) Vocabulary"@en;
+  :declare _:genid1;
+  :suggestedShapesGraph <http://www.w3.org/ns/shacl-shacl#> .
+
+:annotationValue a owl:AnnotationProperty;
+  rdfs:comment "The (default) values of the annotation property."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "annotation value"@en;
+  rdfs:domain :ResultAnnotation .
+
+:defaultValue a owl:AnnotationProperty;
+  rdfs:comment "A default value for a property, for example for user interface tools to pre-populate input fields."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "default value"@en;
+  rdfs:domain :PropertyShape .
+
+:description a owl:AnnotationProperty;
+  rdfs:comment "Human-readable descriptions for the property in the context of the surrounding shape."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "description"@en;
+  rdfs:domain :PropertyShape .
+
+:focusNode a owl:AnnotationProperty;
+  rdfs:comment "The focus node that was validated when the result was produced."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "focus node"@en;
+  rdfs:domain :AbstractResult .
+
+:labelTemplate a owl:AnnotationProperty;
+  rdfs:comment "Outlines how human-readable labels of instances of the associated Parameterizable shall be produced. The values can contain {?paramName} as placeholders for the actual values of the given parameter."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "label template"@en;
+  rdfs:domain :Parameterizable .
+
+:name a owl:AnnotationProperty;
+  rdfs:comment "Human-readable labels for the property in the context of the surrounding shape."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "name"@en;
+  rdfs:domain :PropertyShape .
+
+:object a owl:AnnotationProperty;
+  rdfs:comment "An expression producing the nodes that shall be inferred as objects."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "object"@en;
+  rdfs:domain :TripleRule .
+
+:predicate a owl:AnnotationProperty;
+  rdfs:comment "An expression producing the properties that shall be inferred as predicates."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "predicate"@en;
+  rdfs:domain :TripleRule .
+
+:prefixes a owl:AnnotationProperty;
+  rdfs:comment "The prefixes that shall be applied before parsing the associated SPARQL query. The objects should define those prefixes using sh:declare."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "prefixes"@en;
+  rdfs:domain :SPARQLExecutable .
+
+:resultMessage a owl:AnnotationProperty;
+  rdfs:comment "Human-readable messages explaining the cause of the result."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "result message"@en;
+  rdfs:domain :AbstractResult .
+
+:sourceConstraint a owl:AnnotationProperty;
+  rdfs:comment "The constraint that was validated when the result was produced."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "source constraint"@en;
+  rdfs:domain :AbstractResult .
+
+:subject a owl:AnnotationProperty;
+  rdfs:comment "An expression producing the resources that shall be inferred as subjects."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "subject"@en;
+  rdfs:domain :TripleRule .
+
+:targetNode a owl:AnnotationProperty;
+  rdfs:comment "Links a shape to individual nodes, indicating that these nodes must conform to the shape."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "target node"@en;
+  rdfs:domain :Shape .
+
+:value a owl:AnnotationProperty;
+  rdfs:comment "An RDF node that has caused the result."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "value"@en;
+  rdfs:domain :AbstractResult .
+
+:alternativePath a owl:ObjectProperty;
+  rdfs:range rdf:List;
+  rdfs:comment "The (single) value of this property must be a list of path elements, representing the elements of alternative paths."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "alternative path"@en .
+
+rdf:List a owl:Class .
+
+:and a owl:ObjectProperty, owl:NamedIndividual;
+  rdfs:range rdf:List .
+
+:annotationProperty a owl:ObjectProperty;
+  rdfs:domain :ResultAnnotation;
+  rdfs:range rdf:Property;
+  rdfs:comment "The annotation property that shall be set."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "annotation property"@en .
+
+rdf:Property a owl:Class .
+
+:class a owl:ObjectProperty, owl:NamedIndividual;
+  rdfs:range rdfs:Class .
+
+rdfs:Class a owl:Class .
+
+:condition a owl:ObjectProperty;
+  rdfs:domain :Rule;
+  rdfs:range :Shape;
+  rdfs:comment "The shapes that the focus nodes need to conform to before a rule is executed on them."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "condition"@en .
+
+:datatype a owl:ObjectProperty, owl:NamedIndividual;
+  rdfs:range rdfs:Datatype .
+
+rdfs:Datatype a owl:Class .
+
+:declare a owl:ObjectProperty;
+  rdfs:range :PrefixDeclaration;
+  rdfs:comment "Links a resource with its namespace prefix declarations."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "declare"@en .
+
+:detail a owl:ObjectProperty;
+  rdfs:domain :AbstractResult;
+  rdfs:range :AbstractResult;
+  rdfs:comment "Links a result with other results that provide more details, for example to describe violations against nested shapes."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "detail"@en .
+
+:disjoint a owl:ObjectProperty, owl:NamedIndividual;
+  rdfs:range rdf:Property .
+
+:entailment a owl:ObjectProperty;
+  rdfs:domain owl:Ontology;
+  rdfs:range rdfs:Resource;
+  rdfs:comment "An entailment regime that indicates what kind of inferencing is required by a shapes graph."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "entailment"@en .
+
+owl:Ontology a owl:Class .
+
+rdfs:Resource a owl:Class .
+
+:equals a owl:ObjectProperty, owl:NamedIndividual;
+  rdfs:range rdf:Property .
+
+:filterShape a owl:ObjectProperty;
+  rdfs:range :Shape;
+  rdfs:comment "The shape that all input nodes of the expression need to conform to."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "filter shape"@en .
+
+:group a owl:ObjectProperty;
+  rdfs:domain :PropertyShape;
+  rdfs:range :PropertyGroup;
+  rdfs:comment "Can be used to link to a property group to indicate that a property shape belongs to a group of related property shapes."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "group"@en .
+
+:ignoredProperties a owl:ObjectProperty, owl:NamedIndividual;
+  rdfs:range rdf:List .
+
+:in a owl:ObjectProperty, owl:NamedIndividual;
+  rdfs:range rdf:List .
+
+:inversePath a owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  rdfs:comment "The (single) value of this property represents an inverse path (object to subject)."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "inverse path"@en .
+
+:js a owl:ObjectProperty, owl:NamedIndividual;
+  rdfs:range :JSConstraint .
+
+:jsLibrary a owl:ObjectProperty;
+  rdfs:range :JSLibrary;
+  rdfs:comment "Declares which JavaScript libraries are needed to execute this."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "JavaScript library"@en .
+
+:languageIn a owl:ObjectProperty, owl:NamedIndividual;
+  rdfs:range rdf:List .
+
+:lessThan a owl:ObjectProperty, owl:NamedIndividual;
+  rdfs:range rdf:Property .
+
+:lessThanOrEquals a owl:ObjectProperty, owl:NamedIndividual;
+  rdfs:range rdf:Property .
+
+:node a owl:ObjectProperty, owl:NamedIndividual;
+  rdfs:range :NodeShape .
+
+:nodeKind a owl:ObjectProperty, owl:NamedIndividual;
+  rdfs:range :NodeKind .
+
+:nodeValidator a owl:ObjectProperty;
+  rdfs:domain :ConstraintComponent;
+  rdfs:range :Validator;
+  rdfs:comment "The validator(s) used to evaluate a constraint in the context of a node shape."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "node validator"@en .
+
+:not a owl:ObjectProperty, owl:NamedIndividual;
+  rdfs:range :Shape .
+
+:oneOrMorePath a owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  rdfs:comment "The (single) value of this property represents a path that is matched one or more times."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "one or more path"@en .
+
+:or a owl:ObjectProperty, owl:NamedIndividual;
+  rdfs:range rdf:List .
+
+:parameter a owl:ObjectProperty;
+  rdfs:domain :Parameterizable;
+  rdfs:range :Parameter;
+  rdfs:comment "The parameters of a function or constraint component."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "parameter"@en .
+
+:path a owl:ObjectProperty;
+  rdfs:domain :PropertyShape;
+  rdfs:range rdfs:Resource;
+  rdfs:comment "Specifies the property path of a property shape."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "path"@en .
+
+:property a owl:ObjectProperty;
+  rdfs:domain :Shape;
+  rdfs:range :PropertyShape .
+
+:propertyValidator a owl:ObjectProperty;
+  rdfs:domain :ConstraintComponent;
+  rdfs:range :Validator;
+  rdfs:comment "The validator(s) used to evaluate a constraint in the context of a property shape."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "property validator"@en .
+
+:qualifiedValueShape a owl:ObjectProperty;
+  rdfs:range :Shape .
+
+:result a owl:ObjectProperty;
+  rdfs:domain :ValidationReport;
+  rdfs:range :ValidationResult;
+  rdfs:comment "The validation results contained in a validation report."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "result"@en .
+
+:resultAnnotation a owl:ObjectProperty;
+  rdfs:domain :SPARQLSelectValidator;
+  rdfs:range :ResultAnnotation;
+  rdfs:comment "Links a SPARQL validator with zero or more sh:ResultAnnotation instances, defining how to derive additional result properties based on the variables of the SELECT query."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "result annotation"@en .
+
+:resultPath a owl:ObjectProperty;
+  rdfs:domain :AbstractResult;
+  rdfs:range rdfs:Resource;
+  rdfs:comment "The path of a validation result, based on the path of the validated property shape."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "result path"@en .
+
+:resultSeverity a owl:ObjectProperty;
+  rdfs:domain :AbstractResult;
+  rdfs:range :Severity;
+  rdfs:comment "The severity of the result, e.g. warning."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "result severity"@en .
+
+:returnType a owl:ObjectProperty;
+  rdfs:domain :Function;
+  rdfs:range rdfs:Class;
+  rdfs:comment "The expected type of values returned by the associated function."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "return type"@en .
+
+:rule a owl:ObjectProperty;
+  rdfs:domain :Shape;
+  rdfs:range :Rule;
+  rdfs:comment "The rules linked to a shape."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "rule"@en .
+
+:severity a owl:ObjectProperty;
+  rdfs:domain :Shape;
+  rdfs:range :Severity;
+  rdfs:comment "Defines the severity that validation results produced by a shape must have. Defaults to sh:Violation."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "severity"@en .
+
+:shapesGraph a owl:ObjectProperty;
+  rdfs:domain owl:Ontology;
+  rdfs:range owl:Ontology;
+  rdfs:comment "Shapes graphs that should be used when validating this data graph."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "shapes graph"@en .
+
+:sourceConstraintComponent a owl:ObjectProperty;
+  rdfs:domain :AbstractResult;
+  rdfs:range :ConstraintComponent;
+  rdfs:comment "The constraint component that is the source of the result."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "source constraint component"@en .
+
+:sourceShape a owl:ObjectProperty;
+  rdfs:domain :AbstractResult;
+  rdfs:range :Shape;
+  rdfs:comment "The shape that is was validated when the result was produced."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "source shape"@en .
+
+:sparql a owl:ObjectProperty;
+  rdfs:domain :Shape;
+  rdfs:range :SPARQLConstraint .
+
+:suggestedShapesGraph a owl:ObjectProperty;
+  rdfs:domain owl:Ontology;
+  rdfs:range owl:Ontology;
+  rdfs:comment "Suggested shapes graphs for this ontology. The values of this property may be used in the absence of specific sh:shapesGraph statements."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "suggested shapes graph"@en .
+
+:target a owl:ObjectProperty;
+  rdfs:domain :Shape;
+  rdfs:range :Target;
+  rdfs:comment "Links a shape to a target specified by an extension language, for example instances of sh:SPARQLTarget."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "target"@en .
+
+:targetClass a owl:ObjectProperty;
+  rdfs:domain :Shape;
+  rdfs:range rdfs:Class;
+  rdfs:comment "Links a shape to a class, indicating that all instances of the class must conform to the shape."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "target class"@en .
+
+:targetObjectsOf a owl:ObjectProperty;
+  rdfs:domain :Shape;
+  rdfs:range rdf:Property;
+  rdfs:comment "Links a shape to a property, indicating that all all objects of triples that have the given property as their predicate must conform to the shape."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "target objects of"@en .
+
+:targetSubjectsOf a owl:ObjectProperty;
+  rdfs:domain :Shape;
+  rdfs:range rdf:Property;
+  rdfs:comment "Links a shape to a property, indicating that all subjects of triples that have the given property as their predicate must conform to the shape."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "target subjects of"@en .
+
+:validator a owl:ObjectProperty;
+  rdfs:domain :ConstraintComponent;
+  rdfs:range :Validator;
+  rdfs:comment "The validator(s) used to evaluate constraints of either node or property shapes."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "validator"@en .
+
+:xone a owl:ObjectProperty;
+  rdfs:range rdf:List .
+
+:zeroOrMorePath a owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  rdfs:comment "The (single) value of this property represents a path that is matched zero or more times."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "zero or more path"@en .
+
+:zeroOrOnePath a owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  rdfs:comment "The (single) value of this property represents a path that is matched zero or one times."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "zero or one path"@en .
+
+:annotationVarName a owl:DatatypeProperty;
+  rdfs:domain :ResultAnnotation;
+  rdfs:range xsd:string;
+  rdfs:comment "The name of the SPARQL variable from the SELECT clause that shall be used for the values."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "annotation variable name"@en .
+
+:ask a owl:DatatypeProperty;
+  rdfs:domain :SPARQLAskExecutable;
+  rdfs:range xsd:string;
+  rdfs:comment "The SPARQL ASK query to execute."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "ask"@en .
+
+:closed a owl:DatatypeProperty, owl:NamedIndividual;
+  rdfs:range xsd:boolean .
+
+:conforms a owl:DatatypeProperty;
+  rdfs:domain :ValidationReport;
+  rdfs:range xsd:boolean;
+  rdfs:comment "True if the validation did not produce any validation results, and false otherwise."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "conforms"@en .
+
+:construct a owl:DatatypeProperty;
+  rdfs:domain :SPARQLConstructExecutable;
+  rdfs:range xsd:string;
+  rdfs:comment "The SPARQL CONSTRUCT query to execute."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "construct"@en .
+
+:deactivated a owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "If set to true then all nodes conform to this."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "deactivated"@en .
+
+:flags a owl:DatatypeProperty, owl:NamedIndividual;
+  rdfs:range xsd:string .
+
+:jsFunctionName a owl:DatatypeProperty;
+  rdfs:domain :JSExecutable;
+  rdfs:range xsd:string;
+  rdfs:comment "The name of the JavaScript function to execute."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "JavaScript function name"@en .
+
+:jsLibraryURL a owl:DatatypeProperty;
+  rdfs:domain :JSLibrary;
+  rdfs:range xsd:anyURI;
+  rdfs:comment "Declares the URLs of a JavaScript library. This should be the absolute URL of a JavaScript file. Implementations may redirect those to local files."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "JavaScript library URL"@en .
+
+:maxCount a owl:DatatypeProperty, owl:NamedIndividual;
+  rdfs:range xsd:integer .
+
+:maxLength a owl:DatatypeProperty, owl:NamedIndividual;
+  rdfs:range xsd:integer .
+
+:minCount a owl:DatatypeProperty, owl:NamedIndividual;
+  rdfs:range xsd:integer .
+
+:minLength a owl:DatatypeProperty, owl:NamedIndividual;
+  rdfs:range xsd:integer .
+
+:namespace a owl:DatatypeProperty;
+  rdfs:domain :PrefixDeclaration;
+  rdfs:range xsd:anyURI;
+  rdfs:comment "The namespace associated with a prefix in a prefix declaration."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "namespace"@en .
+
+:optional a owl:DatatypeProperty;
+  rdfs:domain :Parameter;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Indicates whether a parameter is optional."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "optional"@en .
+
+:pattern a owl:DatatypeProperty, owl:NamedIndividual;
+  rdfs:range xsd:string .
+
+:prefix a owl:DatatypeProperty;
+  rdfs:domain :PrefixDeclaration;
+  rdfs:range xsd:string;
+  rdfs:comment "The prefix of a prefix declaration."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "prefix"@en .
+
+:qualifiedMaxCount a owl:DatatypeProperty;
+  rdfs:range xsd:integer .
+
+:qualifiedMinCount a owl:DatatypeProperty;
+  rdfs:range xsd:integer .
+
+:qualifiedValueShapesDisjoint a owl:DatatypeProperty;
+  rdfs:range xsd:boolean .
+
+:select a owl:DatatypeProperty;
+  rdfs:domain :SPARQLSelectExecutable;
+  rdfs:range xsd:string;
+  rdfs:comment "The SPARQL SELECT query to execute."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "select"@en .
+
+:shapesGraphWellFormed a owl:DatatypeProperty;
+  rdfs:domain :ValidationReport;
+  rdfs:range xsd:boolean;
+  rdfs:comment "If true then the validation engine was certain that the shapes graph has passed all SHACL syntax requirements during the validation process."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "shapes graph well-formed"@en .
+
+:uniqueLang a owl:DatatypeProperty;
+  rdfs:range xsd:boolean .
+
+:update a owl:DatatypeProperty;
+  rdfs:domain :SPARQLUpdateExecutable;
+  rdfs:range xsd:string;
+  rdfs:comment "The SPARQL UPDATE to execute."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "update"@en .
+
+:AbstractResult a owl:Class;
+  rdfs:subClassOf rdfs:Resource;
+  rdfs:comment "The base class of validation results, typically not instantiated directly."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Abstract result"@en .
+
+:ConstraintComponent a owl:Class;
+  rdfs:subClassOf :Parameterizable;
+  rdfs:comment "The class of constraint components."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Constraint component"@en .
+
+:Function a owl:Class;
+  rdfs:subClassOf :Parameterizable;
+  rdfs:comment "The class of SHACL functions."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Function"@en .
+
+:JSConstraint a owl:Class;
+  rdfs:subClassOf :JSExecutable;
+  rdfs:comment "The class of constraints backed by a JavaScript function."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "JavaScript-based constraint"@en .
+
+:JSExecutable a owl:Class;
+  rdfs:subClassOf rdfs:Resource;
+  rdfs:comment "Abstract base class of resources that declare an executable JavaScript."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "JavaScript executable"@en .
+
+:JSFunction a owl:Class;
+  rdfs:subClassOf :Function, :JSExecutable;
+  rdfs:comment "The class of SHACL functions that execute a JavaScript function when called."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "JavaScript function"@en .
+
+:JSLibrary a owl:Class;
+  rdfs:subClassOf rdfs:Resource;
+  rdfs:comment "Represents a JavaScript library, typically identified by one or more URLs of files to include."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "JavaScript library"@en .
+
+:JSRule a owl:Class;
+  rdfs:subClassOf :JSExecutable, :Rule;
+  rdfs:comment "The class of SHACL rules expressed using JavaScript."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "JavaScript rule"@en .
+
+:JSTarget a owl:Class;
+  rdfs:subClassOf :JSExecutable, :Target;
+  rdfs:comment "The class of targets that are based on JavaScript functions."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "JavaScript target"@en .
+
+:JSTargetType a owl:Class;
+  rdfs:subClassOf :JSExecutable, :TargetType;
+  rdfs:comment "The (meta) class for parameterizable targets that are based on JavaScript functions."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "JavaScript target type"@en .
+
+:JSValidator a owl:Class;
+  rdfs:subClassOf :JSExecutable, :Validator;
+  rdfs:comment "A SHACL validator based on JavaScript. This can be used to declare SHACL constraint components that perform JavaScript-based validation when used."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "JavaScript validator"@en .
+
+:NodeKind a owl:Class;
+  rdfs:subClassOf rdfs:Resource;
+  rdfs:comment "The class of all node kinds, including sh:BlankNode, sh:IRI, sh:Literal or the combinations of these: sh:BlankNodeOrIRI, sh:BlankNodeOrLiteral, sh:IRIOrLiteral."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Node kind"@en .
+
+:NodeShape a owl:Class;
+  rdfs:subClassOf :Shape;
+  rdfs:comment "A node shape is a shape that specifies constraint that need to be met with respect to focus nodes."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Node shape"@en .
+
+:Parameter a owl:Class;
+  rdfs:subClassOf :PropertyShape;
+  rdfs:comment "The class of parameter declarations, consisting of a path predicate and (possibly) information about allowed value type, cardinality and other characteristics."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Parameter"@en .
+
+:Parameterizable a owl:Class;
+  rdfs:subClassOf rdfs:Resource;
+  rdfs:comment "Superclass of components that can take parameters, especially functions and constraint components."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Parameterizable"@en .
+
+:PrefixDeclaration a owl:Class;
+  rdfs:subClassOf rdfs:Resource;
+  rdfs:comment "The class of prefix declarations, consisting of pairs of a prefix with a namespace."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Prefix declaration"@en .
+
+:PropertyGroup a owl:Class;
+  rdfs:subClassOf rdfs:Resource;
+  rdfs:comment "Instances of this class represent groups of property shapes that belong together."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Property group"@en .
+
+:PropertyShape a owl:Class;
+  rdfs:subClassOf :Shape;
+  rdfs:comment "A property shape is a shape that specifies constraints on the values of a focus node for a given property or path."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Property shape"@en .
+
+:ResultAnnotation a owl:Class;
+  rdfs:subClassOf rdfs:Resource;
+  rdfs:comment "A class of result annotations, which define the rules to derive the values of a given annotation property as extra values for a validation result."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Result annotation"@en .
+
+:Rule a owl:Class;
+  rdfs:subClassOf rdfs:Resource;
+  rdfs:comment "The class of SHACL rules. Never instantiated directly."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Rule"@en .
+
+:SPARQLAskExecutable a owl:Class;
+  rdfs:subClassOf :SPARQLExecutable;
+  rdfs:comment "The class of SPARQL executables that are based on an ASK query."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "SPARQL ASK executable"@en .
+
+:SPARQLAskValidator a owl:Class;
+  rdfs:subClassOf :SPARQLAskExecutable, :Validator;
+  rdfs:comment "The class of validators based on SPARQL ASK queries. The queries are evaluated for each value node and are supposed to return true if the given node conforms."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "SPARQL ASK validator"@en .
+
+:SPARQLConstraint a owl:Class;
+  rdfs:subClassOf :SPARQLSelectExecutable;
+  rdfs:comment "The class of constraints based on SPARQL SELECT queries."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "SPARQL constraint"@en .
+
+:SPARQLConstructExecutable a owl:Class;
+  rdfs:subClassOf :SPARQLExecutable;
+  rdfs:comment "The class of SPARQL executables that are based on a CONSTRUCT query."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "SPARQL CONSTRUCT executable"@en .
+
+:SPARQLExecutable a owl:Class;
+  rdfs:subClassOf rdfs:Resource;
+  rdfs:comment "The class of resources that encapsulate a SPARQL query."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "SPARQL executable"@en .
+
+:SPARQLFunction a owl:Class;
+  rdfs:subClassOf :Function, :SPARQLAskExecutable, :SPARQLSelectExecutable;
+  rdfs:comment "A function backed by a SPARQL query - either ASK or SELECT."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "SPARQL function"@en .
+
+:SPARQLRule a owl:Class;
+  rdfs:subClassOf :Rule, :SPARQLConstructExecutable;
+  rdfs:comment "The class of SHACL rules based on SPARQL CONSTRUCT queries."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "SPARQL CONSTRUCT rule"@en .
+
+:SPARQLSelectExecutable a owl:Class;
+  rdfs:subClassOf :SPARQLExecutable;
+  rdfs:comment "The class of SPARQL executables based on a SELECT query."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "SPARQL SELECT executable"@en .
+
+:SPARQLSelectValidator a owl:Class;
+  rdfs:subClassOf :SPARQLSelectExecutable, :Validator;
+  rdfs:comment "The class of validators based on SPARQL SELECT queries. The queries are evaluated for each focus node and are supposed to produce bindings for all focus nodes that do not conform."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "SPARQL SELECT validator"@en .
+
+:SPARQLTarget a owl:Class;
+  rdfs:subClassOf :SPARQLAskExecutable, :SPARQLSelectExecutable, :Target;
+  rdfs:comment "The class of targets that are based on SPARQL queries."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "SPARQL target"@en .
+
+:SPARQLTargetType a owl:Class;
+  rdfs:subClassOf :SPARQLAskExecutable, :SPARQLSelectExecutable, :TargetType;
+  rdfs:comment "The (meta) class for parameterizable targets that are based on SPARQL queries."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "SPARQL target type"@en .
+
+:SPARQLUpdateExecutable a owl:Class;
+  rdfs:subClassOf :SPARQLExecutable;
+  rdfs:comment "The class of SPARQL executables based on a SPARQL UPDATE."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "SPARQL UPDATE executable"@en .
+
+:Severity a owl:Class;
+  rdfs:subClassOf rdfs:Resource;
+  rdfs:comment "The class of validation result severity levels, including violation and warning levels."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Severity"@en .
+
+:Shape a owl:Class;
+  rdfs:subClassOf rdfs:Resource;
+  rdfs:comment "A shape is a collection of constraints that may be targeted for certain nodes."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Shape"@en .
+
+:Target a owl:Class;
+  rdfs:subClassOf rdfs:Resource;
+  rdfs:comment "The base class of targets such as those based on SPARQL queries."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Target"@en .
+
+:TargetType a owl:Class;
+  rdfs:subClassOf rdfs:Class, :Parameterizable;
+  rdfs:comment """The (meta) class for parameterizable targets.	Instances of this are instantiated as values of the sh:target property."""@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Target type"@en .
+
+:TripleRule a owl:Class;
+  rdfs:subClassOf :Rule;
+  rdfs:comment "A rule based on triple (subject, predicate, object) pattern."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Triple rule"@en .
+
+:ValidationReport a owl:Class;
+  rdfs:subClassOf rdfs:Resource;
+  rdfs:comment "The class of SHACL validation reports."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Validation report"@en .
+
+:ValidationResult a owl:Class;
+  rdfs:subClassOf :AbstractResult;
+  rdfs:comment "The class of validation results."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Validation result"@en .
+
+:Validator a owl:Class;
+  rdfs:subClassOf rdfs:Resource;
+  rdfs:comment "The class of validators, which provide instructions on how to process a constraint definition. This class serves as base class for the SPARQL-based validators and other possible implementations."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Validator"@en .
+
+xsd:boolean a owl:NamedIndividual .
+
+xsd:integer a owl:NamedIndividual .
+
+xsd:string a owl:NamedIndividual .
+
+_:genid1 :prefix "sh";
+  :namespace "http://www.w3.org/ns/shacl#"^^xsd:anyURI .
+
+<http://www.w3.org/ns/shacl-shacl#> a owl:NamedIndividual .
+
+:AndConstraintComponent a owl:NamedIndividual, :ConstraintComponent;
+  :parameter :AndConstraintComponent-and;
+  rdfs:comment "A constraint component that can be used to test whether a value node conforms to all members of a provided list of shapes."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "And constraint component"@en .
+
+:AndConstraintComponent-and a owl:NamedIndividual, :Parameter;
+  :path :and;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#> .
+
+:BlankNode a owl:NamedIndividual, :NodeKind;
+  rdfs:comment "The node kind of all blank nodes."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Blank node"@en .
+
+:BlankNodeOrIRI a owl:NamedIndividual, :NodeKind;
+  rdfs:comment "The node kind of all blank nodes or IRIs."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Blank node or IRI"@en .
+
+:BlankNodeOrLiteral a owl:NamedIndividual, :NodeKind;
+  rdfs:comment "The node kind of all blank nodes or literals."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Blank node or literal"@en .
+
+:ClassConstraintComponent a owl:NamedIndividual, :ConstraintComponent;
+  :parameter :ClassConstraintComponent-class;
+  rdfs:comment "A constraint component that can be used to verify that each value node is an instance of a given type."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Class constraint component"@en .
+
+:ClassConstraintComponent-class a owl:NamedIndividual, :Parameter;
+  :nodeKind :IRI;
+  :path :class;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#> .
+
+:IRI a owl:NamedIndividual, :NodeKind;
+  rdfs:comment "The node kind of all IRIs."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "IRI"@en .
+
+:ClosedConstraintComponent a owl:NamedIndividual, :ConstraintComponent;
+  :parameter :ClosedConstraintComponent-closed, :ClosedConstraintComponent-ignoredProperties;
+  rdfs:comment "A constraint component that can be used to indicate that focus nodes must only have values for those properties that have been explicitly enumerated via sh:property/sh:path."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Closed constraint component"@en .
+
+:ClosedConstraintComponent-closed a owl:NamedIndividual, :Parameter;
+  :datatype xsd:boolean;
+  :path :closed;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#> .
+
+:ClosedConstraintComponent-ignoredProperties a owl:NamedIndividual, :Parameter;
+  :path :ignoredProperties;
+  :optional true;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#> .
+
+:DatatypeConstraintComponent a owl:NamedIndividual, :ConstraintComponent;
+  :parameter :DatatypeConstraintComponent-datatype;
+  rdfs:comment "A constraint component that can be used to restrict the datatype of all value nodes."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Datatype constraint component"@en .
+
+:DatatypeConstraintComponent-datatype a owl:NamedIndividual, :Parameter;
+  :nodeKind :IRI;
+  :path :datatype;
+  :maxCount 1;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#> .
+
+:DisjointConstraintComponent a owl:NamedIndividual, :ConstraintComponent;
+  :parameter :DisjointConstraintComponent-disjoint;
+  rdfs:comment "A constraint component that can be used to verify that the set of value nodes is disjoint with the the set of nodes that have the focus node as subject and the value of a given property as predicate."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Disjoint constraint component"@en .
+
+:DisjointConstraintComponent-disjoint a owl:NamedIndividual, :Parameter;
+  :nodeKind :IRI;
+  :path :disjoint;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#> .
+
+:EqualsConstraintComponent a owl:NamedIndividual, :ConstraintComponent;
+  :parameter :EqualsConstraintComponent-equals;
+  rdfs:comment "A constraint component that can be used to verify that the set of value nodes is equal to the set of nodes that have the focus node as subject and the value of a given property as predicate."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Equals constraint component"@en .
+
+:EqualsConstraintComponent-equals a owl:NamedIndividual, :Parameter;
+  :nodeKind :IRI;
+  :path :equals;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#> .
+
+:ExpressionConstraintComponent a owl:NamedIndividual, :ConstraintComponent;
+  :parameter :ExpressionConstraintComponent-expression;
+  rdfs:comment "A constraint component that can be used to verify that a given node expression produces true for all value nodes."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Expression constraint component"@en .
+
+:ExpressionConstraintComponent-expression a owl:NamedIndividual, :Parameter;
+  :path :expression;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#> .
+
+:expression a owl:NamedIndividual .
+
+:HasValueConstraintComponent a owl:NamedIndividual, :ConstraintComponent;
+  :parameter :HasValueConstraintComponent-hasValue;
+  rdfs:comment "A constraint component that can be used to verify that one of the value nodes is a given RDF node."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Has-value constraint component"@en .
+
+:HasValueConstraintComponent-hasValue a owl:NamedIndividual, :Parameter;
+  :path :hasValue;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#> .
+
+:hasValue a owl:NamedIndividual .
+
+:IRIOrLiteral a owl:NamedIndividual, :NodeKind;
+  rdfs:comment "The node kind of all IRIs or literals."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "IRI or literal"@en .
+
+:InConstraintComponent a owl:NamedIndividual, :ConstraintComponent;
+  :parameter :InConstraintComponent-in;
+  rdfs:comment "A constraint component that can be used to exclusively enumerate the permitted value nodes."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "In constraint component"@en .
+
+:InConstraintComponent-in a owl:NamedIndividual, :Parameter;
+  :path :in;
+  :maxCount 1;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#> .
+
+:Info a owl:NamedIndividual, :Severity;
+  rdfs:comment "The severity for an informational validation result."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Info"@en .
+
+:JSConstraint-js a owl:NamedIndividual, :Parameter;
+  :path :js;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#> .
+
+:JSConstraintComponent a owl:NamedIndividual, :ConstraintComponent;
+  :parameter :JSConstraint-js;
+  rdfs:comment "A constraint component with the parameter sh:js linking to a sh:JSConstraint containing a sh:script."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "JavaScript constraint component"@en .
+
+:LanguageInConstraintComponent a owl:NamedIndividual, :ConstraintComponent;
+  :parameter :LanguageInConstraintComponent-languageIn;
+  rdfs:comment "A constraint component that can be used to enumerate language tags that all value nodes must have."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Language-in constraint component"@en .
+
+:LanguageInConstraintComponent-languageIn a owl:NamedIndividual, :Parameter;
+  :path :languageIn;
+  :maxCount 1;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#> .
+
+:LessThanConstraintComponent a owl:NamedIndividual, :ConstraintComponent;
+  :parameter :LessThanConstraintComponent-lessThan;
+  rdfs:comment "A constraint component that can be used to verify that each value node is smaller than all the nodes that have the focus node as subject and the value of a given property as predicate."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Less-than constraint component"@en .
+
+:LessThanConstraintComponent-lessThan a owl:NamedIndividual, :Parameter;
+  :nodeKind :IRI;
+  :path :lessThan;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#> .
+
+:LessThanOrEqualsConstraintComponent a owl:NamedIndividual, :ConstraintComponent;
+  :parameter :LessThanOrEqualsConstraintComponent-lessThanOrEquals;
+  rdfs:comment "A constraint component that can be used to verify that every value node is smaller than all the nodes that have the focus node as subject and the value of a given property as predicate."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Less-than-or-equals constraint component"@en .
+
+:LessThanOrEqualsConstraintComponent-lessThanOrEquals a owl:NamedIndividual, :Parameter;
+  :nodeKind :IRI;
+  :path :lessThanOrEquals;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#> .
+
+:Literal a owl:NamedIndividual, :NodeKind;
+  rdfs:comment "The node kind of all literals."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Literal"@en .
+
+:MaxCountConstraintComponent a owl:NamedIndividual, :ConstraintComponent;
+  :parameter :MaxCountConstraintComponent-maxCount;
+  rdfs:comment "A constraint component that can be used to restrict the maximum number of value nodes."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Max-count constraint component"@en .
+
+:MaxCountConstraintComponent-maxCount a owl:NamedIndividual, :Parameter;
+  :datatype xsd:integer;
+  :path :maxCount;
+  :maxCount 1;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#> .
+
+:MaxExclusiveConstraintComponent a owl:NamedIndividual, :ConstraintComponent;
+  :parameter :MaxExclusiveConstraintComponent-maxExclusive;
+  rdfs:comment "A constraint component that can be used to restrict the range of value nodes with a maximum exclusive value."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Max-exclusive constraint component"@en .
+
+:MaxExclusiveConstraintComponent-maxExclusive a owl:NamedIndividual, :Parameter;
+  :nodeKind :Literal;
+  :path :maxExclusive;
+  :maxCount 1;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#> .
+
+:maxExclusive a owl:NamedIndividual .
+
+:MaxInclusiveConstraintComponent a owl:NamedIndividual, :ConstraintComponent;
+  :parameter :MaxInclusiveConstraintComponent-maxInclusive;
+  rdfs:comment "A constraint component that can be used to restrict the range of value nodes with a maximum inclusive value."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Max-inclusive constraint component"@en .
+
+:MaxInclusiveConstraintComponent-maxInclusive a owl:NamedIndividual, :Parameter;
+  :nodeKind :Literal;
+  :path :maxInclusive;
+  :maxCount 1;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#> .
+
+:maxInclusive a owl:NamedIndividual .
+
+:MaxLengthConstraintComponent a owl:NamedIndividual, :ConstraintComponent;
+  :parameter :MaxLengthConstraintComponent-maxLength;
+  rdfs:comment "A constraint component that can be used to restrict the maximum string length of value nodes."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Max-length constraint component"@en .
+
+:MaxLengthConstraintComponent-maxLength a owl:NamedIndividual, :Parameter;
+  :datatype xsd:integer;
+  :path :maxLength;
+  :maxCount 1;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#> .
+
+:MinCountConstraintComponent a owl:NamedIndividual, :ConstraintComponent;
+  :parameter :MinCountConstraintComponent-minCount;
+  rdfs:comment "A constraint component that can be used to restrict the minimum number of value nodes."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Min-count constraint component"@en .
+
+:MinCountConstraintComponent-minCount a owl:NamedIndividual, :Parameter;
+  :datatype xsd:integer;
+  :path :minCount;
+  :maxCount 1;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#> .
+
+:MinExclusiveConstraintComponent a owl:NamedIndividual, :ConstraintComponent;
+  :parameter :MinExclusiveConstraintComponent-minExclusive;
+  rdfs:comment "A constraint component that can be used to restrict the range of value nodes with a minimum exclusive value."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Min-exclusive constraint component"@en .
+
+:MinExclusiveConstraintComponent-minExclusive a owl:NamedIndividual, :Parameter;
+  :nodeKind :Literal;
+  :path :minExclusive;
+  :maxCount 1;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#> .
+
+:minExclusive a owl:NamedIndividual .
+
+:MinInclusiveConstraintComponent a owl:NamedIndividual, :ConstraintComponent;
+  :parameter :MinInclusiveConstraintComponent-minInclusive;
+  rdfs:comment "A constraint component that can be used to restrict the range of value nodes with a minimum inclusive value."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Min-inclusive constraint component"@en .
+
+:MinInclusiveConstraintComponent-minInclusive a owl:NamedIndividual, :Parameter;
+  :nodeKind :Literal;
+  :path :minInclusive;
+  :maxCount 1;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#> .
+
+:minInclusive a owl:NamedIndividual .
+
+:MinLengthConstraintComponent a owl:NamedIndividual, :ConstraintComponent;
+  :parameter :MinLengthConstraintComponent-minLength;
+  rdfs:comment "A constraint component that can be used to restrict the minimum string length of value nodes."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Min-length constraint component"@en .
+
+:MinLengthConstraintComponent-minLength a owl:NamedIndividual, :Parameter;
+  :datatype xsd:integer;
+  :path :minLength;
+  :maxCount 1;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#> .
+
+:NodeConstraintComponent a owl:NamedIndividual, :ConstraintComponent;
+  :parameter :NodeConstraintComponent-node;
+  rdfs:comment "A constraint component that can be used to verify that all value nodes conform to the given node shape."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Node constraint component"@en .
+
+:NodeConstraintComponent-node a owl:NamedIndividual, :Parameter;
+  :path :node;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#> .
+
+:NodeKindConstraintComponent a owl:NamedIndividual, :ConstraintComponent;
+  :parameter :NodeKindConstraintComponent-nodeKind;
+  rdfs:comment "A constraint component that can be used to restrict the RDF node kind of each value node."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Node-kind constraint component"@en .
+
+:NodeKindConstraintComponent-nodeKind a owl:NamedIndividual, :Parameter;
+  :in _:genid2;
+  :path :nodeKind;
+  :maxCount 1;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#> .
+
+:NotConstraintComponent a owl:NamedIndividual, :ConstraintComponent;
+  :parameter :NotConstraintComponent-not;
+  rdfs:comment "A constraint component that can be used to verify that value nodes do not conform to a given shape."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Not constraint component"@en .
+
+:NotConstraintComponent-not a owl:NamedIndividual, :Parameter;
+  :path :not;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#> .
+
+:OrConstraintComponent a owl:NamedIndividual, :ConstraintComponent;
+  :parameter :OrConstraintComponent-or;
+  rdfs:comment "A constraint component that can be used to restrict the value nodes so that they conform to at least one out of several provided shapes."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Or constraint component"@en .
+
+:OrConstraintComponent-or a owl:NamedIndividual, :Parameter;
+  :path :or;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#> .
+
+:PatternConstraintComponent a owl:NamedIndividual, :ConstraintComponent;
+  :parameter :PatternConstraintComponent-flags, :PatternConstraintComponent-pattern;
+  rdfs:comment "A constraint component that can be used to verify that every value node matches a given regular expression."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Pattern constraint component"@en .
+
+:PatternConstraintComponent-flags a owl:NamedIndividual, :Parameter;
+  :datatype xsd:string;
+  :path :flags;
+  :optional true;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#> .
+
+:PatternConstraintComponent-pattern a owl:NamedIndividual, :Parameter;
+  :datatype xsd:string;
+  :path :pattern;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#> .
+
+:PropertyConstraintComponent a owl:NamedIndividual, :ConstraintComponent;
+  :parameter :PropertyConstraintComponent-property .
+# 
+# http://www.w3.org/ns/shacl#PropertyConstraintComponent-property
+# 
+# http://www.w3.org/ns/shacl#QualifiedMaxCountConstraintComponent
+# 
+# http://www.w3.org/ns/shacl#QualifiedMaxCountConstraintComponent-qualifiedMaxCount
+# 
+# http://www.w3.org/ns/shacl#QualifiedMaxCountConstraintComponent-qualifiedValueShape
+# 
+# http://www.w3.org/ns/shacl#QualifiedMaxCountConstraintComponent-qualifiedValueShapesDisjoint
+# 
+# http://www.w3.org/ns/shacl#QualifiedMinCountConstraintComponent
+# 
+# http://www.w3.org/ns/shacl#QualifiedMinCountConstraintComponent-qualifiedMinCount
+# 
+# http://www.w3.org/ns/shacl#QualifiedMinCountConstraintComponent-qualifiedValueShape
+# 
+# http://www.w3.org/ns/shacl#QualifiedMinCountConstraintComponent-qualifiedValueShapesDisjoint
+# 
+# http://www.w3.org/ns/shacl#SPARQLConstraintComponent
+# 
+# http://www.w3.org/ns/shacl#SPARQLConstraintComponent-sparql
+# 
+# http://www.w3.org/ns/shacl#UniqueLangConstraintComponent
+# 
+# http://www.w3.org/ns/shacl#UniqueLangConstraintComponent-uniqueLang
+# 
+# http://www.w3.org/ns/shacl#Violation
+# 
+# http://www.w3.org/ns/shacl#Warning
+# 
+# http://www.w3.org/ns/shacl#XoneConstraintComponent
+# 
+# http://www.w3.org/ns/shacl#XoneConstraintComponent-xone
+# 
+# http://www.w3.org/ns/shacl#and
+# 
+# http://www.w3.org/ns/shacl#class
+# 
+# http://www.w3.org/ns/shacl#closed
+# 
+# http://www.w3.org/ns/shacl#datatype
+# 
+# http://www.w3.org/ns/shacl#disjoint
+# 
+# http://www.w3.org/ns/shacl#equals
+# 
+# http://www.w3.org/ns/shacl#expression
+# 
+# http://www.w3.org/ns/shacl#flags
+# 
+# http://www.w3.org/ns/shacl#hasValue
+# 
+# http://www.w3.org/ns/shacl#ignoredProperties
+# 
+# http://www.w3.org/ns/shacl#in
+# 
+# http://www.w3.org/ns/shacl#js
+# 
+# http://www.w3.org/ns/shacl#languageIn
+# 
+# http://www.w3.org/ns/shacl#lessThan
+# 
+# http://www.w3.org/ns/shacl#lessThanOrEquals
+# 
+# http://www.w3.org/ns/shacl#maxCount
+# 
+# http://www.w3.org/ns/shacl#maxExclusive
+# 
+# http://www.w3.org/ns/shacl#maxInclusive
+# 
+# http://www.w3.org/ns/shacl#maxLength
+# 
+# http://www.w3.org/ns/shacl#minCount
+# 
+# http://www.w3.org/ns/shacl#minExclusive
+# 
+# http://www.w3.org/ns/shacl#minInclusive
+# 
+# http://www.w3.org/ns/shacl#minLength
+# 
+# http://www.w3.org/ns/shacl#node
+# 
+# http://www.w3.org/ns/shacl#nodeKind
+# 
+# http://www.w3.org/ns/shacl#not
+# 
+# http://www.w3.org/ns/shacl#or
+# 
+# http://www.w3.org/ns/shacl#pattern
+# 
+# http://www.w3.org/ns/shacl#property
+# 
+# http://www.w3.org/ns/shacl#qualifiedMaxCount
+# 
+# http://www.w3.org/ns/shacl#qualifiedMinCount
+# 
+# http://www.w3.org/ns/shacl#qualifiedValueShape
+# 
+# http://www.w3.org/ns/shacl#qualifiedValueShapesDisjoint
+# 
+# http://www.w3.org/ns/shacl#sparql
+# 
+# http://www.w3.org/ns/shacl#this
+# 
+# http://www.w3.org/ns/shacl#uniqueLang
+# 
+# http://www.w3.org/ns/shacl#xone
+# 
+# http://www.w3.org/ns/shacl-shacl#
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
+
+:PropertyConstraintComponent-property a owl:NamedIndividual, :Parameter;
+  :path :property;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#> .
+
+:PropertyConstraintComponent rdfs:comment "A constraint component that can be used to verify that all value nodes conform to the given property shape."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Property constraint component"@en .
+
+:property a owl:NamedIndividual;
+  rdfs:comment "Links a shape to its property shapes."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "property"@en .
+
+:QualifiedMaxCountConstraintComponent a owl:NamedIndividual, :ConstraintComponent;
+  :parameter :QualifiedMaxCountConstraintComponent-qualifiedMaxCount, :QualifiedMaxCountConstraintComponent-qualifiedValueShape,
+    :QualifiedMaxCountConstraintComponent-qualifiedValueShapesDisjoint;
+  rdfs:comment "A constraint component that can be used to verify that a specified maximum number of value nodes conforms to a given shape."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Qualified-max-count constraint component"@en .
+
+:QualifiedMaxCountConstraintComponent-qualifiedMaxCount a owl:NamedIndividual, :Parameter;
+  :datatype xsd:integer;
+  :path :qualifiedMaxCount;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#> .
+
+:QualifiedMaxCountConstraintComponent-qualifiedValueShape a owl:NamedIndividual, :Parameter;
+  :path :qualifiedValueShape;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#> .
+
+:QualifiedMaxCountConstraintComponent-qualifiedValueShapesDisjoint a owl:NamedIndividual,
+    :Parameter;
+  :datatype xsd:boolean;
+  :path :qualifiedValueShapesDisjoint;
+  :optional true;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#> .
+
+:qualifiedMaxCount a owl:NamedIndividual;
+  rdfs:comment "The maximum number of value nodes that can conform to the shape."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "qualified max count"@en .
+
+:qualifiedValueShape a owl:NamedIndividual;
+  rdfs:comment "The shape that a specified number of values must conform to."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "qualified value shape"@en .
+
+:qualifiedValueShapesDisjoint a owl:NamedIndividual;
+  rdfs:comment "Can be used to mark the qualified value shape to be disjoint with its sibling shapes."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "qualified value shapes disjoint"@en .
+
+:QualifiedMinCountConstraintComponent a owl:NamedIndividual, :ConstraintComponent;
+  :parameter :QualifiedMinCountConstraintComponent-qualifiedMinCount, :QualifiedMinCountConstraintComponent-qualifiedValueShape,
+    :QualifiedMinCountConstraintComponent-qualifiedValueShapesDisjoint;
+  rdfs:comment "A constraint component that can be used to verify that a specified minimum number of value nodes conforms to a given shape."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Qualified-min-count constraint component"@en .
+
+:QualifiedMinCountConstraintComponent-qualifiedMinCount a owl:NamedIndividual, :Parameter;
+  :datatype xsd:integer;
+  :path :qualifiedMinCount;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#> .
+
+:QualifiedMinCountConstraintComponent-qualifiedValueShape a owl:NamedIndividual, :Parameter;
+  :path :qualifiedValueShape;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#> .
+
+:QualifiedMinCountConstraintComponent-qualifiedValueShapesDisjoint a owl:NamedIndividual,
+    :Parameter;
+  :datatype xsd:boolean;
+  :path :qualifiedValueShapesDisjoint;
+  :optional true;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#> .
+
+:qualifiedMinCount a owl:NamedIndividual;
+  rdfs:comment "The minimum number of value nodes that must conform to the shape."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "qualified min count"@en .
+
+:SPARQLConstraintComponent a owl:NamedIndividual, :ConstraintComponent;
+  :parameter :SPARQLConstraintComponent-sparql;
+  rdfs:comment "A constraint component that can be used to define constraints based on SPARQL queries."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "SPARQL constraint component"@en .
+
+:SPARQLConstraintComponent-sparql a owl:NamedIndividual, :Parameter;
+  :path :sparql;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#> .
+
+:sparql a owl:NamedIndividual;
+  rdfs:comment "Links a shape with SPARQL constraints."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "constraint (in SPARQL)"@en .
+
+:UniqueLangConstraintComponent a owl:NamedIndividual, :ConstraintComponent;
+  :parameter :UniqueLangConstraintComponent-uniqueLang;
+  rdfs:comment "A constraint component that can be used to specify that no pair of value nodes may use the same language tag."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Unique-languages constraint component"@en .
+
+:UniqueLangConstraintComponent-uniqueLang a owl:NamedIndividual, :Parameter;
+  :datatype xsd:boolean;
+  :path :uniqueLang;
+  :maxCount 1;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#> .
+
+:uniqueLang a owl:NamedIndividual;
+  rdfs:comment "Specifies whether all node values must have a unique (or no) language tag."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "unique languages"@en .
+
+:Violation a owl:NamedIndividual, :Severity;
+  rdfs:comment "The severity for a violation validation result."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Violation"@en .
+
+:Warning a owl:NamedIndividual, :Severity;
+  rdfs:comment "The severity for a warning validation result."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Warning"@en .
+
+:XoneConstraintComponent a owl:NamedIndividual, :ConstraintComponent;
+  :parameter :XoneConstraintComponent-xone;
+  rdfs:comment "A constraint component that can be used to restrict the value nodes so that they conform to exactly one out of several provided shapes."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "Exactly one constraint component"@en .
+
+:XoneConstraintComponent-xone a owl:NamedIndividual, :Parameter;
+  :path :xone;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#> .
+
+:xone a owl:NamedIndividual;
+  rdfs:comment "Specifies a list of shapes so that the value nodes must conform to exactly one of the shapes."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "exactly one"@en .
+
+:expression rdfs:comment "The node expression that must return true for the value nodes."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "expression"@en .
+
+:hasValue rdfs:comment "Specifies a value that must be among the value nodes."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "has value"@en .
+
+:maxExclusive rdfs:comment "Specifies the maximum exclusive value of each value node."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "max exclusive"@en .
+
+:maxInclusive rdfs:comment "Specifies the maximum inclusive value of each value node."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "max inclusive"@en .
+
+:minExclusive rdfs:comment "Specifies the minimum exclusive value of each value node."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "min exclusive"@en .
+
+:minInclusive rdfs:comment "Specifies the minimum inclusive value of each value node."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "min inclusive"@en .
+
+:this a owl:NamedIndividual, rdfs:Resource;
+  rdfs:comment "A node expression that represents the current focus node."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "this"@en .
+
+:and rdfs:comment "RDF list of shapes to validate the value nodes against."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "and"@en .
+
+:class rdfs:comment "The type that all value nodes must have."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "class"@en .
+
+:closed rdfs:comment "If set to true then the shape is closed."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "closed"@en .
+
+:datatype rdfs:comment "Specifies an RDF datatype that all value nodes must have."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "datatype"@en .
+
+:disjoint rdfs:comment "Specifies a property where the set of values must be disjoint with the value nodes."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "disjoint"@en .
+
+:equals rdfs:comment "Specifies a property that must have the same values as the value nodes."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "equals"@en .
+
+:flags rdfs:comment "An optional flag to be used with regular expression pattern matching."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "flags"@en .
+
+:ignoredProperties rdfs:comment "An optional RDF list of properties that are also permitted in addition to those explicitly enumerated via sh:property/sh:path."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "ignored properties"@en .
+
+:in rdfs:comment "Specifies a list of allowed values so that each value node must be among the members of the given list."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "in"@en .
+
+:intersection rdfs:comment "A list of node expressions that shall be intersected."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "intersection"@en .
+
+:js rdfs:comment "Constraints expressed in JavaScript.";
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "JavaScript constraint"@en .
+
+:languageIn rdfs:comment "Specifies a list of language tags that all value nodes must have."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "language in"@en .
+
+:lessThan rdfs:comment "Specifies a property that must have smaller values than the value nodes."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "less than"@en .
+
+:lessThanOrEquals rdfs:comment "Specifies a property that must have smaller or equal values than the value nodes."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "less than or equals"@en .
+
+:maxCount rdfs:comment "Specifies the maximum number of values in the set of value nodes."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "max count"@en .
+
+:maxLength rdfs:comment "Specifies the maximum string length of each value node."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "max length"@en .
+
+:message rdfs:comment "A human-readable message (possibly with placeholders for variables) explaining the cause of the result."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "message"@en .
+
+:minCount rdfs:comment "Specifies the minimum number of values in the set of value nodes."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "min count"@en .
+
+:minLength rdfs:comment "Specifies the minimum string length of each value node."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "min length"@en .
+
+:node rdfs:comment "Specifies the node shape that all value nodes must conform to."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "node"@en .
+
+:nodeKind rdfs:comment "Specifies the node kind (e.g. IRI or literal) each value node."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "node kind"@en .
+
+:nodes rdfs:comment "The node expression producing the input nodes of a filter shape expression."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "nodes"@en .
+
+:not rdfs:comment "Specifies a shape that the value nodes must not conform to."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "not"@en .
+
+:or rdfs:comment "Specifies a list of shapes so that the value nodes must conform to at least one of the shapes."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "or"@en .
+
+:order rdfs:comment "Specifies the relative order of this compared to its siblings. For example use 0 for the first, 1 for the second."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "order"@en .
+
+:pattern rdfs:comment "Specifies a regular expression pattern that the string representations of the value nodes must match."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "pattern"@en .
+
+:union rdfs:comment "A list of node expressions that shall be used together."@en;
+  rdfs:isDefinedBy <http://www.w3.org/ns/shacl#>;
+  rdfs:label "union"@en .
