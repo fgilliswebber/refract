@@ -1,0 +1,6 @@
+PREFIX mesh: <http://purl.bioontology.org/ontology/MESH/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+ASK {
+    mesh:D005062 skos:historyNote ?note .
+}

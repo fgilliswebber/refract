@@ -1,0 +1,17 @@
+@prefix mesh: <http://purl.bioontology.org/ontology/MESH/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<http://purl.bioontology.org/ontology/MESH/>
+    a owl:Ontology ;
+    dct:title "Medical Subject Headings"@en .
+
+mesh:D007391 a owl:Class ;
+    rdfs:label "International Cooperation"@en .
+
+mesh:D005062 a owl:Class ;
+    skos:prefLabel "European Union"@en ;
+    rdfs:subClassOf mesh:D007391 ;
+    skos:definition "An economic union with the principal objectives of free movement of goods, capital, and labor. The constituent countries are Austria, Belgium, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, Netherlands, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, Sweden, and United Kingdom. (https://europa.eu/european-union/about-eu/countries accessed 12/31/2020)"@en .
