@@ -35,6 +35,6 @@ The emergence of mRNA vaccine technology as a recognised and distinct vaccine pl
 
 ---
 ## Rationale for classification as ontology evolution
-- _Same viewpoint_ - VO's biomedical perspective is unchanged
-- _Same URI_ - updated in place, versioned
-- _Semantic change driven by domain change_ - the emergence of mRNA vaccine technology as a recognised and distinct vaccine platform, and the approval of the Pfizer-BioNTech COVID-19 vaccine as a named individual, represent new domain knowledge that requires the ontology to be updated to reflect this
+- _Same viewpoint_ - VO's biomedical perspective is unchanged.
+- _Same URI_ - updated in place, versioned.
+- _Semantic change driven by domain change_ - the emergence of mRNA vaccine technology as a recognised and distinct vaccine platform, and the approval of the Pfizer-BioNTech COVID-19 vaccine as a named individual, represent new domain knowledge that requires the ontology to be updated to reflect this.
