@@ -1,0 +1,54 @@
+{
+  "@context": {
+    "ref": "http://semanticweb.tools/ont/refract#",
+    "dash": "http://datashapes.org/dash#",
+    "dct": "http://purl.org/dc/terms/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "shape": "https://semanticweb.tools/rdf/shapes/",
+    "multi": "https://w3id.org/MULTI#"
+  },
+  "@graph": [
+    {
+      "@id": "ref:tmf_rc3",
+      "@type": "ref:Manifest",
+      "rdfs:label": {"@value": "Manifest 1.0.0 for refactoring of MULTI ontology", "@language": "en"},
+      "ref:transformationType": {"@id": "ref:OntologyRefactoringProcess"},
+      "ref:transformationSource": {"@id": "https://w3id.org/MULTI"},
+      "ref:hasURIRelationshipToSource": {"@id": "ref:SameVersioned"},
+      "ref:versionManifest": {"@id": "ref:tmf_rc3_v1"},
+      "dash:shape": {"@id": "shape:ShapeRefactoring"},
+      "ref:hasAction": [
+        {"@id": "ref:action_rc3_1"},
+        {"@id": "ref:action_rc3_2"}
+      ]
+    },
+    {
+      "@id": "ref:tmf_rc3_v1",
+      "@type": "ref:Version",
+      "ref:versionNumber": "1.0.0",
+      "dct:date": "2025-05-01",
+      "ref:versionPrevious": {"@id": "ref:NoPreviousVersion"},
+      "dct:contributor": "Frances Gillis-Webber"
+    },
+    {
+      "@id": "ref:action_rc3_1",
+      "@type": "ref:AddAnnotationLangString",
+      "ref:sourceNode": {"@id": "multi:Viewpoint"},
+      "ref:targetAnnotation": {"@id": "rdfs:label"},
+      "ref:targetAnnotationValue": "Standpunt",
+      "ref:targetLanguageTag": "af",
+      "dash:shape": {"@id": "shape:ShapeAddAnnotationLangString"}
+    },
+    {
+      "@id": "ref:action_rc3_2",
+      "@type": "ref:AddAnnotationLangString",
+      "ref:sourceNode": {"@id": "multi:Viewpoint"},
+      "ref:targetAnnotation": {"@id": "rdfs:label"},
+      "ref:targetAnnotationValue": "Point de vue",
+      "ref:targetLanguageTag": "fr",
+      "dash:shape": {"@id": "shape:ShapeAddAnnotationLangString"}
+    }
+  ]
+}
