@@ -1,0 +1,6 @@
+PREFIX edam: <http://edamontology.org/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+ASK {
+    edam:operationAlignment a owl:Class .
+}

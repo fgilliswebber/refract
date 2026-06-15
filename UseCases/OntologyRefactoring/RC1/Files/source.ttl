@@ -1,0 +1,17 @@
+@prefix edam: <http://edamontology.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://edamontology.org/>
+    a owl:Ontology ;
+    dct:title "EDAM Ontology"@en .
+
+edam:operation_0004 a owl:Class ;
+    rdfs:label "Operation"@en .
+
+edam:operation_2928 a owl:Class ;
+    rdfs:label "Alignment"@en ;
+    rdfs:subClassOf edam:operation_0004 ;
+    skos:definition "Align two or more molecular sequences, structures or other data."@en .
