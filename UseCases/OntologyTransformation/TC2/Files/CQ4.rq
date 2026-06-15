@@ -1,0 +1,7 @@
+PREFIX ch: <https://example.org/ch#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?label
+WHERE {
+    ch:SarahBaartman rdfs:label ?label .
+}

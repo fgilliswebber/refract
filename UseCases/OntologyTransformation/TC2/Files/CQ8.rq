@@ -1,0 +1,5 @@
+PREFIX ch: <https://example.org/ch#>
+
+ASK {
+    ch:VenusHottentote ?p ?o .
+}

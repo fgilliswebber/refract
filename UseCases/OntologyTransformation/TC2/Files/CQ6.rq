@@ -1,0 +1,6 @@
+PREFIX ch: <https://example.org/ch#>
+
+SELECT ?date
+WHERE {
+    ch:SarahBaartman ch:removedFromDisplay ?date .
+}

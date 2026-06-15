@@ -1,0 +1,60 @@
+@prefix ch: <https://example.org/ch#> .
+@prefix chc: <https://example.org/ch/contested#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+
+<https://example.org/ch/contested>
+    a owl:Ontology ;
+    rdfs:label "Cultural Heritage Ontology - Contested Heritage Viewpoint"@en ;
+    prov:wasDerivedFrom <https://example.org/ch> ;
+    dct:created "2025-01-01"^^xsd:date .
+
+ch:CulturalObject a owl:Class ;
+    rdfs:label "Cultural object"@en .
+
+chc:HumanRemains a owl:Class ;
+    rdfs:label "Human remains"@en ;
+    rdfs:subClassOf ch:CulturalObject ;
+    skos:definition "The physical remains of a person, recognised as deserving dignity and respect regardless of their current location."@en .
+
+chc:ContestedHeritage a owl:Class ;
+    rdfs:label "Contested heritage"@en ;
+    rdfs:subClassOf ch:CulturalObject ;
+    skos:definition "Cultural objects or human remains whose ownership, display, or acquisition is disputed on ethical, historical, or cultural grounds."@en .
+
+chc:Repatriation a owl:Class ;
+    rdfs:label "Repatriation"@en ;
+    skos:definition "The process of returning cultural objects or human remains to their community or country of origin."@en .
+
+chc:ConsentStatus a owl:Class ;
+    rdfs:label "Consent status"@en .
+
+chc:ConsentGivenExplicit a chc:ConsentStatus ;
+    rdfs:label "Consent given (explicit)"@en ;
+    skos:definition "Consent was explicitly given and documented."@en .
+
+chc:ConsentNotGivenExplicit a chc:ConsentStatus ;
+    rdfs:label "Consent not given (explicit)"@en ;
+    skos:definition "Consent was explicitly refused or withheld, as documented in the historical record."@en .
+
+chc:ConsentNotGivenImplicit a chc:ConsentStatus ;
+    rdfs:label "Consent not given (implicit)"@en ;
+    skos:definition "Consent was not given, as inferred from contextual and historical evidence."@en .
+
+chc:ConsentUnknown a chc:ConsentStatus ;
+    rdfs:label "Consent unknown"@en .
+
+ch:SarahBaartman a chc:HumanRemains ;
+    rdfs:label "Sarah Baartman"@en ;
+    skos:historyNote "Known in colonial records as 'Venus Hottentote' and 'Saartjie Baartman'. These labels are considered disrespectful and have been removed."@en ;
+    ch:acquiredBy ch:MuseeDeLHomme ;
+    ch:acquisitionDate "1815"^^xsd:gYear ;
+    ch:removedFromDisplay "1974"^^xsd:gYear ;
+    chc:repatriatedTo <https://example.org/ch/southafrica> ;
+    chc:repatriationDate "2002-05-06"^^xsd:date ;
+    chc:donationConsentStatus chc:ConsentNotGivenImplicit ;
+    skos:note "It is inferred that Sarah Baartman did not give informed consent to her display or the retention of her remains."@en .

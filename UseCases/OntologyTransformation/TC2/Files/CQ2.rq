@@ -1,0 +1,6 @@
+PREFIX ch: <https://example.org/ch#>
+PREFIX chc: <https://example.org/ch/contested#>
+
+ASK {
+    ch:SarahBaartman a chc:HumanRemains .
+}

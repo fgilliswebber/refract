@@ -1,0 +1,7 @@
+PREFIX ch: <https://example.org/ch#>
+PREFIX chc: <https://example.org/ch/contested#>
+
+SELECT ?consentStatus
+WHERE {
+    ch:SarahBaartman chc:donationConsentStatus ?consentStatus .
+}

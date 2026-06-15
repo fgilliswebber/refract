@@ -1,0 +1,6 @@
+PREFIX chc: <https://example.org/ch/contested#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+ASK {
+    chc:HumanRemains a owl:Class .
+}
