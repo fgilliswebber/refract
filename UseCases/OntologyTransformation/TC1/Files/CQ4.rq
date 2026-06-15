@@ -1,0 +1,7 @@
+PREFIX recipeim: <https://example.org/recipe/imperial#>
+PREFIX qudt: <http://qudt.org/schema/qudt/>
+
+SELECT ?multiplier
+WHERE {
+    recipeim:Ounce qudt:conversionMultiplier ?multiplier .
+}

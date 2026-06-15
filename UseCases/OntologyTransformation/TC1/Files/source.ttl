@@ -1,0 +1,34 @@
+@prefix recipe: <https://example.org/recipe#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://example.org/recipe>
+    a owl:Ontology ;
+    rdfs:label "Recipe Measurement Ontology"@en .
+
+recipe:Measurement a owl:Class ;
+    rdfs:label "Measurement"@en .
+
+recipe:Unit a owl:Class ;
+    rdfs:label "Unit"@en ;
+    rdfs:subClassOf recipe:Measurement .
+
+recipe:MetricUnit a owl:Class ;
+    rdfs:label "Metric unit"@en ;
+    rdfs:subClassOf recipe:Unit .
+
+recipe:Gram a owl:Class ;
+    rdfs:label "Gram"@en ;
+    rdfs:subClassOf recipe:MetricUnit ;
+    skos:definition "A unit of mass in the metric system."@en .
+
+recipe:Millilitre a owl:Class ;
+    rdfs:label "Millilitre"@en ;
+    rdfs:subClassOf recipe:MetricUnit ;
+    skos:definition "A unit of volume in the metric system."@en .
+
+recipe:Celsius a owl:Class ;
+    rdfs:label "Degree Celsius"@en ;
+    rdfs:subClassOf recipe:MetricUnit ;
+    skos:definition "A unit of temperature in the metric system."@en .

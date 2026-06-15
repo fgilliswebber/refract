@@ -1,0 +1,6 @@
+PREFIX recipeim: <https://example.org/recipe/imperial#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+ASK {
+    recipeim:ImperialUnit a owl:Class .
+}

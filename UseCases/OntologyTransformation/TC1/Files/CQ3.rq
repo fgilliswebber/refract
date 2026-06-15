@@ -1,0 +1,6 @@
+PREFIX recipe: <https://example.org/recipe#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+ASK {
+    recipe:Gram a owl:Class .
+}

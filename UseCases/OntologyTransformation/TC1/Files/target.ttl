@@ -1,0 +1,48 @@
+@prefix recipe: <https://example.org/recipe#> .
+@prefix recipeim: <https://example.org/recipe/imperial#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+
+<https://example.org/recipe/imperial>
+    a owl:Ontology ;
+    rdfs:label "Recipe Measurement Ontology - Imperial Viewpoint"@en ;
+    prov:wasDerivedFrom <https://example.org/recipe> ;
+    dct:created "2025-01-01"^^xsd:date .
+
+recipe:Measurement a owl:Class ;
+    rdfs:label "Measurement"@en .
+
+recipe:Unit a owl:Class ;
+    rdfs:label "Unit"@en ;
+    rdfs:subClassOf recipe:Measurement .
+
+recipeim:ImperialUnit a owl:Class ;
+    rdfs:label "Imperial unit"@en ;
+    rdfs:subClassOf recipe:Unit .
+
+recipeim:Ounce a owl:Class ;
+    rdfs:label "Ounce"@en ;
+    rdfs:subClassOf recipeim:ImperialUnit ;
+    skos:definition "A unit of mass in the imperial system."@en ;
+    qudt:conversionMultiplier "28.3495"^^xsd:decimal ;
+    skos:note "1 ounce = 28.3495 grams"@en .
+
+recipeim:FluidOunce a owl:Class ;
+    rdfs:label "Fluid ounce"@en ;
+    rdfs:subClassOf recipeim:ImperialUnit ;
+    skos:definition "A unit of volume in the imperial system."@en ;
+    qudt:conversionMultiplier "29.5735"^^xsd:decimal ;
+    skos:note "1 fluid ounce = 29.5735 millilitres"@en .
+
+recipeim:Fahrenheit a owl:Class ;
+    rdfs:label "Degree Fahrenheit"@en ;
+    rdfs:subClassOf recipeim:ImperialUnit ;
+    skos:definition "A unit of temperature in the imperial system."@en ;
+    qudt:conversionMultiplier "1.8"^^xsd:decimal ;
+    qudt:conversionOffset "32"^^xsd:decimal ;
+    skos:note "°F = (°C × 1.8) + 32"@en .

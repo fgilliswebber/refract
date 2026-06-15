@@ -1,0 +1,164 @@
+{
+  "@context": {
+    "ref": "http://semanticweb.tools/ont/refract#",
+    "dct": "http://purl.org/dc/terms/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "shape": "https://semanticweb.tools/rdf/shapes/",
+    "dash": "http://datashapes.org/dash#",
+    "recipe": "https://example.org/recipe#",
+    "recipeim": "https://example.org/recipe/imperial#",
+    "qudt": "http://qudt.org/schema/qudt/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  },
+  "@graph": [
+    {
+      "@id": "ref:tmf_tc1",
+      "@type": "ref:Manifest",
+      "rdfs:label": {"@value": "Manifest 1.0.0 for transformation of Recipe Measurement Ontology to Imperial Viewpoint", "@language": "en"},
+      "ref:transformationType": {"@id": "ref:OntologyTransformationProcess"},
+      "ref:transformationSource": {"@id": "https://example.org/recipe"},
+      "ref:hasURIRelationshipToSource": {"@id": "ref:Different"},
+      "ref:targetOntologyURI": {"@id": "https://example.org/recipe/imperial"},
+      "ref:targetViewpoint": {"@id": "https://semanticweb.tools/rdf/multi/imperial"},
+      "ref:versionManifest": {"@id": "ref:tmf_tc1_v1"},
+      "dash:shape": {"@id": "shape:ShapeTransformation"},
+      "ref:hasAction": [
+        {"@id": "ref:action_tc1_1"},
+        {"@id": "ref:action_tc1_2"},
+        {"@id": "ref:action_tc1_3"},
+        {"@id": "ref:action_tc1_4"},
+        {"@id": "ref:action_tc1_5"},
+        {"@id": "ref:action_tc1_6"},
+        {"@id": "ref:action_tc1_7"},
+        {"@id": "ref:action_tc1_8"},
+        {"@id": "ref:action_tc1_9"},
+        {"@id": "ref:action_tc1_10"},
+        {"@id": "ref:action_tc1_11"},
+        {"@id": "ref:action_tc1_12"}
+      ],
+      "ref:actionOrder": {
+        "@list": [
+          {"@id": "ref:action_tc1_1"},
+          {"@id": "ref:action_tc1_2"},
+          {"@id": "ref:action_tc1_3"},
+          {"@id": "ref:action_tc1_4"},
+          {"@id": "ref:action_tc1_5"},
+          {"@id": "ref:action_tc1_6"},
+          {"@id": "ref:action_tc1_7"},
+          {"@id": "ref:action_tc1_8"},
+          {"@id": "ref:action_tc1_9"},
+          {"@id": "ref:action_tc1_10"},
+          {"@id": "ref:action_tc1_11"},
+          {"@id": "ref:action_tc1_12"}
+        ]
+      }
+    },
+    {
+      "@id": "ref:tmf_tc1_v1",
+      "@type": "ref:Version",
+      "ref:versionNumber": "1.0.0",
+      "dct:date": "2025-05-01",
+      "ref:versionPrevious": {"@id": "ref:NoPreviousVersion"},
+      "dct:contributor": "Frances Gillis-Webber"
+    },
+    {
+      "@id": "ref:action_tc1_1",
+      "@type": "ref:AddClass",
+      "ref:targetIdentifier": {"@id": "recipeim:ImperialUnit"},
+      "ref:targetParent": {"@id": "recipe:Unit"},
+      "ref:targetLabel": "Imperial unit",
+      "ref:targetLanguageTag": "en",
+      "dash:shape": {"@id": "shape:ShapeAddClass"}
+    },
+    {
+      "@id": "ref:action_tc1_2",
+      "@type": "ref:AddClass",
+      "ref:targetIdentifier": {"@id": "recipeim:Ounce"},
+      "ref:targetParent": {"@id": "recipeim:ImperialUnit"},
+      "ref:targetLabel": "Ounce",
+      "ref:targetLanguageTag": "en",
+      "dash:shape": {"@id": "shape:ShapeAddClass"}
+    },
+    {
+      "@id": "ref:action_tc1_3",
+      "@type": "ref:AddClass",
+      "ref:targetIdentifier": {"@id": "recipeim:FluidOunce"},
+      "ref:targetParent": {"@id": "recipeim:ImperialUnit"},
+      "ref:targetLabel": "Fluid ounce",
+      "ref:targetLanguageTag": "en",
+      "dash:shape": {"@id": "shape:ShapeAddClass"}
+    },
+    {
+      "@id": "ref:action_tc1_4",
+      "@type": "ref:AddClass",
+      "ref:targetIdentifier": {"@id": "recipeim:Fahrenheit"},
+      "ref:targetParent": {"@id": "recipeim:ImperialUnit"},
+      "ref:targetLabel": "Degree Fahrenheit",
+      "ref:targetLanguageTag": "en",
+      "dash:shape": {"@id": "shape:ShapeAddClass"}
+    },
+    {
+      "@id": "ref:action_tc1_5",
+      "@type": "ref:AddAnnotation",
+      "ref:targetNode": {"@id": "recipeim:Ounce"},
+      "ref:targetAnnotation": {"@id": "qudt:conversionMultiplier"},
+      "ref:targetAnnotationValue": "28.3495",
+      "ref:targetDataType": {"@id": "xsd:decimal"},
+      "dash:shape": {"@id": "shape:ShapeAddAnnotation"}
+    },
+    {
+      "@id": "ref:action_tc1_6",
+      "@type": "ref:AddAnnotation",
+      "ref:targetNode": {"@id": "recipeim:FluidOunce"},
+      "ref:targetAnnotation": {"@id": "qudt:conversionMultiplier"},
+      "ref:targetAnnotationValue": "29.5735",
+      "ref:targetDataType": {"@id": "xsd:decimal"},
+      "dash:shape": {"@id": "shape:ShapeAddAnnotation"}
+    },
+    {
+      "@id": "ref:action_tc1_7",
+      "@type": "ref:AddAnnotation",
+      "ref:targetNode": {"@id": "recipeim:Fahrenheit"},
+      "ref:targetAnnotation": {"@id": "qudt:conversionMultiplier"},
+      "ref:targetAnnotationValue": "1.8",
+      "ref:targetDataType": {"@id": "xsd:decimal"},
+      "dash:shape": {"@id": "shape:ShapeAddAnnotation"}
+    },
+    {
+      "@id": "ref:action_tc1_8",
+      "@type": "ref:AddAnnotation",
+      "ref:targetNode": {"@id": "recipeim:Fahrenheit"},
+      "ref:targetAnnotation": {"@id": "qudt:conversionOffset"},
+      "ref:targetAnnotationValue": "32",
+      "ref:targetDataType": {"@id": "xsd:decimal"},
+      "dash:shape": {"@id": "shape:ShapeAddAnnotation"}
+    },
+    {
+      "@id": "ref:action_tc1_9",
+      "@type": "ref:DeleteClass",
+      "ref:sourceNode": {"@id": "recipe:MetricUnit"},
+      "dash:shape": {"@id": "shape:ShapeDeleteClass"}
+    },
+    {
+      "@id": "ref:action_tc1_10",
+      "@type": "ref:DeleteClass",
+      "ref:sourceNode": {"@id": "recipe:Gram"},
+      "dash:shape": {"@id": "shape:ShapeDeleteClass"}
+    },
+    {
+      "@id": "ref:action_tc1_11",
+      "@type": "ref:DeleteClass",
+      "ref:sourceNode": {"@id": "recipe:Millilitre"},
+      "dash:shape": {"@id": "shape:ShapeDeleteClass"}
+    },
+    {
+      "@id": "ref:action_tc1_12",
+      "@type": "ref:DeleteClass",
+      "ref:sourceNode": {"@id": "recipe:Celsius"},
+      "dash:shape": {"@id": "shape:ShapeDeleteClass"}
+    }
+  ]
+}
