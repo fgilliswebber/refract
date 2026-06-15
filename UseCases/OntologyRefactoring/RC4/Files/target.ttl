@@ -1,0 +1,31 @@
+@prefix uct: <https://example.org/uct#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://example.org/uct>
+    a owl:Ontology ;
+    rdfs:label "UCT Organisational Structure"@en ;
+    owl:versionInfo "2.0.0" .
+
+uct:AcademicUnit a owl:Class ;
+    rdfs:label "Academic Unit"@en .
+
+uct:Faculty a owl:Class ;
+    rdfs:label "Faculty"@en ;
+    rdfs:subClassOf uct:AcademicUnit .
+
+uct:HumanitiesFaculty a owl:Class ;
+    rdfs:label "Faculty of Humanities"@en ;
+    rdfs:subClassOf uct:Faculty .
+
+uct:DepartmentOfKnowledgeAndInformationStewardship a owl:Class ;
+    rdfs:label "Department of Knowledge and Information Stewardship"@en ;
+    rdfs:subClassOf uct:HumanitiesFaculty ;
+    prov:wasRevisionOf uct:SchoolOfLibraryStudies ;
+    dct:created "2016-01-01"^^xsd:date .
+
+uct:SchoolOfLibraryStudies a owl:Class ;
+    rdfs:label "School of Library Studies"@en ;
+    rdfs:subClassOf uct:HumanitiesFaculty ;
+    owl:deprecated "true"^^xsd:boolean ;
+    rdfs:comment "Deprecated as of 2016-01-01. Use uct:DepartmentOfKnowledgeAndInformationStewardship instead."@en .

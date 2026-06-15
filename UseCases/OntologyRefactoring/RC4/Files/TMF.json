@@ -1,0 +1,79 @@
+{
+  "@context": {
+    "ref": "http://semanticweb.tools/ont/refract#",
+    "dct": "http://purl.org/dc/terms/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "shape": "https://semanticweb.tools/rdf/shapes/",
+    "dash": "http://datashapes.org/dash#",
+    "uct": "https://example.org/uct#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "owl": "http://www.w3.org/2002/07/owl#"
+  },
+  "@graph": [
+    {
+      "@id": "ref:tmf_rc4",
+      "@type": "ref:Manifest",
+      "rdfs:label": {"@value": "Manifest 1.0.0 for refactoring of UCT Organisational Structure ontology", "@language": "en"},
+      "ref:transformationType": {"@id": "ref:OntologyRefactoringProcess"},
+      "ref:transformationSource": {"@id": "https://example.org/uct"},
+      "ref:hasURIRelationshipToSource": {"@id": "ref:SameVersioned"},
+      "ref:versionManifest": {"@id": "ref:tmf_rc4_v1"},
+      "dash:shape": {"@id": "shape:ShapeRefactoring"},
+      "ref:hasAction": {"@id": "ref:action_rc4_1"}
+    },
+    {
+      "@id": "ref:tmf_rc4_v1",
+      "@type": "ref:Version",
+      "ref:versionNumber": "1.0.0",
+      "dct:date": "2025-05-01",
+      "ref:versionPrevious": {"@id": "ref:NoPreviousVersion"},
+      "dct:contributor": "Frances Gillis-Webber"
+    },
+    {
+      "@id": "ref:action_rc4_1",
+      "@type": "ref:DeprecateClassWithSuccessor",
+      "ref:hasAction": [
+        {"@id": "ref:action_rc4_1a"},
+        {"@id": "ref:action_rc4_1b"},
+        {"@id": "ref:action_rc4_1c"},
+        {"@id": "ref:action_rc4_1d"}
+      ],
+      "dash:shape": {"@id": "shape:ShapeDeprecateClassWithSuccessor"}
+    },
+    {
+      "@id": "ref:action_rc4_1a",
+      "@type": "ref:DeprecateClass",
+      "ref:sourceNode": {"@id": "uct:SchoolOfLibraryStudies"},
+      "ref:actionSequence": 1,
+      "dash:shape": {"@id": "shape:ShapeDeprecateClass"}
+    },
+    {
+      "@id": "ref:action_rc4_1b",
+      "@type": "ref:AddClass",
+      "ref:targetIdentifier": {"@id": "uct:DepartmentOfKnowledgeAndInformationStewardship"},
+      "ref:targetParent": {"@id": "uct:HumanitiesFaculty"},
+      "ref:targetLabel": "Department of Knowledge and Information Stewardship",
+      "ref:targetLanguageTag": "en",
+      "ref:actionSequence": 2,
+      "dash:shape": {"@id": "shape:ShapeAddClass"}
+    },
+    {
+      "@id": "ref:action_rc4_1c",
+      "@type": "ref:AddCommentForDeprecation",
+      "ref:sourceNode": {"@id": "uct:SchoolOfLibraryStudies"},
+      "ref:actionSequence": 3,
+      "dash:shape": {"@id": "shape:ShapeAddCommentForDeprecation"}
+    },
+    {
+      "@id": "ref:action_rc4_1d",
+      "@type": "ref:AddAnnotation",
+      "ref:sourceNode": {"@id": "uct:SchoolOfLibraryStudies"},
+      "ref:targetAnnotation": {"@id": "prov:atTime"},
+      "ref:targetAnnotationValue": "2016-01-01+02:00",
+      "ref:targetDataType": {"@id": "xsd:date"},
+      "ref:actionSequence": 4,
+      "dash:shape": {"@id": "shape:ShapeAddAnnotation"}
+    }
+  ]
+}

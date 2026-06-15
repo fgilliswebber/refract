@@ -1,0 +1,58 @@
+@prefix ref: <http://semanticweb.tools/ont/refract#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix shape: <https://semanticweb.tools/rdf/shapes/> .
+@prefix uct: <https://example.org/uct#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+
+ref:tmf_rc4 a ref:Manifest ;
+    rdfs:label "Manifest 1.0.0 for refactoring of UCT Organisational Structure ontology"@en ;
+    ref:transformationType ref:OntologyRefactoringProcess ;
+    ref:transformationSource <https://example.org/uct> ;
+    ref:hasURIRelationshipToSource ref:SameVersioned ;
+    ref:versionManifest ref:tmf_rc4_v1 ;
+    dash:shape shape:ShapeRefactoring ;
+    ref:hasAction ref:action_rc4_1 .
+
+ref:tmf_rc4_v1 a ref:Version ;
+    ref:versionNumber "1.0.0" ;
+    dct:date "2025-05-01" ;
+    ref:versionPrevious ref:NoPreviousVersion ;
+    dct:contributor "Frances Gillis-Webber" .
+
+ref:action_rc4_1 a ref:DeprecateClassWithSuccessor ;
+    ref:hasAction ref:action_rc4_1a ;
+    ref:hasAction ref:action_rc4_1b ;
+    ref:hasAction ref:action_rc4_1c ;
+    ref:hasAction ref:action_rc4_1d ;
+    dash:shape shape:ShapeDeprecateClassWithSuccessor .
+
+ref:action_rc4_1a a ref:DeprecateClass ;
+    ref:sourceNode uct:SchoolOfLibraryStudies ;
+    ref:actionSequence 1 ;
+    dash:shape shape:ShapeDeprecateClass .
+
+ref:action_rc4_1b a ref:AddClass ;
+    ref:targetIdentifier uct:DepartmentOfKnowledgeAndInformationStewardship ;
+    ref:targetParent uct:HumanitiesFaculty ;
+    ref:targetLabel "Department of Knowledge and Information Stewardship" ;
+    ref:targetLanguageTag "en" ;
+    ref:actionSequence 2 ;
+    dash:shape shape:ShapeAddClass .
+
+ref:action_rc4_1c a ref:AddCommentForDeprecation ;
+    ref:sourceNode uct:SchoolOfLibraryStudies ;
+    ref:actionSequence 3 ;
+    dash:shape shape:ShapeAddCommentForDeprecation .
+
+ref:action_rc4_1d a ref:AddAnnotation ;
+    ref:sourceNode uct:SchoolOfLibraryStudies ;
+    ref:targetAnnotation prov:atTime ;
+    ref:targetAnnotationValue "2016-01-01+02:00" ;
+    ref:targetDataType xsd:date ;
+    ref:actionSequence 4 ;
+    dash:shape shape:ShapeAddAnnotation .
