@@ -25,6 +25,6 @@ The goal is to remove the United Kingdom from the list of countries given in `sk
 
 ---
 ## Rationale for classification as ontology evolution
-- _Same viewpoint_ - MeSH's biomedical/bibliographic perspective is unchanged
-- _Same URI_ - updated in place, versioned
-- _Semantic change driven by domain change_ - Brexit altered the real-world composition of the EU, requiring the ontology to be updated to reflect this
+- _Same viewpoint_ - MeSH's biomedical/bibliographic perspective is unchanged.
+- _Same URI_ - updated in place, versioned.
+- _Semantic change driven by domain change_ - Brexit altered the real-world composition of the EU, requiring the ontology to be updated to reflect this.
