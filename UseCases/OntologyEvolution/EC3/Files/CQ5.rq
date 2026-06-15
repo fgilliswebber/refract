@@ -1,0 +1,5 @@
+PREFIX ex: <https://example.org/vo/>
+
+ASK {
+    ex:PfizerBioNTech a ex:mRNAVaccine .
+}

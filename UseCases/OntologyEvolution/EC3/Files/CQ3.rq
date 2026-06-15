@@ -1,0 +1,7 @@
+PREFIX ex: <https://example.org/vo/>
+PREFIX vo: <http://purl.obolibrary.org/obo/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+ASK {
+    vo:VO_0005198 rdfs:subClassOf ex:mRNAVaccine .
+}

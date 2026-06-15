@@ -1,0 +1,11 @@
+PREFIX ex: <https://example.org/vo/>
+PREFIX vo: <http://purl.obolibrary.org/obo/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+ASK {
+    ex:mRNAVaccine rdfs:subClassOf [
+        a owl:Restriction ;
+        owl:onProperty vo:RO_0000087 ;
+        owl:someValuesFrom vo:VO_0000728
+    ] .
+}

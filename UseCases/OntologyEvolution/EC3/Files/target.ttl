@@ -1,0 +1,44 @@
+@prefix vo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex: <https://example.org/vo/> .
+
+vo:VO_0000001 a owl:Class ;
+    rdfs:label "vaccine"@en .
+
+vo:VO_0004908 a owl:Class ;
+    rdfs:label "COVID-19 vaccine"@en ;
+    rdfs:subClassOf vo:VO_0000001 .
+
+vo:VO_0005198 a owl:Class ;
+    rdfs:label "COVID-19 RNA vaccine"@en ;
+    rdfs:subClassOf vo:VO_0004908 ;
+    rdfs:subClassOf ex:mRNAVaccine ;
+    rdfs:subClassOf [
+        a owl:Restriction ;
+        owl:onProperty vo:RO_0000087 ;
+        owl:someValuesFrom vo:VO_0000728
+    ] .
+
+vo:RO_0000087 a owl:ObjectProperty ;
+    rdfs:label "has role"@en .
+
+vo:VO_0000728 a owl:Class ;
+    rdfs:label "RNA vaccine role"@en .
+
+ex:mRNAVaccine a owl:Class ;
+    rdfs:label "mRNA vaccine"@en ;
+    rdfs:subClassOf vo:VO_0000001 ;
+    rdfs:subClassOf [
+        a owl:Restriction ;
+        owl:onProperty vo:RO_0000087 ;
+        owl:someValuesFrom vo:VO_0000728
+    ] ;
+    skos:definition "A vaccine that uses messenger RNA (mRNA) technology to instruct cells to produce a protein that triggers an immune response."@en ;
+    dct:created "2025-01-01"^^xsd:date .
+
+ex:PfizerBioNTech a ex:mRNAVaccine ;
+    rdfs:label "Pfizer-BioNTech COVID-19 vaccine"@en .

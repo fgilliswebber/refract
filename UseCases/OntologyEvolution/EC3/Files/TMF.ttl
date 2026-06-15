@@ -1,0 +1,67 @@
+@prefix ref: <http://semanticweb.tools/ont/refract#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix shape: <https://semanticweb.tools/rdf/shapes/> .
+@prefix vo: <http://purl.obolibrary.org/obo/> .
+@prefix ex: <https://example.org/vo/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+ref:tmf_ec3 a ref:Manifest ;
+    rdfs:label "Manifest 1.0.0 for evolution of Vaccine Ontology"@en ;
+    ref:transformationType ref:OntologyEvolutionProcess ;
+    ref:transformationSource <http://purl.obolibrary.org/obo/vo.owl> ;
+    ref:hasURIRelationshipToSource ref:SameVersioned ;
+    ref:versionManifest ref:tmf_ec3_v1 ;
+    dash:shape shape:ShapeEvolution ;
+    ref:hasAction ref:action_ec3_1, ref:action_ec3_2, ref:action_ec3_3, ref:action_ec3_4, ref:action_ec3_5 ;
+    ref:actionOrder (
+        ref:action_ec3_1
+        ref:action_ec3_2
+        ref:action_ec3_3
+        ref:action_ec3_4
+        ref:action_ec3_5
+    ) .
+
+ref:tmf_ec3_v1 a ref:Version ;
+    ref:versionNumber "1.0.0" ;
+    dct:date "2025-05-01" ;
+    ref:versionPrevious ref:NoPreviousVersion ;
+    dct:contributor "Frances Gillis-Webber" .
+
+ref:action_ec3_1 a ref:AddClass ;
+    ref:targetIdentifier ex:mRNAVaccine ;
+    ref:targetParent vo:VO_0000001 ;
+    ref:targetLabel "mRNA vaccine" ;
+    ref:targetLanguageTag "en" ;
+    dash:shape shape:ShapeAddClass .
+
+ref:action_ec3_2 a ref:AddSuperclassAssertion ;
+    ref:sourceNode vo:VO_0005198 ;
+    ref:targetParent ex:mRNAVaccine ;
+    dash:shape shape:ShapeAddSuperclassAssertion .
+
+ref:action_ec3_3 a ref:AddPropertyRestriction ;
+    ref:targetNode ex:mRNAVaccine ;
+    ref:targetObject vo:RO_0000087 ;
+    ref:targetObjectValue vo:VO_0000728 ;
+    ref:restrictionType owl:someValuesFrom ;
+    ref:propertyType owl:ObjectProperty ;
+    dash:shape shape:ShapeAddPropertyRestriction .
+
+ref:action_ec3_4 a ref:AddAnnotationLangString ;
+    ref:targetNode ex:mRNAVaccine ;
+    ref:targetAnnotation skos:definition ;
+    ref:targetAnnotationValue "A vaccine that uses messenger RNA (mRNA) technology to instruct cells to produce a protein that triggers an immune response." ;
+    ref:targetLanguageTag "en" ;
+    dash:shape shape:ShapeAddAnnotationLangString .
+
+ref:action_ec3_5 a ref:AddInstance ;
+    ref:targetIdentifier ex:PfizerBioNTech ;
+    ref:targetInstanceOf ex:mRNAVaccine ;
+    ref:targetLabel "Pfizer-BioNTech COVID-19 vaccine" ;
+    ref:targetLanguageTag "en" ;
+    dash:shape shape:ShapeAddInstance .

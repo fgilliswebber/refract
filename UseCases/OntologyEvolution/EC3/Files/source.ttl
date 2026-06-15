@@ -1,0 +1,25 @@
+@prefix vo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+vo:VO_0000001 a owl:Class ;
+    rdfs:label "vaccine"@en .
+
+vo:VO_0004908 a owl:Class ;
+    rdfs:label "COVID-19 vaccine"@en ;
+    rdfs:subClassOf vo:VO_0000001 .
+
+vo:VO_0005198 a owl:Class ;
+    rdfs:label "COVID-19 RNA vaccine"@en ;
+    rdfs:subClassOf vo:VO_0004908 ;
+    rdfs:subClassOf [
+        a owl:Restriction ;
+        owl:onProperty vo:RO_0000087 ;
+        owl:someValuesFrom vo:VO_0000728
+    ] .
+
+vo:RO_0000087 a owl:ObjectProperty ;
+    rdfs:label "has role"@en .
+
+vo:VO_0000728 a owl:Class ;
+    rdfs:label "RNA vaccine role"@en .
