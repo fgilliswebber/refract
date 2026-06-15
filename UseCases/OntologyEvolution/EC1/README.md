@@ -39,6 +39,6 @@ The goal is to update EFO with a new class `efo:DistributedIntelligence` as a si
 
 ## Rationale for classification as ontology evolution
 
-- _Same viewpoint_ - EFO's biomedical perspective is unchanged
-- _Same URI_ - updated in place, versioned
+- _Same viewpoint_ - EFO's biomedical perspective is unchanged.
+- _Same URI_ - updated in place, versioned.
 - _Semantic change driven by domain/belief system change_ - the scientific understanding of intelligence has expanded beyond its traditional biological scope, driven by the emergence of AI. This necessitates new classes to represent the broader conceptualisation of intelligence.
