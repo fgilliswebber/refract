@@ -1,0 +1,31 @@
+@prefix mola: <https://ontology.londisizwe.org/mola#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://semanticweb.tools/ont/mola>
+    a owl:Ontology ;
+    rdfs:label "MoLA Ontology"@en .
+
+mola:LanguageCode a owl:Class ;
+    rdfs:label "Language code"@en ;
+    rdfs:subClassOf owl:Thing .
+
+mola:Period a owl:Class ;
+    rdfs:label "Period"@en ;
+    rdfs:subClassOf owl:Thing .
+
+mola:LanguoidName a owl:Class ;
+    rdfs:label "Languoid name"@en ;
+    rdfs:subClassOf owl:Thing .
+
+mola:GeographicCoordinate a owl:Class ;
+    rdfs:label "Geographic coordinate"@en ;
+    rdfs:subClassOf owl:Thing .
+
+mola:Languoid a owl:Class ;
+    rdfs:label "Languoid"@en ;
+    rdfs:subClassOf owl:Thing .
+
+mola:LanguageTag a owl:Class ;
+    rdfs:label "Language tag"@en ;
+    rdfs:subClassOf owl:Thing .
