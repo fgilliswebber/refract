@@ -11,6 +11,7 @@ For full documentation including parameters, see the [REFrACT vocabulary](https:
 ## Shapes graph
 - [ShapeDeleteSemanticAxiom.ttl](ShapeDeleteSemanticAxiom.ttl) (local instance)
 - URI: `https://semanticweb.tools/rdf/shapes/ShapeDeleteSemanticAxiom.ttl`
+- [See evaluation](Evaluation/README.md)
 
 ## Examples
 - [Example TMF](TMFDeleteSemanticAxiom.ttl)
