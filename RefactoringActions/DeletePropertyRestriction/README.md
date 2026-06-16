@@ -11,6 +11,7 @@ For full documentation including parameters, see the [REFrACT vocabulary](https:
 ## Shapes graph
 - [ShapeDeletePropertyRestriction.ttl](ShapeDeletePropertyRestriction.ttl) (local instance)
 - URI: `https://semanticweb.tools/rdf/shapes/ShapeDeletePropertyRestriction.ttl`
+- [See evaluation](Evaluation/README.md)
 
 ## Examples
 - [Example TMF](TMFDeletePropertyRestriction.ttl)
