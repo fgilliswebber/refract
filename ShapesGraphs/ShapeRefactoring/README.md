@@ -8,6 +8,7 @@
 A macro-level shapes graph for validating the Transformation Manifest File of an ontology refactoring process.
 - [ShapeRefactoring.ttl](ShapeRefactoring.ttl) (local instance)
 - URI: `https://semanticweb.tools/rdf/shapes/ShapeRefactoring.ttl`
+- [See evaluation](Evaluation/README.md)
 
 ## Used in use cases
 - Ontology Refactoring: [RC1](../../UseCases/OntologyRefactoring/RC1/README.md), [RC2](../../UseCases/OntologyRefactoring/RC2/README.md), [RC3](../../UseCases/OntologyRefactoring/RC3/README.md), [RC4](../../UseCases/OntologyRefactoring/RC4/README.md)
