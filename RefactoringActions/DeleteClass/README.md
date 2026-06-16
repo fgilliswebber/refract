@@ -11,6 +11,7 @@ For full documentation including parameters, see the [REFrACT vocabulary](https:
 ## Shapes graph
 - [ShapeDeleteClass.ttl](ShapeDeleteClass.ttl) (local instance)
 - URI: `https://semanticweb.tools/rdf/shapes/ShapeDeleteClass.ttl`
+- [See evaluation](Evaluation/README.md)
 
 ## Examples
 - [Example TMF](TMFDeleteClass.ttl)
