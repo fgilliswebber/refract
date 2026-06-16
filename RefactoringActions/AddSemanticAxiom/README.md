@@ -11,6 +11,7 @@ For full documentation including parameters, see the [REFrACT vocabulary](https:
 ## Shapes graph
 - [ShapeAddSemanticAxiom.ttl](ShapeAddSemanticAxiom.ttl) (local instance)
 - URI: `https://semanticweb.tools/rdf/shapes/ShapeAddSemanticAxiom.ttl`
+- [See evaluation](Evaluation/README.md)
 
 ## Examples
 - [Example TMF](TMFAddSemanticAxiom.ttl)
