@@ -11,6 +11,7 @@ For full documentation including parameters, see the [REFrACT vocabulary](https:
 ## Shapes graph
 - [ShapeAddEquivalentClassSet.ttl](ShapeAddEquivalentClassSet.ttl) (local instance)
 - URI: `https://semanticweb.tools/rdf/shapes/ShapeAddEquivalentClassSet.ttl`
+- [See evaluation](Evaluation/README.md)
 
 ## Examples
 - [Example TMF](TMFAddEquivalentClassSet.ttl)
