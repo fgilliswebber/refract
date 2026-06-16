@@ -11,6 +11,7 @@ For full documentation including parameters, see the [REFrACT vocabulary](https:
 ## Shapes graph
 - [ShapeDeprecateClassWithSuccessor.ttl](ShapeDeprecateClassWithSuccessor.ttl) (local instance)
 - URI: `https://semanticweb.tools/rdf/shapes/ShapeDeprecateClassWithSuccessor.ttl`
+- [See evaluation](Evaluation/README.md)
 
 ## Examples
 - [Example TMF](TMFDeprecateClassWithSuccessor.ttl)
