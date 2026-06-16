@@ -11,6 +11,7 @@ For full documentation including parameters, see the [REFrACT vocabulary](https:
 ## Shapes graph
 - [ShapeDeleteInstancePropertyAssertion.ttl](ShapeDeleteInstancePropertyAssertion.ttl) (local instance)
 - URI: `https://semanticweb.tools/rdf/shapes/ShapeDeleteInstancePropertyAssertion.ttl`
+- [See evaluation](Evaluation/README.md)
 
 ## Examples
 - [Example TMF](TMFDeleteInstancePropertyAssertion.ttl)
