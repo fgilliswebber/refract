@@ -11,6 +11,7 @@ For full documentation including parameters, see the [REFrACT vocabulary](https:
 ## Shapes graph
 - [ShapeChangeAnnotationLangString.ttl](ShapeChangeAnnotationLangString.ttl) (local instance)
 - URI: `https://semanticweb.tools/rdf/shapes/ShapeChangeAnnotationLangString.ttl`
+- [See evaluation](Evaluation/README.md)
 
 ## Examples
 - [Example TMF](TMFChangeAnnotationLangString.ttl)
