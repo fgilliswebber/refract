@@ -11,6 +11,7 @@ For full documentation including parameters, see the [REFrACT vocabulary](https:
 ## Shapes graph
 - [ShapeAddClass.ttl](ShapeAddClass.ttl) (local instance)
 - URI: `https://semanticweb.tools/rdf/shapes/ShapeAddClass.ttl`
+- [See evaluation](Evaluation/README.md)
 
 ## Examples
 - [Example TMF](TMFAddClass.ttl)
