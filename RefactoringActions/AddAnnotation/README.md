@@ -13,7 +13,7 @@ For full documentation including parameters, see the [REFrACT vocabulary](https:
 
 - [ShapeAddAnnotation.ttl](ShapeAddAnnotation.ttl) (local instance)
 - URI: `https://semanticweb.tools/rdf/shapes/ShapeAddAnnotation.ttl`
-- Evaluation: [Results of SHACL shape validator](ShapeAddAnnotation.ttl) 
+- Evaluation: [Results of SHACL shape validator](Evaluation/validation-shapes-graph-2026-06-16.png)
 
 ## Examples
 
