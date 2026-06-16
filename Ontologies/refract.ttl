@@ -6,10 +6,12 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix multi: <https://semanticweb.tools/ont/multi#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @base <https://semanticweb.tools/ont/refract#> .
 
 <https://semanticweb.tools/ont/refract> rdf:type owl:Ontology ;
@@ -23,14 +25,19 @@
 REFrACT provides a controlled vocabulary of refactoring action types, each with associated SHACL shapes graphs for validation, enabling the provenance and configuration metadata of ontology transformation processes to be captured in a machine-readable and reusable form. An example TMF is provided for each refactoring action."""@en ;
                                          dc:rights "CC-Zero" ;
                                          dc:title "Refactoring Actions Shapes Library (REFrACT)"@en ;
-                                         dct:bibliographicCitation "Gillis-Webber, Frances. 2026. \"Refactoring Actions Shapes Library (REFrACT).\" https://w3id.org/refract."@en ;
-                                         dct:created "16 May 2026" ;
-                                         dct:modified "13 June 2026" ;
-                                         vann:preferredNamespacePrefix "ref" ;
+                                         dcterms:bibliographicCitation "Gillis-Webber, Frances. 2026. \"Refactoring Actions Shapes Library (REFrACT).\" https://w3id.org/refract."@en ;
+                                         dcterms:created "2026-05-16"^^xsd:date ;
+                                         dcterms:issued "2026-06-16"^^xsd:date ;
+                                         dcterms:modified "2026-06-16"^^xsd:date ;
+                                         dcterms:publisher "Frances Gillis-Webber c/o SemanticWeb.tools" ;
+                                         dcterms:source <https://github.com/semanticweb-tools/refract> ;
+                                         vann:preferredNamespacePrefix "fract" ;
                                          vann:preferredNamespaceUri "https://semanticweb.tools/ont/refract#" ;
                                          rdfs:comment "The SHACL shapes graphs, example Transformation Manifest Files, rdfs:comments, and ref:hasParameters annotations for each refactoring action were generated with the assistance of Claude Sonnet 4.6 by Anthropic. If you identify any discrepancies, please contact Frances Gillis-Webber at fgilliswebber@cs.uct.ac.za."@en ;
                                          rdfs:label "REFrACT" ;
-                                         owl:versionInfo "1.0.0" .
+                                         owl:versionInfo "1.0.0" ;
+                                         foaf:logo <https://semanticweb.tools/logo.png> ;
+                                         <https://w3id.org/mod#status> "stable" .
 
 #################################################################
 #    Annotation properties
@@ -57,27 +64,46 @@ dc:title rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/abstract
-dct:abstract rdf:type owl:AnnotationProperty .
+dcterms:abstract rdf:type owl:AnnotationProperty ;
+                 rdfs:isDefinedBy dcterms: .
 
 
 ###  http://purl.org/dc/terms/bibliographicCitation
-dct:bibliographicCitation rdf:type owl:AnnotationProperty .
+dcterms:bibliographicCitation rdf:type owl:AnnotationProperty ;
+                              rdfs:isDefinedBy dcterms: .
 
 
 ###  http://purl.org/dc/terms/contributor
-dct:contributor rdf:type owl:AnnotationProperty .
+dcterms:contributor rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/created
-dct:created rdf:type owl:AnnotationProperty .
+dcterms:created rdf:type owl:AnnotationProperty ;
+                rdfs:isDefinedBy dcterms: .
 
 
 ###  http://purl.org/dc/terms/date
-dct:date rdf:type owl:AnnotationProperty .
+dcterms:date rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:AnnotationProperty ;
+               rdfs:isDefinedBy dcterms: .
 
 
 ###  http://purl.org/dc/terms/modified
-dct:modified rdf:type owl:AnnotationProperty .
+dcterms:modified rdf:type owl:AnnotationProperty ;
+                 rdfs:isDefinedBy dcterms: .
+
+
+###  http://purl.org/dc/terms/publisher
+dcterms:publisher rdf:type owl:AnnotationProperty ;
+                  rdfs:isDefinedBy dcterms: .
+
+
+###  http://purl.org/dc/terms/source
+dcterms:source rdf:type owl:AnnotationProperty ;
+               rdfs:isDefinedBy dcterms: .
 
 
 ###  http://purl.org/vocab/vann/preferredNamespacePrefix
@@ -92,8 +118,8 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 <http://www.w3.org/2004/02/skos/core#note> rdf:type owl:AnnotationProperty .
 
 
-###  https://semanticweb.tools/ont/refract#changeLog
-:changeLog rdf:type owl:AnnotationProperty .
+###  http://xmlns.com/foaf/0.1/logo
+foaf:logo rdf:type owl:AnnotationProperty .
 
 
 ###  https://semanticweb.tools/ont/refract#exampleTMF
@@ -201,6 +227,11 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
  ] .
 
 
+###  https://w3id.org/mod#status
+<https://w3id.org/mod#status> rdf:type owl:AnnotationProperty ;
+                              rdfs:isDefinedBy <https://w3id.org/mod> .
+
+
 #################################################################
 #    Datatypes
 #################################################################
@@ -214,13 +245,13 @@ xsd:date rdf:type rdfs:Datatype .
 #################################################################
 
 ###  http://purl.org/dc/terms/contributor
-dct:contributor rdf:type owl:ObjectProperty .
+dcterms:contributor rdf:type owl:ObjectProperty .
 
 
 ###  http://purl.org/dc/terms/license
-dct:license rdf:type owl:ObjectProperty ;
-            rdfs:isDefinedBy "http://purl.org/dc/terms/" ;
-            rdfs:label "license"@en .
+dcterms:license rdf:type owl:ObjectProperty ;
+                rdfs:isDefinedBy "http://purl.org/dc/terms/" ;
+                rdfs:label "license"@en .
 
 
 ###  http://www.w3.org/ns/prov#wasDerivedFrom
@@ -232,6 +263,7 @@ prov:wasDerivedFrom rdf:type owl:ObjectProperty ;
 
 ###  https://semanticweb.tools/ont/multi#hasViewpoint
 multi:hasViewpoint rdf:type owl:ObjectProperty ;
+                   rdfs:comment "Links an entity to the viewpoint it represents or is associated with, as defined in the MULTI ontology."@en ;
                    rdfs:isDefinedBy "https://semanticweb.tools/ont/multi" ;
                    rdfs:label "has viewpoint"@en .
 
@@ -388,6 +420,13 @@ multi:hasViewpoint rdf:type owl:ObjectProperty ;
                   rdfs:label "target annotation"@en .
 
 
+###  https://semanticweb.tools/ont/refract#targetConcept
+:targetConcept rdf:type owl:ObjectProperty ;
+               rdfs:comment "16-06-2026: Possibly needs to be removed."@en ;
+               rdfs:isDefinedBy <https://semanticweb.tools/ont/refract> ;
+               rdfs:label "target concept"@en .
+
+
 ###  https://semanticweb.tools/ont/refract#targetDataType
 :targetDataType rdf:type owl:ObjectProperty ;
                 rdfs:comment "Specifies the datatype of a value in a refactoring action, for example an annotation value or a data property value. The value must be a URI representing a valid XSD, RDF, or OWL datatype."@en ;
@@ -507,12 +546,6 @@ multi:hasViewpoint rdf:type owl:ObjectProperty ;
                                                      rdfs:label "starting node"@en .
 
 
-###  https://semanticweb.tools/ont/refract/targetConcept
-<https://semanticweb.tools/ont/refract/targetConcept> rdf:type owl:ObjectProperty ;
-                                                      rdfs:isDefinedBy "https://semanticweb.tools/ont/refract" ;
-                                                      rdfs:label "target concept"@en .
-
-
 ###  https://semanticweb.tools/ont/refract/transformationSource
 <https://semanticweb.tools/ont/refract/transformationSource> rdf:type owl:ObjectProperty ;
                                                              rdfs:comment "The URI of the source ontology that is being transformed, refactored, evolved, or localised."@en ;
@@ -546,13 +579,13 @@ multi:hasViewpoint rdf:type owl:ObjectProperty ;
 #################################################################
 
 ###  http://purl.org/dc/terms/date
-dct:date rdf:type owl:DatatypeProperty .
+dcterms:date rdf:type owl:DatatypeProperty .
 
 
 ###  http://purl.org/dc/terms/title
-dct:title rdf:type owl:DatatypeProperty ;
-          rdfs:isDefinedBy "http://purl.org/dc/terms/" ;
-          rdfs:label "title"@en .
+dcterms:title rdf:type owl:DatatypeProperty ;
+              rdfs:isDefinedBy "http://purl.org/dc/terms/" ;
+              rdfs:label "title"@en .
 
 
 ###  https://semanticweb.tools/ont/refract#URI
@@ -577,7 +610,10 @@ dct:title rdf:type owl:DatatypeProperty ;
 
 
 ###  https://semanticweb.tools/ont/refract#changeLog
-:changeLog rdf:type owl:DatatypeProperty .
+:changeLog rdf:type owl:DatatypeProperty ;
+           rdfs:comment "11-06-2026: Not used at the moment. Planned for future work."@en ;
+           rdfs:isDefinedBy <https://semanticweb.tools/ont/refract> ;
+           rdfs:label "change log"@en .
 
 
 ###  https://semanticweb.tools/ont/refract#includeSeeAlso
@@ -637,7 +673,9 @@ dct:title rdf:type owl:DatatypeProperty ;
 ###  http://www.w3.org/ns/prov#Activity
 prov:Activity rdf:type owl:Class ;
               rdfs:subClassOf rdfs:Class ;
-              rdfs:isDefinedBy "http://www.w3.org/ns/prov#" .
+              rdfs:comment "An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities."@en ;
+              rdfs:isDefinedBy "http://www.w3.org/ns/prov#" ;
+              rdfs:label "Activity"@en .
 
 
 ###  https://semanticweb.tools/ont/refract#AddAnnotation
@@ -1500,6 +1538,7 @@ prov:Activity rdf:type owl:Class ;
 ###  https://semanticweb.tools/ont/refract#DirectEquivalent
 :DirectEquivalent rdf:type owl:Class ;
                   rdfs:subClassOf :SemanticCategory ;
+                  rdfs:comment "A semantic category indicating that the source and target concepts have equal individuals, and the axiom pattern and superclass are both equivalent between the source and target viewpoints."@en ;
                   rdfs:isDefinedBy "https://semanticweb.tools/ont/refract" ;
                   rdfs:label "Direct equivalent"@en .
 
@@ -1842,17 +1881,12 @@ prov:Activity rdf:type owl:Class ;
 #    Annotations
 #################################################################
 
-dct:contributor rdfs:isDefinedBy "contributor"@en ,
-                                 "http://purl.org/dc/terms/" .
+dcterms:contributor rdfs:isDefinedBy "contributor"@en ,
+                                     "http://purl.org/dc/terms/" .
 
 
-dct:date rdfs:isDefinedBy "http://purl.org/dc/terms/" ;
-         rdfs:label "date"@en .
-
-
-:changeLog rdfs:comment "11-06-2026: Not used at the moment. Planned for future work."@en ;
-           rdfs:isDefinedBy <https://semanticweb.tools/ont/refract> ;
-           rdfs:label "change log"@en .
+dcterms:date rdfs:isDefinedBy "http://purl.org/dc/terms/" ;
+             rdfs:label "date"@en .
 
 
 ###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
