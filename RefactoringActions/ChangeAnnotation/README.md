@@ -11,6 +11,7 @@ For full documentation including parameters, see the [REFrACT vocabulary](https:
 ## Shapes graph
 - [ShapeChangeAnnotation.ttl](ShapeChangeAnnotation.ttl) (local instance)
 - URI: `https://semanticweb.tools/rdf/shapes/ShapeChangeAnnotation.ttl`
+- [See evaluation](Evaluation/README.md)
 
 ## Examples
 - [Example TMF](TMFChangeAnnotation.ttl)
