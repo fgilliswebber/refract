@@ -10,6 +10,7 @@ A macro-level shapes graph for validating the Transformation Manifest File of an
 
 - [ShapeEvolution.ttl](ShapeEvolution.ttl) (local instance)
 - URI: `https://semanticweb.tools/rdf/shapes/ShapeEvolution.ttl`
+- [See evaluation](Evaluation/README.md)
 
 ## Used in use cases
 - Ontology Evolution: [EC1](../../UseCases/OntologyEvolution/EC1/README.md), [EC2](../../UseCases/OntologyEvolution/EC2/README.md), [EC3](../../UseCases/OntologyEvolution/EC3/README.md)
