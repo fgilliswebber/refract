@@ -11,6 +11,7 @@ For full documentation including parameters, see the [REFrACT vocabulary](https:
 ## Shapes graph
 - [ShapeDeleteSuperclassAssertion.ttl](ShapeDeleteSuperclassAssertion.ttl) (local instance)
 - URI: `https://semanticweb.tools/rdf/shapes/ShapeDeleteSuperclassAssertion.ttl`
+- [See evaluation](Evaluation/README.md)
 
 ## Examples
 - [Example TMF](TMFDeleteSuperclassAssertion.ttl)
