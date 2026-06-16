@@ -2,30 +2,41 @@
 @prefix ref: <https://semanticweb.tools/ont/refract#> .
 @prefix shape: <https://semanticweb.tools/rdf/shapes/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 shape:ShapeDeletePropertyRestriction
     a sh:NodeShape ;
+    rdfs:label "Shape Delete Property Restriction" ;
+    rdfs:comment "A shapes graph for validating a 'Delete property restriction' refactoring action in a Transformation Manifest File." ;
     sh:targetClass ref:DeletePropertyRestriction ;
     sh:property [
         sh:path ref:sourceNode ;
+        sh:name "source node" ;
+        sh:description "The URI of an ontology element that already exists in the source ontology and is referenced by a refactoring action." ;
         sh:nodeKind sh:IRI ;
         sh:minCount 1 ;
         sh:maxCount 1 ;
     ] ;
     sh:property [
         sh:path ref:targetObject ;
+        sh:name "target object" ;
+        sh:description "The URI of the object property used in a restriction or axiom as part of a refactoring action." ;
         sh:nodeKind sh:IRI ;
         sh:minCount 1 ;
         sh:maxCount 1 ;
     ] ;
     sh:property [
         sh:path ref:targetObjectValue ;
+        sh:name "target object value" ;
+        sh:description "The URI of the filler class used in a restriction as part of a refactoring action." ;
         sh:nodeKind sh:IRI ;
         sh:minCount 1 ;
         sh:maxCount 1 ;
     ] ;
     sh:property [
         sh:path ref:restrictionType ;
+        sh:name "restriction type" ;
+        sh:description "Specifies the type of restriction to be added as part of a refactoring action. The value must be either owl:someValuesFrom (existential restriction) or owl:allValuesFrom (universal restriction)." ;
         sh:nodeKind sh:IRI ;
         sh:minCount 1 ;
         sh:maxCount 1 ;
