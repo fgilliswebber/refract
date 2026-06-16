@@ -11,6 +11,7 @@ For full documentation including parameters, see the [REFrACT vocabulary](https:
 ## Shapes graph
 - [ShapeAddSubPropertyChainOf.ttl](ShapeAddSubPropertyChainOf.ttl) (local instance)
 - URI: `https://semanticweb.tools/rdf/shapes/ShapeAddSubPropertyChainOf.ttl`
+- [See evaluation](Evaluation/README.md)
 
 ## Examples
 - [Example TMF](TMFAddSubPropertyChainOf.ttl)
