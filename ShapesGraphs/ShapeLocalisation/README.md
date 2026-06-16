@@ -7,6 +7,7 @@
 A macro-level shapes graph for validating the Transformation Manifest File of an ontology localisation process.
 - [ShapeLocalisation.ttl](ShapeLocalisation.ttl) (local instance)
 - URI: `https://semanticweb.tools/rdf/shapes/ShapeLocalisation.ttl`
+- [See evaluation](Evaluation/README.md)
 
 ## Used in use cases
 - Ontology Localisation: [LC1](../../UseCases/OntologyLocalisation/LC1/README.md), [LC2](../../UseCases/OntologyLocalisation/LC2/README.md), [LC3](../../UseCases/OntologyLocalisation/LC3/README.md)
