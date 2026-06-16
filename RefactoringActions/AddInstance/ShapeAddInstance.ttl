@@ -1,30 +1,41 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix ref: <http://semanticweb.tools/ont/refract#> .
+@prefix ref: <https://semanticweb.tools/ont/refract#> .
 @prefix shape: <https://semanticweb.tools/rdf/shapes/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 shape:ShapeAddInstance
     a sh:NodeShape ;
+    rdfs:label "Shape Add Instance" ;
+    rdfs:comment "A shapes graph for validating an 'Add instance' refactoring action in a Transformation Manifest File." ;
     sh:targetClass ref:AddInstance ;
     sh:property [
         sh:path ref:targetIdentifier ;
+        sh:name "target identifier" ;
+        sh:description "The URI (or fragment identifier) of an ontology element to be created by a refactoring action." ;
         sh:nodeKind sh:IRI ;
         sh:minCount 1 ;
         sh:maxCount 1 ;
     ] ;
     sh:property [
         sh:path ref:targetInstanceOf ;
+        sh:name "target instance of" ;
+        sh:description "The URI of the class that a new named individual is declared as an instance of, as part of an 'add instance' refactoring action. Multiple classes may be specified." ;
         sh:nodeKind sh:IRI ;
         sh:minCount 1 ;
     ] ;
     sh:property [
         sh:path ref:targetLabel ;
+        sh:name "target label" ;
+        sh:description "A plain string label for an ontology element that is to be created by a refactoring action." ;
         sh:datatype xsd:string ;
         sh:minCount 1 ;
         sh:maxCount 1 ;
     ] ;
     sh:property [
         sh:path ref:targetLanguageTag ;
+        sh:name "target language tag" ;
+        sh:description "A language tag expressed as a plain string, conforming to ISO 639 or BCP 47 (e.g. \"en-za\", \"fr\")." ;
         sh:datatype xsd:string ;
         sh:minCount 1 ;
         sh:maxCount 1 ;
