@@ -11,6 +11,7 @@ For full documentation including parameters, see the [REFrACT vocabulary](https:
 ## Shapes graph
 - [ShapeAddObjectProperty.ttl](ShapeAddObjectProperty.ttl) (local instance)
 - URI: `https://semanticweb.tools/rdf/shapes/ShapeAddObjectProperty.ttl`
+- [See evaluation](Evaluation/README.md)
 
 ## Examples
 - [Example TMF](TMFAddObjectProperty.ttl)
