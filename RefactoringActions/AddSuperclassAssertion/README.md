@@ -11,6 +11,7 @@ For full documentation including parameters, see the [REFrACT vocabulary](https:
 ## Shapes graph
 - [ShapeAddSuperclassAssertion.ttl](ShapeAddSuperclassAssertion.ttl) (local instance)
 - URI: `https://semanticweb.tools/rdf/shapes/ShapeAddSuperclassAssertion.ttl`
+- [See evaluation](Evaluation/README.md)
 
 ## Examples
 - [Example TMF](TMFAddSuperclassAssertion.ttl)
