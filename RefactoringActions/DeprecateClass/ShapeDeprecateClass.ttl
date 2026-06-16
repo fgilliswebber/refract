@@ -1,12 +1,17 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix ref: <https://semanticweb.tools/ont/refract#> .
 @prefix shape: <https://semanticweb.tools/rdf/shapes/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 shape:ShapeDeprecateClass
     a sh:NodeShape ;
+    rdfs:label "Shape Deprecate Class" ;
+    rdfs:comment "A shapes graph for validating a 'Deprecate class' refactoring action in a Transformation Manifest File." ;
     sh:targetClass ref:DeprecateClass ;
     sh:property [
         sh:path ref:sourceNode ;
+        sh:name "source node" ;
+        sh:description "The URI of an ontology element that already exists in the source ontology and is referenced by a refactoring action." ;
         sh:nodeKind sh:IRI ;
         sh:minCount 1 ;
     ] .
