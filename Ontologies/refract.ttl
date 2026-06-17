@@ -471,14 +471,14 @@ multi:hasViewpoint rdf:type owl:ObjectProperty ;
 
 ###  https://semanticweb.tools/ont/refract#targetObject
 :targetObject rdf:type owl:ObjectProperty ;
-              rdfs:comment "The URI of the object property used in a restriction or axiom as part of a refactoring action."@en ;
+              rdfs:comment "The URI of the property used in a refactoring action, for example the property of a restriction, axiom, or instance property assertion."@en ;
               rdfs:isDefinedBy <https://semanticweb.tools/ont/refract> ;
               rdfs:label "target object"@en .
 
 
 ###  https://semanticweb.tools/ont/refract#targetObjectValue
 :targetObjectValue rdf:type owl:ObjectProperty ;
-                   rdfs:comment "The URI of the filler class used in a restriction as part of a refactoring action."@en ;
+                   rdfs:comment "The URI of the value used in a refactoring action, for example the filler class of a restriction or the value of an instance property assertion."@en ;
                    rdfs:isDefinedBy <https://semanticweb.tools/ont/refract> ;
                    rdfs:label "target object value"@en .
 
