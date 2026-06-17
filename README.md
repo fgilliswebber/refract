@@ -4,8 +4,10 @@
 
 ---
 
-**URI:** `https://semanticweb.tools/ont/refract` \
-**Persistent URI:** `https://w3id.org/refract`
+**Persistent URI:** `https://w3id.org/refract` \
+**Redirects to:** `https://semanticweb.tools/ont/refract` 
+
+**Recommended prefix:** `fract: <https://w3id.org/refract#>`
 
 **Version:** 1.0.0 \
 **Licence:** [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)
