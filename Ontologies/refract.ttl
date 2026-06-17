@@ -394,7 +394,7 @@ multi:hasViewpoint rdf:type owl:ObjectProperty ;
 
 ###  https://semanticweb.tools/ont/refract#sourceOnClass
 :sourceOnClass rdf:type owl:ObjectProperty ;
-               rdfs:comment "The URI of the property that a restriction or axiom is applied to in the source ontology, used to identify the specific restriction or axiom to be deleted."@en ;
+               rdfs:comment "The URI of the filler class in a qualified cardinality restriction in the source ontology, used to uniquely identify the restriction when a class has multiple cardinality restrictions on the same property. If omitted, the restriction is assumed to be unqualified."@en ;
                rdfs:isDefinedBy <https://semanticweb.tools/ont/refract> ;
                rdfs:label "source on class"@en .
 
@@ -408,7 +408,7 @@ multi:hasViewpoint rdf:type owl:ObjectProperty ;
 
 ###  https://semanticweb.tools/ont/refract#sourceProperty
 :sourceProperty rdf:type owl:ObjectProperty ;
-                rdfs:comment "The URI of the filler class in a qualified cardinality restriction in the source ontology, used to uniquely identify the restriction when a class has multiple cardinality restrictions on the same property. If omitted, the restriction is assumed to be unqualified."@en ;
+                rdfs:comment "The URI of the property that a restriction or axiom is applied to in the source ontology, used to identify the specific restriction or axiom to be deleted."@en ;
                 rdfs:isDefinedBy <https://semanticweb.tools/ont/refract> ;
                 rdfs:label "source property"@en .
 
