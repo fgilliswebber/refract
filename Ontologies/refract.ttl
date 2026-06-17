@@ -28,7 +28,7 @@ REFrACT provides a controlled vocabulary of refactoring action types, each with 
                             dcterms:bibliographicCitation "Gillis-Webber, Frances. 2026. \"Refactoring Actions Shapes Library (REFrACT).\" https://w3id.org/refract."@en ;
                             dcterms:created "2026-05-16"^^xsd:date ;
                             dcterms:issued "2026-06-16"^^xsd:date ;
-                            dcterms:modified "2026-06-16"^^xsd:date ;
+                            dcterms:modified "2026-06-18" ;
                             dcterms:publisher "Frances Gillis-Webber c/o SemanticWeb.tools" ;
                             dcterms:source <https://github.com/semanticweb-tools/refract> ;
                             vann:preferredNamespacePrefix "fract" ;
@@ -214,7 +214,7 @@ foaf:logo rdf:type owl:AnnotationProperty .
    owl:annotatedSource :targetRights ;
    owl:annotatedProperty rdfs:comment ;
    owl:annotatedTarget "Specifies the rights of the target ontology. The value may be 'Target same as source' if the rights are the same as the source ontology, or a URI to a licence such as a Creative Commons licence. If omitted, the rights of the target ontology are unknown."@en ;
-   rdfs:seeAlso <https://w3id.org/refract/TargetSameAsSource>
+   rdfs:seeAlso :TargetSameAsSource
  ] .
 
 
@@ -228,7 +228,7 @@ foaf:logo rdf:type owl:AnnotationProperty .
    owl:annotatedSource :versionNumber ;
    owl:annotatedProperty rdfs:comment ;
    owl:annotatedTarget "The version number of a Transformation Manifest File, expressed as a plain string (e.g. \"1.0.0\")."@en ;
-   rdfs:seeAlso <https://w3id.org/refract/Manifest>
+   rdfs:seeAlso :Manifest
  ] .
 
 
@@ -413,6 +413,13 @@ multi:hasViewpoint rdf:type owl:ObjectProperty ;
                 rdfs:label "source property"@en .
 
 
+###  https://w3id.org/refract#startingNode
+:startingNode rdf:type owl:ObjectProperty ;
+              rdfs:comment "The URI of the root class from which a localisation process begins. If omitted, the localisation applies to the entire source ontology."@en ;
+              rdfs:isDefinedBy <https://w3id.org/refract> ;
+              rdfs:label "starting node"@en .
+
+
 ###  https://w3id.org/refract#targetAnnotation
 :targetAnnotation rdf:type owl:ObjectProperty ;
                   rdfs:comment "The URI of an annotation property to be added to an ontology element as part of a refactoring action."@en ;
@@ -511,6 +518,34 @@ multi:hasViewpoint rdf:type owl:ObjectProperty ;
  ] .
 
 
+###  https://w3id.org/refract#transformationSource
+:transformationSource rdf:type owl:ObjectProperty ;
+                      rdfs:comment "The URI of the source ontology that is being transformed, refactored, evolved, or localised."@en ;
+                      rdfs:isDefinedBy <https://w3id.org/refract> ;
+                      rdfs:label "transformation source"@en .
+
+
+###  https://w3id.org/refract#transformationTarget
+:transformationTarget rdf:type owl:ObjectProperty ;
+                      rdfs:comment "11-06-2026: Possibly needs to be removed."@en ;
+                      rdfs:isDefinedBy <https://w3id.org/refract> ;
+                      rdfs:label "transformation target"@en .
+
+
+###  https://w3id.org/refract#transformationType
+:transformationType rdf:type owl:ObjectProperty ;
+                    rdfs:comment "Specifies the type of transformation process described by the Transformation Manifest File. The value must be one of: 'Ontology refactoring process', 'Ontology evolution process', 'Ontology transformation process', or 'Ontology localisation process'."@en ;
+                    rdfs:isDefinedBy <https://w3id.org/refract> ;
+                    rdfs:label "transformation type"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :transformationType ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Specifies the type of transformation process described by the Transformation Manifest File. The value must be one of: 'Ontology refactoring process', 'Ontology evolution process', 'Ontology transformation process', or 'Ontology localisation process'."@en ;
+   rdfs:seeAlso :TransformationProcess
+ ] .
+
+
 ###  https://w3id.org/refract#versionManifest
 :versionManifest rdf:type owl:ObjectProperty ;
                  rdfs:comment "Links a manifest to its version metadata, specified as an instance of 'Version'."@en ;
@@ -521,7 +556,7 @@ multi:hasViewpoint rdf:type owl:ObjectProperty ;
    owl:annotatedSource :versionManifest ;
    owl:annotatedProperty rdfs:comment ;
    owl:annotatedTarget "Links a manifest to its version metadata, specified as an instance of 'Version'."@en ;
-   rdfs:seeAlso <https://w3id.org/refract/Version>
+   rdfs:seeAlso :Version
  ] .
 
 
@@ -536,41 +571,6 @@ multi:hasViewpoint rdf:type owl:ObjectProperty ;
    owl:annotatedProperty rdfs:comment ;
    owl:annotatedTarget "Links a version of a Transformation Manifest File to its previous version. If this is the first version of the TMF, the value should be 'No previous version'."@en ;
    rdfs:seeAlso :NoPreviousVersion
- ] .
-
-
-###  https://w3id.org/refract/startingNode
-<https://w3id.org/refract/startingNode> rdf:type owl:ObjectProperty ;
-                                        rdfs:comment "The URI of the root class from which a localisation process begins. If omitted, the localisation applies to the entire source ontology."@en ;
-                                        rdfs:isDefinedBy <https://w3id.org/refract> ;
-                                        rdfs:label "starting node"@en .
-
-
-###  https://w3id.org/refract/transformationSource
-<https://w3id.org/refract/transformationSource> rdf:type owl:ObjectProperty ;
-                                                rdfs:comment "The URI of the source ontology that is being transformed, refactored, evolved, or localised."@en ;
-                                                rdfs:isDefinedBy <https://w3id.org/refract> ;
-                                                rdfs:label "transformation source"@en .
-
-
-###  https://w3id.org/refract/transformationTarget
-<https://w3id.org/refract/transformationTarget> rdf:type owl:ObjectProperty ;
-                                                rdfs:comment "11-06-2026: Possibly needs to be removed."@en ;
-                                                rdfs:isDefinedBy <https://w3id.org/refract> ;
-                                                rdfs:label "transformation target"@en .
-
-
-###  https://w3id.org/refract/transformationType
-<https://w3id.org/refract/transformationType> rdf:type owl:ObjectProperty ;
-                                              rdfs:comment "Specifies the type of transformation process described by the Transformation Manifest File. The value must be one of: 'Ontology refactoring process', 'Ontology evolution process', 'Ontology transformation process', or 'Ontology localisation process'."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/refract> ;
-                                              rdfs:label "transformation type"@en .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource <https://w3id.org/refract/transformationType> ;
-   owl:annotatedProperty rdfs:comment ;
-   owl:annotatedTarget "Specifies the type of transformation process described by the Transformation Manifest File. The value must be one of: 'Ontology refactoring process', 'Ontology evolution process', 'Ontology transformation process', or 'Ontology localisation process'."@en ;
-   rdfs:seeAlso <https://w3id.org/refract/TransformationProcess>
  ] .
 
 
@@ -1594,12 +1594,64 @@ prov:Activity rdf:type owl:Class ;
              rdfs:label "Local action"@en .
 
 
+###  https://w3id.org/refract#Manifest
+:Manifest rdf:type owl:Class ;
+          rdfs:subClassOf rdfs:Resource ;
+          rdfs:comment "A Transformation Manifest File (TMF) that records the metadata and refactoring actions associated with an ontology transformation process. A manifest declares the source ontology, the transformation process type, the URI relationship to the source, version metadata, and the set of refactoring actions to be applied."@en ;
+          rdfs:isDefinedBy <https://w3id.org/refract> ;
+          rdfs:label "Manifest"@en .
+
+
 ###  https://w3id.org/refract#NoCorrespondence
 :NoCorrespondence rdf:type owl:Class ;
                   rdfs:subClassOf :SemanticCategory ;
                   rdfs:comment "A semantic category indicating that there are no shared individuals between the source and target concepts, such that there is no conceptual correspondence between the source and target viewpoints."@en ;
                   rdfs:isDefinedBy <https://w3id.org/refract> ;
                   rdfs:label "No correspondence"@en .
+
+
+###  https://w3id.org/refract#OntologyEvolutionProcess
+:OntologyEvolutionProcess rdf:type owl:Class ;
+                          rdfs:subClassOf :TransformationProcess ;
+                          rdfs:comment "A transformation process that modifies an ontology to reflect changes in the domain it models. Characterised by: same viewpoint, same URI (versioned), and semantic changes driven by a real-world domain change. Examples include adding or removing classes and properties in response to changes in the world."@en ;
+                          rdfs:isDefinedBy <https://w3id.org/refract> ;
+                          rdfs:label "Ontology evolution process"@en ;
+                          :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeEvolution.ttl> .
+
+
+###  https://w3id.org/refract#OntologyLocalisationProcess
+:OntologyLocalisationProcess rdf:type owl:Class ;
+                             rdfs:subClassOf :OntologyTransformationProcess ;
+                             rdfs:comment "A transformation process that adapts an ontology to a specific cultural, linguistic, or regional viewpoint. A subclass of 'Ontology transformation process'. Characterised by: different viewpoint, different URI, and semantic changes driven by a community-specific viewpoint."@en ;
+                             rdfs:isDefinedBy <https://w3id.org/refract> ;
+                             rdfs:label "Ontology localisation process"@en ;
+                             :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeLocalisation.ttl> .
+
+
+###  https://w3id.org/refract#OntologyRefactoringProcess
+:OntologyRefactoringProcess rdf:type owl:Class ;
+                            rdfs:subClassOf :TransformationProcess ;
+                            rdfs:comment "A transformation process that modifies an ontology without changing its intended meaning. Characterised by: same viewpoint, same URI (versioned), and structural changes only with no semantic or domain change. Examples include renaming classes or properties."@en ;
+                            rdfs:isDefinedBy <https://w3id.org/refract> ;
+                            rdfs:label "Ontology refactoring process"@en ;
+                            :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeRefactoring.ttl> .
+
+
+###  https://w3id.org/refract#OntologyTransformationProcess
+:OntologyTransformationProcess rdf:type owl:Class ;
+                               rdfs:subClassOf :TransformationProcess ;
+                               rdfs:comment "A transformation process that produces a new ontology from an existing one, representing a different viewpoint or context. Characterised by: different viewpoint, different URI, and semantic changes driven by a different viewpoint or conte"@en ;
+                               rdfs:isDefinedBy <https://w3id.org/refract> ;
+                               rdfs:label "Ontology transformation process"@en ;
+                               :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeTransformation.ttl> .
+
+
+###  https://w3id.org/refract#OntologyView
+:OntologyView rdf:type owl:Class ;
+              rdfs:subClassOf <http://www.w3.org/ns/shacl#Target> ;
+              rdfs:comment "A class representing an ontology view — the transformation of a source ontology to a target viewpoint, where both the semantic and annotation layers are adapted as required. In the context of internationalisation, a view is specific to a culture, language, or region. Modelled as a subclass of sh:Target to enable view-specific SHACL validation."@en ;
+              rdfs:isDefinedBy <https://w3id.org/refract> ;
+              rdfs:label "Ontology view"@en .
 
 
 ###  https://w3id.org/refract#OverlappingMeaning
@@ -1702,6 +1754,30 @@ prov:Activity rdf:type owl:Class ;
                   rdfs:label "Structural action"@en .
 
 
+###  https://w3id.org/refract#TargetSameAsSource
+:TargetSameAsSource rdf:type owl:Class ;
+                    rdfs:subClassOf <http://www.w3.org/ns/shacl#Target> ;
+                    rdfs:comment "A SHACL target that applies validation to ontologies where the target is the same as the source, used in refactoring and evolution processes where the URI relationship is 'same versioned' or 'same unversioned'."@en ;
+                    rdfs:isDefinedBy <https://w3id.org/refract> ;
+                    rdfs:label "Target same as source"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :TargetSameAsSource ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "A SHACL target that applies validation to ontologies where the target is the same as the source, used in refactoring and evolution processes where the URI relationship is 'same versioned' or 'same unversioned'."@en ;
+   rdfs:seeAlso :SameUnversionedRelationship ,
+                :SameVersionedRelationship
+ ] .
+
+
+###  https://w3id.org/refract#TransformationProcess
+:TransformationProcess rdf:type owl:Class ;
+                       rdfs:subClassOf rdfs:Class ;
+                       rdfs:comment "A process that transforms one or more ontologies or knowledge graphs into a new form."@en ;
+                       rdfs:isDefinedBy <https://w3id.org/refract> ;
+                       rdfs:label "Transformation process"@en .
+
+
 ###  https://w3id.org/refract#URIRelationship
 :URIRelationship rdf:type owl:Class ;
                  rdfs:subClassOf rdfs:Resource ;
@@ -1710,88 +1786,12 @@ prov:Activity rdf:type owl:Class ;
                  rdfs:label "URI relationship"@en .
 
 
-###  https://w3id.org/refract/Manifest
-<https://w3id.org/refract/Manifest> rdf:type owl:Class ;
-                                    rdfs:subClassOf rdfs:Resource ;
-                                    rdfs:comment "A Transformation Manifest File (TMF) that records the metadata and refactoring actions associated with an ontology transformation process. A manifest declares the source ontology, the transformation process type, the URI relationship to the source, version metadata, and the set of refactoring actions to be applied."@en ;
-                                    rdfs:isDefinedBy <https://w3id.org/refract> ;
-                                    rdfs:label "Manifest"@en .
-
-
-###  https://w3id.org/refract/OntologyEvolutionProcess
-<https://w3id.org/refract/OntologyEvolutionProcess> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://w3id.org/refract/TransformationProcess> ;
-                                                    rdfs:comment "A transformation process that modifies an ontology to reflect changes in the domain it models. Characterised by: same viewpoint, same URI (versioned), and semantic changes driven by a real-world domain change. Examples include adding or removing classes and properties in response to changes in the world."@en ;
-                                                    rdfs:isDefinedBy <https://w3id.org/refract> ;
-                                                    rdfs:label "Ontology evolution process"@en ;
-                                                    :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeEvolution.ttl> .
-
-
-###  https://w3id.org/refract/OntologyLocalisationProcess
-<https://w3id.org/refract/OntologyLocalisationProcess> rdf:type owl:Class ;
-                                                       rdfs:subClassOf <https://w3id.org/refract/OntologyTransformationProcess> ;
-                                                       rdfs:comment "A transformation process that adapts an ontology to a specific cultural, linguistic, or regional viewpoint. A subclass of 'Ontology transformation process'. Characterised by: different viewpoint, different URI, and semantic changes driven by a community-specific viewpoint."@en ;
-                                                       rdfs:isDefinedBy <https://w3id.org/refract> ;
-                                                       rdfs:label "Ontology localisation process"@en ;
-                                                       :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeLocalisation.ttl> .
-
-
-###  https://w3id.org/refract/OntologyRefactoringProcess
-<https://w3id.org/refract/OntologyRefactoringProcess> rdf:type owl:Class ;
-                                                      rdfs:subClassOf <https://w3id.org/refract/TransformationProcess> ;
-                                                      rdfs:comment "A transformation process that modifies an ontology without changing its intended meaning. Characterised by: same viewpoint, same URI (versioned), and structural changes only with no semantic or domain change. Examples include renaming classes or properties."@en ;
-                                                      rdfs:isDefinedBy <https://w3id.org/refract> ;
-                                                      rdfs:label "Ontology refactoring process"@en ;
-                                                      :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeRefactoring.ttl> .
-
-
-###  https://w3id.org/refract/OntologyTransformationProcess
-<https://w3id.org/refract/OntologyTransformationProcess> rdf:type owl:Class ;
-                                                         rdfs:subClassOf <https://w3id.org/refract/TransformationProcess> ;
-                                                         rdfs:comment "A transformation process that produces a new ontology from an existing one, representing a different viewpoint or context. Characterised by: different viewpoint, different URI, and semantic changes driven by a different viewpoint or conte"@en ;
-                                                         rdfs:isDefinedBy <https://w3id.org/refract> ;
-                                                         rdfs:label "Ontology transformation process"@en ;
-                                                         :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeTransformation.ttl> .
-
-
-###  https://w3id.org/refract/OntologyView
-<https://w3id.org/refract/OntologyView> rdf:type owl:Class ;
-                                        rdfs:subClassOf <http://www.w3.org/ns/shacl#Target> ;
-                                        rdfs:comment "A class representing an ontology view — the transformation of a source ontology to a target viewpoint, where both the semantic and annotation layers are adapted as required. In the context of internationalisation, a view is specific to a culture, language, or region. Modelled as a subclass of sh:Target to enable view-specific SHACL validation."@en ;
-                                        rdfs:isDefinedBy <https://w3id.org/refract> ;
-                                        rdfs:label "Ontology view"@en .
-
-
-###  https://w3id.org/refract/TargetSameAsSource
-<https://w3id.org/refract/TargetSameAsSource> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://www.w3.org/ns/shacl#Target> ;
-                                              rdfs:comment "A SHACL target that applies validation to ontologies where the target is the same as the source, used in refactoring and evolution processes where the URI relationship is 'same versioned' or 'same unversioned'."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/refract> ;
-                                              rdfs:label "Target same as source"@en .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource <https://w3id.org/refract/TargetSameAsSource> ;
-   owl:annotatedProperty rdfs:comment ;
-   owl:annotatedTarget "A SHACL target that applies validation to ontologies where the target is the same as the source, used in refactoring and evolution processes where the URI relationship is 'same versioned' or 'same unversioned'."@en ;
-   rdfs:seeAlso :SameUnversionedRelationship ,
-                :SameVersionedRelationship
- ] .
-
-
-###  https://w3id.org/refract/TransformationProcess
-<https://w3id.org/refract/TransformationProcess> rdf:type owl:Class ;
-                                                 rdfs:subClassOf rdfs:Class ;
-                                                 rdfs:comment "A process that transforms one or more ontologies or knowledge graphs into a new form."@en ;
-                                                 rdfs:isDefinedBy <https://w3id.org/refract> ;
-                                                 rdfs:label "Transformation process"@en .
-
-
-###  https://w3id.org/refract/Version
-<https://w3id.org/refract/Version> rdf:type owl:Class ;
-                                   rdfs:subClassOf rdfs:Resource ;
-                                   rdfs:comment "A class representing the version metadata of a Transformation Manifest File. Version metadata includes the version number, the date of the version, the previous version, and the contributors to the TMF."@en ;
-                                   rdfs:isDefinedBy <https://w3id.org/refract> ;
-                                   rdfs:label "Version"@en .
+###  https://w3id.org/refract#Version
+:Version rdf:type owl:Class ;
+         rdfs:subClassOf rdfs:Resource ;
+         rdfs:comment "A class representing the version metadata of a Transformation Manifest File. Version metadata includes the version number, the date of the version, the previous version, and the contributors to the TMF."@en ;
+         rdfs:isDefinedBy <https://w3id.org/refract> ;
+         rdfs:label "Version"@en .
 
 
 #################################################################
@@ -1864,7 +1864,7 @@ prov:Activity rdf:type owl:Class ;
 
 ###  https://w3id.org/refract#NoPreviousVersion
 :NoPreviousVersion rdf:type owl:NamedIndividual ,
-                            <https://w3id.org/refract/Version> ;
+                            :Version ;
                    rdfs:comment "A named individual indicating that a Transformation Manifest File has no previous version, i.e. it is the first version of the manifest."@en ;
                    rdfs:isDefinedBy <https://w3id.org/refract> ;
                    rdfs:label "No previous version"@en .
@@ -1873,7 +1873,7 @@ prov:Activity rdf:type owl:Class ;
    owl:annotatedSource :NoPreviousVersion ;
    owl:annotatedProperty rdfs:comment ;
    owl:annotatedTarget "A named individual indicating that a Transformation Manifest File has no previous version, i.e. it is the first version of the manifest."@en ;
-   rdfs:seeAlso <https://w3id.org/refract/Manifest>
+   rdfs:seeAlso :Manifest
  ] .
 
 
