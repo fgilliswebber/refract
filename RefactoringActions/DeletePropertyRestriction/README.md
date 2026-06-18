@@ -6,7 +6,7 @@
 
 A semantic action that deletes an existential or universal property restriction from a class in the ontology.
 
-For full documentation including parameters, see the [REFrACT vocabulary](https://semanticweb.tools/ont/refract#DeletePropertyRestriction).
+For full documentation including parameters, see the [REFrACT vocabulary](https://w3id.org/refract#DeletePropertyRestriction).
 
 ## Shapes graph
 - [ShapeDeletePropertyRestriction.ttl](ShapeDeletePropertyRestriction.ttl) (local instance)
