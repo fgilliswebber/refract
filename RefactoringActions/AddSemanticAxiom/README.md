@@ -6,7 +6,7 @@
 
 A catch-all semantic action that adds a binary semantic axiom between two ontology elements. Use a dedicated action where one exists for the specific axiom type.
 
-For full documentation including parameters, see the [REFrACT vocabulary](https://semanticweb.tools/ont/refract#AddSemanticAxiom).
+For full documentation including parameters, see the [REFrACT vocabulary](https://w3id.org/refract#AddSemanticAxiom).
 
 ## Shapes graph
 - [ShapeAddSemanticAxiom.ttl](ShapeAddSemanticAxiom.ttl) (local instance)
