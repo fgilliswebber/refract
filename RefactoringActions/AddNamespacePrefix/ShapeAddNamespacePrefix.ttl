@@ -1,5 +1,5 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix ref: <https://semanticweb.tools/ont/refract#> .
+@prefix fract: <https://w3id.org/refract#> .
 @prefix shape: <https://semanticweb.tools/rdf/shapes/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -8,7 +8,7 @@ shape:ShapeAddNamespacePrefix
     a sh:NodeShape ;
     rdfs:label "Shape Add Namespace Prefix" ;
     rdfs:comment "A shapes graph for validating an 'Add namespace prefix' refactoring action in a Transformation Manifest File." ;
-    sh:targetClass ref:AddNamespacePrefix ;
+    sh:targetClass fract:AddNamespacePrefix ;
     sh:property [
         sh:path sh:prefix ;
         sh:name "prefix" ;
