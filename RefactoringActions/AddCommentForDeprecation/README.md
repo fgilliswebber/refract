@@ -6,7 +6,7 @@
 
 An annotation action that adds a deprecation comment and optionally a 'see also' reference to the deprecated class as part of a 'Deprecate class with successor class' composite action. If 'target annotation value' is omitted, the algorithm generates the comment from a template. This action is not intended to be used standalone.
 
-For full documentation including parameters, see the [REFrACT vocabulary](https://semanticweb.tools/ont/refract#AddCommentForDeprecation).
+For full documentation including parameters, see the [REFrACT vocabulary](https://w3id.org/refract#AddCommentForDeprecation).
 
 ## Shapes graph
 - [ShapeAddCommentForDeprecation.ttl](ShapeAddCommentForDeprecation.ttl) (local instance)
