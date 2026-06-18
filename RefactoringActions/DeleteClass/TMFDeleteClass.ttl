@@ -1,15 +1,15 @@
-@prefix ref: <https://semanticweb.tools/ont/refract#> .
+@prefix fract: <https://w3id.org/refract#> .
 @prefix dash: <http://datashapes.org/dash#> .
 @prefix shape: <https://semanticweb.tools/rdf/shapes/> .
 @prefix sweet: <http://sweetontology.net/realmHydroBody/> .
 
-ref:tmf_DeleteClass a ref:Manifest ;
-    ref:transformationType ref:OntologyRefactoringProcess ;
-    ref:transformationSource <http://sweetontology.net/realmHydroBody> ;
-    ref:hasURIRelationshipToSource ref:SameVersioned ;
-    ref:hasAction ref:action_DeleteClass_1 .
+fract:tmf_DeleteClass a fract:Manifest ;
+    fract:transformationType fract:OntologyRefactoringProcess ;
+    fract:transformationSource <http://sweetontology.net/realmHydroBody> ;
+    fract:hasURIRelationshipToSource fract:SameVersioned ;
+    fract:hasAction fract:action_DeleteClass_1 .
 
-ref:action_DeleteClass_1 a ref:DeleteClass ;
-    ref:sourceNode sweet:River ;
-    ref:checkForAssertion ref:IfTrueStop ;
+fract:action_DeleteClass_1 a fract:DeleteClass ;
+    fract:sourceNode sweet:River ;
+    fract:checkForAssertion fract:IfTrueStop ;
     dash:shape shape:ShapeDeleteClass .
