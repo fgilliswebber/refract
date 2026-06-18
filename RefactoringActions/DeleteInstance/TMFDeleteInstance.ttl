@@ -1,15 +1,15 @@
-@prefix ref: <https://semanticweb.tools/ont/refract#> .
+@prefix fract: <https://w3id.org/refract#> .
 @prefix dash: <http://datashapes.org/dash#> .
 @prefix shape: <https://semanticweb.tools/rdf/shapes/> .
 @prefix ex: <https://example.org/vo/> .
 
-ref:tmf_DeleteInstance a ref:Manifest ;
-    ref:transformationType ref:OntologyEvolutionProcess ;
-    ref:transformationSource <http://purl.obolibrary.org/obo/vo.owl> ;
-    ref:hasURIRelationshipToSource ref:SameVersioned ;
-    ref:hasAction ref:action_DeleteInstance_1 .
+fract:tmf_DeleteInstance a fract:Manifest ;
+    fract:transformationType fract:OntologyEvolutionProcess ;
+    fract:transformationSource <http://purl.obolibrary.org/obo/vo.owl> ;
+    fract:hasURIRelationshipToSource fract:SameVersioned ;
+    fract:hasAction fract:action_DeleteInstance_1 .
 
-ref:action_DeleteInstance_1 a ref:DeleteInstance ;
-    ref:sourceNode ex:PfizerBioNTech ;
-    ref:checkForAssertion ref:IfTrueStop ;
+fract:action_DeleteInstance_1 a fract:DeleteInstance ;
+    fract:sourceNode ex:PfizerBioNTech ;
+    fract:checkForAssertion fract:IfTrueStop ;
     dash:shape shape:ShapeDeleteInstance .
