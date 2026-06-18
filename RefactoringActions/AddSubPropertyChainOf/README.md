@@ -6,7 +6,7 @@
 
 A semantic action that adds a sub-property chain axiom to an object property in the ontology.
 
-For full documentation including parameters, see the [REFrACT vocabulary](https://semanticweb.tools/ont/refract#AddSubPropertyChainOf).
+For full documentation including parameters, see the [REFrACT vocabulary](hhttps://w3id.org/refract#AddSubPropertyChainOf).
 
 ## Shapes graph
 - [ShapeAddSubPropertyChainOf.ttl](ShapeAddSubPropertyChainOf.ttl) (local instance)
