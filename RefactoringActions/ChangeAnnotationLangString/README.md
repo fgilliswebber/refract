@@ -6,7 +6,7 @@
 
 An annotation action that changes the value and/or language tag of an existing language-tagged string annotation on an ontology element.
 
-For full documentation including parameters, see the [REFrACT vocabulary](https://semanticweb.tools/ont/refract#ChangeAnnotationLangString).
+For full documentation including parameters, see the [REFrACT vocabulary](https://w3id.org/refract#ChangeAnnotationLangString).
 
 ## Shapes graph
 - [ShapeChangeAnnotationLangString.ttl](ShapeChangeAnnotationLangString.ttl) (local instance)
