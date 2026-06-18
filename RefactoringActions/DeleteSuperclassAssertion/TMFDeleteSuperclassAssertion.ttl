@@ -1,15 +1,15 @@
-@prefix ref: <https://semanticweb.tools/ont/refract#> .
+@prefix fract: <https://w3id.org/refract#> .
 @prefix dash: <http://datashapes.org/dash#> .
 @prefix shape: <https://semanticweb.tools/rdf/shapes/> .
 @prefix sweet: <http://sweetontology.net/realmHydroBody/> .
 
-ref:tmf_DeleteSuperclassAssertion a ref:Manifest ;
-    ref:transformationType ref:OntologyRefactoringProcess ;
-    ref:transformationSource <http://sweetontology.net/realmHydroBody> ;
-    ref:hasURIRelationshipToSource ref:SameVersioned ;
-    ref:hasAction ref:action_DeleteSuperclassAssertion_1 .
+fract:tmf_DeleteSuperclassAssertion a fract:Manifest ;
+    fract:transformationType fract:OntologyRefactoringProcess ;
+    fract:transformationSource <http://sweetontology.net/realmHydroBody> ;
+    fract:hasURIRelationshipToSource fract:SameVersioned ;
+    fract:hasAction fract:action_DeleteSuperclassAssertion_1 .
 
-ref:action_DeleteSuperclassAssertion_1 a ref:DeleteSuperclassAssertion ;
-    ref:sourceNode sweet:River ;
-    ref:targetParent sweet:NaturalWaterBody ;
+fract:action_DeleteSuperclassAssertion_1 a fract:DeleteSuperclassAssertion ;
+    fract:sourceNode sweet:River ;
+    fract:targetParent sweet:NaturalWaterBody ;
     dash:shape shape:ShapeDeleteSuperclassAssertion .
