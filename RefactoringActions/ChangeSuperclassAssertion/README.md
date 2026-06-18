@@ -1,5 +1,5 @@
 # Change superclass assertion
-**URI:** `https://semanticweb.tools/ont/refract#ChangeSuperclassAssertion`
+**URI:** `https://w3id.org/refract#ChangeSuperclassAssertion`
 
 **Type:** [Semantic action](../../Definitions/SemanticAction.md) · [Atomic action](../../Definitions/AtomicAction.md) \
 **Scope:** [Local action](../../Definitions/LocalAction.md)
