@@ -6,7 +6,7 @@
 
 A structural and semantic action that adds a class to the ontology.
 
-For full documentation including parameters, see the [REFrACT vocabulary](https://semanticweb.tools/ont/refract#AddClass).
+For full documentation including parameters, see the [REFrACT vocabulary](https://w3id.org/refract#AddClass).
 
 ## Shapes graph
 - [ShapeAddClass.ttl](ShapeAddClass.ttl) (local instance)
