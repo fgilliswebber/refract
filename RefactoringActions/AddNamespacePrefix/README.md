@@ -1,5 +1,5 @@
 # Add namespace prefix
-**URI:** `https://semanticweb.tools/ont/refract#AddNamespacePrefix`
+**URI:** `https://w3id.org/refract#AddNamespacePrefix`
 
 **Scope:** [Global action](../../Definitions/GlobalAction.md)
 
