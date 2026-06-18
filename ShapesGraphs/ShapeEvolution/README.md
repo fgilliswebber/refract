@@ -2,7 +2,7 @@
 
 ## For transformation process: Ontology Evolution
 - Definition: [Ontology Evolution](../../Definitions/OntologyEvolution.md) 
-- URI: `https://semanticweb.tools/ont/refract#OntologyEvolutionProcess`
+- URI: `https://w3id.org/refract#OntologyEvolutionProcess`
 
 ## Shapes graph
 
