@@ -1,5 +1,5 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix ref: <https://semanticweb.tools/ont/refract#> .
+@prefix fract: <https://w3id.org/refract#> .
 @prefix shape: <https://semanticweb.tools/rdf/shapes/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -8,18 +8,18 @@ shape:ShapeDeprecateClassWithSuccessor
     a sh:NodeShape ;
     rdfs:label "Shape Deprecate Class With Successor" ;
     rdfs:comment "A shapes graph for validating a 'Deprecate class with successor class' composite refactoring action in a Transformation Manifest File." ;
-    sh:targetClass ref:DeprecateClassWithSuccessor ;
+    sh:targetClass fract:DeprecateClassWithSuccessor ;
     sh:property [
-        sh:path ref:hasAction ;
+        sh:path fract:hasAction ;
         sh:name "has action" ;
         sh:description "Links a composite refactoring action to its constituent atomic actions. The execution order of the atomic actions is specified using 'action sequence'." ;
         sh:nodeKind sh:IRI ;
         sh:minCount 2 ;
         sh:node [
             sh:property [
-                sh:path ref:actionSequence ;
+                sh:path fract:actionSequence ;
                 sh:name "action sequence" ;
-                sh:description "An integer value that specifies the execution order of an atomic action within a composite action." ;
+                sh:description "An integer value that specifies the execution order of an atomic action within a composite action. If two or more actions have the same sequence number, the transformation algorithm resolves the order by their order of appearance in the Transformation Manifest File." ;
                 sh:datatype xsd:integer ;
                 sh:minCount 1 ;
                 sh:maxCount 1 ;
@@ -27,16 +27,16 @@ shape:ShapeDeprecateClassWithSuccessor
         ]
     ] ;
     sh:property [
-        sh:path ref:hasAction ;
+        sh:path fract:hasAction ;
         sh:name "has action" ;
         sh:description "Links a composite refactoring action to its constituent atomic actions. The execution order of the atomic actions is specified using 'action sequence'." ;
-        sh:qualifiedValueShape [ sh:class ref:DeprecateClass ] ;
+        sh:qualifiedValueShape [ sh:class fract:DeprecateClass ] ;
         sh:qualifiedMinCount 1 ;
     ] ;
     sh:property [
-        sh:path ref:hasAction ;
+        sh:path fract:hasAction ;
         sh:name "has action" ;
         sh:description "Links a composite refactoring action to its constituent atomic actions. The execution order of the atomic actions is specified using 'action sequence'." ;
-        sh:qualifiedValueShape [ sh:class ref:AddClass ] ;
+        sh:qualifiedValueShape [ sh:class fract:AddClass ] ;
         sh:qualifiedMinCount 1 ;
     ] .
