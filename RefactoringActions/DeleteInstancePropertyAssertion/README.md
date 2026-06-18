@@ -6,7 +6,7 @@
 
 A semantic action that deletes an object or data property assertion from a named individual in the ontology. For class-level property usage, use [Delete property restriction](../DeletePropertyRestriction/README.md) or [Delete semantic axiom](../DeleteSemanticAxiom/README.md) instead.
 
-For full documentation including parameters, see the [REFrACT vocabulary](https://semanticweb.tools/ont/refract#DeleteInstancePropertyAssertion).
+For full documentation including parameters, see the [REFrACT vocabulary](https://w3id.org/refract#DeleteInstancePropertyAssertion).
 
 ## Shapes graph
 - [ShapeDeleteInstancePropertyAssertion.ttl](ShapeDeleteInstancePropertyAssertion.ttl) (local instance)
