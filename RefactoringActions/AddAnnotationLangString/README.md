@@ -1,5 +1,5 @@
 # Add annotation - langString
-**URI:** `https://semanticweb.tools/ont/refract#AddAnnotationLangString`
+**URI:** `https://w3id.org/refract#AddAnnotationLangString`
 
 **Type:** [Annotation action](../../Definitions/AnnotationAction.md) · [Atomic action](../../Definitions/AtomicAction.md) \
 **Scope:** [Local action](../../Definitions/LocalAction.md)
