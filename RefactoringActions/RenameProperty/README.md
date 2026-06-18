@@ -6,7 +6,7 @@
 
 A structural action that renames a property (object, data, or annotation) in the ontology by replacing its URI (or fragment identifier) with a new URI.
 
-For full documentation including parameters, see the [REFrACT vocabulary](https://semanticweb.tools/ont/refract#RenameProperty).
+For full documentation including parameters, see the [REFrACT vocabulary](https://w3id.org/refract#RenameProperty).
 
 ## Shapes graph
 - [ShapeRenameProperty.ttl](ShapeRenameProperty.ttl) (local instance)
