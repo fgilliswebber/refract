@@ -5,7 +5,7 @@
 
 A global refactoring action that adds a namespace prefix declaration to an ontology.
 
-For full documentation including parameters, see the [REFrACT vocabulary](https://semanticweb.tools/ont/refract#AddNamespacePrefix).
+For full documentation including parameters, see the [REFrACT vocabulary](https://w3id.org/refract#AddNamespacePrefix).
 
 ## Shapes graph
 - [ShapeAddNamespacePrefix.ttl](ShapeAddNamespacePrefix.ttl) (local instance)
