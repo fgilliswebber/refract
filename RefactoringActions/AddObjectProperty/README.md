@@ -6,7 +6,7 @@
 
 A structural action that adds an object property to the ontology.
 
-For full documentation including parameters, see the [REFrACT vocabulary](https://semanticweb.tools/ont/refract#AddObjectProperty).
+For full documentation including parameters, see the [REFrACT vocabulary](https://w3id.org/refract#AddObjectProperty).
 
 ## Shapes graph
 - [ShapeAddObjectProperty.ttl](ShapeAddObjectProperty.ttl) (local instance)
