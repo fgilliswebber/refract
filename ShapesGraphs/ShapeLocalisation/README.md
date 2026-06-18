@@ -1,7 +1,7 @@
 # ShapeLocalisation
 ## For transformation process: Ontology Localisation
 - Definition: [Ontology Localisation](../../Definitions/OntologyLocalisation.md)
-- URI: `https://semanticweb.tools/ont/refract#OntologyLocalisationProcess`
+- URI: `https://w3id.org/refract#OntologyLocalisationProcess`
 
 ## Shapes graph
 A macro-level shapes graph for validating the Transformation Manifest File of an ontology localisation process.
