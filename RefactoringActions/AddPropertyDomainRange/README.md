@@ -1,5 +1,5 @@
 # Add property domain or range assertion
-**URI:** `https://semanticweb.tools/ont/refract#AddPropertyDomainRange`
+**URI:** `https://w3id.org/refract#AddPropertyDomainRange`
 
 **Type:** [Semantic action](../../Definitions/SemanticAction.md) · [Atomic action](../../Definitions/AtomicAction.md) \
 **Scope:** [Local action](../../Definitions/LocalAction.md)
