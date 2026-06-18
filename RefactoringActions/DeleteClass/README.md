@@ -6,7 +6,7 @@
 
 A structural and semantic action that deletes a class from either the source ontology or the target ontology.
 
-For full documentation including parameters, see the [REFrACT vocabulary](https://semanticweb.tools/ont/refract#DeleteClass).
+For full documentation including parameters, see the [REFrACT vocabulary](https://w3id.org/refract#DeleteClass).
 
 ## Shapes graph
 - [ShapeDeleteClass.ttl](ShapeDeleteClass.ttl) (local instance)
