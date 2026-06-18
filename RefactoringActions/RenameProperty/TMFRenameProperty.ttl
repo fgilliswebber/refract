@@ -6,7 +6,7 @@
 fract:tmf_RenameProperty a fract:Manifest ;
     fract:transformationType fract:OntologyRefactoringProcess ;
     fract:transformationSource <http://example.org/ontology> ;
-    fract:hasURIRelationshipToSource fract:SameVersioned ;
+    fract:hasURIRelationshipToSource fract:SameVersionedRelationship ;
     fract:hasAction fract:action_RenameProperty_1 .
 
 fract:action_RenameProperty_1 a fract:RenameProperty ;
