@@ -1,5 +1,5 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix ref: <https://semanticweb.tools/ont/refract#> .
+@prefix fract: <https://w3id.org/refract#> .
 @prefix shape: <https://semanticweb.tools/rdf/shapes/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -8,9 +8,9 @@ shape:ShapeDeletePropertyRestriction
     a sh:NodeShape ;
     rdfs:label "Shape Delete Property Restriction" ;
     rdfs:comment "A shapes graph for validating a 'Delete property restriction' refactoring action in a Transformation Manifest File." ;
-    sh:targetClass ref:DeletePropertyRestriction ;
+    sh:targetClass fract:DeletePropertyRestriction ;
     sh:property [
-        sh:path ref:sourceNode ;
+        sh:path fract:sourceNode ;
         sh:name "source node" ;
         sh:description "The URI of an ontology element that already exists in the source ontology and is referenced by a refactoring action." ;
         sh:nodeKind sh:IRI ;
@@ -18,23 +18,23 @@ shape:ShapeDeletePropertyRestriction
         sh:maxCount 1 ;
     ] ;
     sh:property [
-        sh:path ref:targetObject ;
+        sh:path fract:targetObject ;
         sh:name "target object" ;
-        sh:description "The URI of the object property used in a restriction or axiom as part of a refactoring action." ;
+        sh:description "The URI of the property used in a refactoring action, for example the property of a restriction, axiom, or instance property assertion." ;
         sh:nodeKind sh:IRI ;
         sh:minCount 1 ;
         sh:maxCount 1 ;
     ] ;
     sh:property [
-        sh:path ref:targetObjectValue ;
+        sh:path fract:targetObjectValue ;
         sh:name "target object value" ;
-        sh:description "The URI of the filler class used in a restriction as part of a refactoring action." ;
+        sh:description "The URI of the value used in a refactoring action, for example the filler class of a restriction or the value of an instance property assertion." ;
         sh:nodeKind sh:IRI ;
         sh:minCount 1 ;
         sh:maxCount 1 ;
     ] ;
     sh:property [
-        sh:path ref:restrictionType ;
+        sh:path fract:restrictionType ;
         sh:name "restriction type" ;
         sh:description "Specifies the type of restriction to be added as part of a refactoring action. The value must be either owl:someValuesFrom (existential restriction) or owl:allValuesFrom (universal restriction)." ;
         sh:nodeKind sh:IRI ;
