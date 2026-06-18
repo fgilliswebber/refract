@@ -6,7 +6,7 @@
 
 A semantic action that adds a domain or range assertion to an object or data property in the ontology.
 
-For full documentation including parameters, see the [REFrACT vocabulary](https://semanticweb.tools/ont/refract#AddPropertyDomainRange).
+For full documentation including parameters, see the [REFrACT vocabulary](https://w3id.org/refract#AddPropertyDomainRange).
 
 ## Shapes graph
 - [ShapeAddPropertyDomainRange.ttl](ShapeAddPropertyDomainRange.ttl) (local instance)
