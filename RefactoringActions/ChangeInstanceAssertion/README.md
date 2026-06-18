@@ -6,7 +6,7 @@
 
 A semantic action that changes the class assertion of a named individual in the ontology.
 
-For full documentation including parameters, see the [REFrACT vocabulary](https://semanticweb.tools/ont/refract#ChangeInstanceAssertion).
+For full documentation including parameters, see the [REFrACT vocabulary](https://w3id.org/refract#ChangeInstanceAssertion).
 
 ## Shapes graph
 - [ShapeChangeInstanceAssertion.ttl](ShapeChangeInstanceAssertion.ttl) (local instance)
