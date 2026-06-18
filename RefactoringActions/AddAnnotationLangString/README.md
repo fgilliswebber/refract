@@ -6,7 +6,7 @@
 
 An annotation action that adds a language-tagged string annotation to an ontology element.
 
-For full documentation including parameters, see the [REFrACT vocabulary](https://semanticweb.tools/ont/refract#AddAnnotationLangString).
+For full documentation including parameters, see the [REFrACT vocabulary](https://w3id.org/refract#AddAnnotationLangString).
 
 ## Shapes graph
 - [ShapeAddAnnotationLangString.ttl](ShapeAddAnnotationLangString.ttl) (local instance)
