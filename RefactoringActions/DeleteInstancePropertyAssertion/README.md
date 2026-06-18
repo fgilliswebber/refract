@@ -1,5 +1,5 @@
 # Delete instance property assertion
-**URI:** `https://semanticweb.tools/ont/refract#DeleteInstancePropertyAssertion`
+**URI:** `https://w3id.org/refract#DeleteInstancePropertyAssertion`
 
 **Type:** [Semantic action](../../Definitions/SemanticAction.md) · [Atomic action](../../Definitions/AtomicAction.md) \
 **Scope:** [Local action](../../Definitions/LocalAction.md)
