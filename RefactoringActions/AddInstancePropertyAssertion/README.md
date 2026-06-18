@@ -1,5 +1,5 @@
 # Add instance property assertion
-**URI:** `https://semanticweb.tools/ont/refract#AddInstancePropertyAssertion`
+**URI:** `https://w3id.org/refract#AddInstancePropertyAssertion`
 
 **Type:** [Semantic action](../../Definitions/SemanticAction.md) · [Atomic action](../../Definitions/AtomicAction.md) \
 **Scope:** [Local action](../../Definitions/LocalAction.md)
