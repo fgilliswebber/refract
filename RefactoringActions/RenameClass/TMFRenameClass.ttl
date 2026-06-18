@@ -1,17 +1,17 @@
-@prefix ref: <https://semanticweb.tools/ont/refract#> .
+@prefix fract: <https://w3id.org/refract#> .
 @prefix dash: <http://datashapes.org/dash#> .
 @prefix shape: <https://semanticweb.tools/rdf/shapes/> .
 @prefix edam: <http://edamontology.org/> .
 
-ref:tmf_RenameClass a ref:Manifest ;
-    ref:transformationType ref:OntologyRefactoringProcess ;
-    ref:transformationSource <http://edamontology.org/> ;
-    ref:hasURIRelationshipToSource ref:SameVersioned ;
-    ref:hasAction ref:action_RenameClass_1 .
+fract:tmf_RenameClass a fract:Manifest ;
+    fract:transformationType fract:OntologyRefactoringProcess ;
+    fract:transformationSource <http://edamontology.org/> ;
+    fract:hasURIRelationshipToSource fract:SameVersioned ;
+    fract:hasAction fract:action_RenameClass_1 .
 
-ref:action_RenameClass_1 a ref:RenameClass ;
-    ref:sourceNode edam:operation_2928 ;
-    ref:targetIdentifier edam:operationAlignment ;
-    ref:targetLabel "Alignment" ;
-    ref:targetLanguageTag "en" ;
+fract:action_RenameClass_1 a fract:RenameClass ;
+    fract:sourceNode edam:operation_2928 ;
+    fract:targetIdentifier edam:operationAlignment ;
+    fract:targetLabel "Alignment" ;
+    fract:targetLanguageTag "en" ;
     dash:shape shape:ShapeRenameClass .
