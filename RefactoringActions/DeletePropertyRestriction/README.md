@@ -1,5 +1,5 @@
 # Delete property restriction
-**URI:** `https://semanticweb.tools/ont/refract#DeletePropertyRestriction`
+**URI:** `https://w3id.org/refract#DeletePropertyRestriction`
 
 **Type:** [Semantic action](../../Definitions/SemanticAction.md) · [Atomic action](../../Definitions/AtomicAction.md) \
 **Scope:** [Local action](../../Definitions/LocalAction.md)
