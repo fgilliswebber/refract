@@ -5,7 +5,7 @@
 
 A global refactoring action that adds an `owl:imports` statement to an ontology, declaring a dependency on an external ontology.
 
-For full documentation including parameters, see the [REFrACT vocabulary](https://semanticweb.tools/ont/refract#ImportOntology).
+For full documentation including parameters, see the [REFrACT vocabulary](https://w3id.org/refract#ImportOntology).
 
 ## Shapes graph
 - [ShapeImportOntology.ttl](ShapeImportOntology.ttl) (local instance)
