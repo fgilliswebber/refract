@@ -6,7 +6,7 @@
 
 An annotation action that changes the value of an existing annotation on an ontology element, without changing the datatype. If a language tag is specified, it is used to identify the specific annotation to be changed, not to change the language tag itself.
 
-For full documentation including parameters, see the [REFrACT vocabulary](https://semanticweb.tools/ont/refract#ChangeAnnotationValue).
+For full documentation including parameters, see the [REFrACT vocabulary](https://w3id.org/refract#ChangeAnnotationValue).
 
 ## Shapes graph
 - [ShapeChangeAnnotationValue.ttl](ShapeChangeAnnotationValue.ttl) (local instance)
