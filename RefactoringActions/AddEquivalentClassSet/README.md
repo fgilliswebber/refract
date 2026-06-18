@@ -1,5 +1,5 @@
 # Add equivalent class (set-based)
-**URI:** `https://semanticweb.tools/ont/refract#AddEquivalentClassSet`
+**URI:** `https://w3id.org/refract#AddEquivalentClassSet`
 
 **Type:** [Semantic action](../../Definitions/SemanticAction.md) · [Atomic action](../../Definitions/AtomicAction.md) \
 **Scope:** [Local action](../../Definitions/LocalAction.md)
