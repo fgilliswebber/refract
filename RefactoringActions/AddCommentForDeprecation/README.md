@@ -1,5 +1,5 @@
 # Add comment for deprecation
-**URI:** `https://semanticweb.tools/ont/refract#AddCommentForDeprecation`
+**URI:** `https://w3id.org/refract#AddCommentForDeprecation`
 
 **Type:** [Annotation action](../../Definitions/AnnotationAction.md) · [Atomic action](../../Definitions/AtomicAction.md) \
 **Scope:** [Local action](../../Definitions/LocalAction.md)
