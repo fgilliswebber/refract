@@ -1,5 +1,5 @@
 # Add property restriction
-**URI:** `https://semanticweb.tools/ont/refract#AddPropertyRestriction`
+**URI:** `https://w3id.org/refract#AddPropertyRestriction`
 
 **Type:** [Semantic action](../../Definitions/SemanticAction.md) · [Atomic action](../../Definitions/AtomicAction.md) \
 **Scope:** [Local action](../../Definitions/LocalAction.md)
