@@ -1,54 +1,54 @@
-@prefix ref: <https://semanticweb.tools/ont/refract#> .
+@prefix fract: <https://w3id.org/refract#> .
 @prefix dash: <http://datashapes.org/dash#> .
 @prefix shape: <https://semanticweb.tools/rdf/shapes/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix uct: <https://example.org/uct#> .
 
-ref:tmf_DeprecateClassWithSuccessor a ref:Manifest ;
-    ref:transformationType ref:OntologyRefactoringProcess ;
-    ref:transformationSource <https://example.org/uct> ;
-    ref:hasURIRelationshipToSource ref:SameVersioned ;
-    ref:hasAction ref:action_rc4_1 .
+fract:tmf_DeprecateClassWithSuccessor a fract:Manifest ;
+    fract:transformationType fract:OntologyRefactoringProcess ;
+    fract:transformationSource <https://example.org/uct> ;
+    fract:hasURIRelationshipToSource fract:SameVersioned ;
+    fract:hasAction fract:action_rc4_1 .
 
-ref:action_rc4_1 a ref:DeprecateClassWithSuccessor ;
-    ref:hasAction ref:action_rc4_1a ;
-    ref:hasAction ref:action_rc4_1b ;
-    ref:hasAction ref:action_rc4_1c ;
-    ref:hasAction ref:action_rc4_1d ;
-    ref:hasAction ref:action_rc4_1e ;
+fract:action_rc4_1 a fract:DeprecateClassWithSuccessor ;
+    fract:hasAction fract:action_rc4_1a ;
+    fract:hasAction fract:action_rc4_1b ;
+    fract:hasAction fract:action_rc4_1c ;
+    fract:hasAction fract:action_rc4_1d ;
+    fract:hasAction fract:action_rc4_1e ;
     dash:shape shape:ShapeDeprecateClassWithSuccessor .
 
-ref:action_rc4_1a a ref:DeprecateClass ;
-    ref:sourceNode uct:SchoolOfLibraryStudies ;
-    ref:actionSequence 1 ;
+fract:action_rc4_1a a fract:DeprecateClass ;
+    fract:sourceNode uct:SchoolOfLibraryStudies ;
+    fract:actionSequence 1 ;
     dash:shape shape:ShapeDeprecateClass .
 
-ref:action_rc4_1b a ref:AddClass ;
-    ref:targetIdentifier uct:DepartmentOfKnowledgeAndInformationStewardship ;
-    ref:targetParent uct:HumanitiesFaculty ;
-    ref:targetLabel "Department of Knowledge and Information Stewardship" ;
-    ref:targetLanguageTag "en" ;
-    ref:actionSequence 2 ;
+fract:action_rc4_1b a fract:AddClass ;
+    fract:targetIdentifier uct:DepartmentOfKnowledgeAndInformationStewardship ;
+    fract:targetParent uct:HumanitiesFaculty ;
+    fract:targetLabel "Department of Knowledge and Information Stewardship" ;
+    fract:targetLanguageTag "en" ;
+    fract:actionSequence 2 ;
     dash:shape shape:ShapeAddClass .
 
-ref:action_rc4_1c a ref:AddCommentForDeprecation ;
-    ref:sourceNode uct:SchoolOfLibraryStudies ;
-    ref:actionSequence 3 ;
+fract:action_rc4_1c a fract:AddCommentForDeprecation ;
+    fract:sourceNode uct:SchoolOfLibraryStudies ;
+    fract:actionSequence 3 ;
     dash:shape shape:ShapeAddCommentForDeprecation .
 
-ref:action_rc4_1d a ref:AddAnnotationLangString ;
-    ref:sourceNode uct:DepartmentOfKnowledgeAndInformationStewardship ;
-    ref:targetAnnotation <http://www.w3.org/2000/01/rdf-schema#comment> ;
-    ref:targetAnnotationValue "Successor to the School of Library Studies." ;
-    ref:targetLanguageTag "en" ;
-    ref:actionSequence 4 ;
+fract:action_rc4_1d a fract:AddAnnotationLangString ;
+    fract:sourceNode uct:DepartmentOfKnowledgeAndInformationStewardship ;
+    fract:targetAnnotation <http://www.w3.org/2000/01/rdf-schema#comment> ;
+    fract:targetAnnotationValue "Successor to the School of Library Studies." ;
+    fract:targetLanguageTag "en" ;
+    fract:actionSequence 4 ;
     dash:shape shape:ShapeAddAnnotationLangString .
 
-ref:action_rc4_1e a ref:AddAnnotation ;
-    ref:sourceNode uct:SchoolOfLibraryStudies ;
-    ref:targetAnnotation prov:atTime ;
-    ref:targetAnnotationValue "2016-01-01" ;
-    ref:targetDataType xsd:date ;
-    ref:actionSequence 5 ;
+fract:action_rc4_1e a fract:AddAnnotation ;
+    fract:sourceNode uct:SchoolOfLibraryStudies ;
+    fract:targetAnnotation prov:atTime ;
+    fract:targetAnnotationValue "2016-01-01" ;
+    fract:targetDataType xsd:date ;
+    fract:actionSequence 5 ;
     dash:shape shape:ShapeAddAnnotation .
