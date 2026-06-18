@@ -1,5 +1,5 @@
 # Delete semantic axiom
-**URI:** `https://semanticweb.tools/ont/refract#DeleteSemanticAxiom`
+**URI:** `https://w3id.org/refract#DeleteSemanticAxiom`
 
 **Type:** [Semantic action](../../Definitions/SemanticAction.md) · [Atomic action](../../Definitions/AtomicAction.md) \
 **Scope:** [Local action](../../Definitions/LocalAction.md)
