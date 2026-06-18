@@ -1,5 +1,5 @@
 # Rename class
-**URI:** `https://semanticweb.tools/ont/refract#RenameClass`
+**URI:** `https://w3id.org/refract#RenameClass`
 
 **Type:** [Structural action](../../Definitions/StructuralAction.md) · [Atomic action](../../Definitions/AtomicAction.md) \
 **Scope:** [Local action](../../Definitions/LocalAction.md)
