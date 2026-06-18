@@ -1,5 +1,5 @@
 # Delete data property
-**URI:** `https://semanticweb.tools/ont/refract#DeleteDataProperty`
+**URI:** `https://w3id.org/refract#DeleteDataProperty`
 
 **Type:** [Structural action](../../Definitions/StructuralAction.md) · [Atomic action](../../Definitions/AtomicAction.md) \
 **Scope:** [Local action](../../Definitions/LocalAction.md)
