@@ -1,7 +1,7 @@
 # ShapeTransformation
 ## For transformation process: Ontology Transformation
 - Definition: [Ontology Transformation](../../Definitions/OntologyTransformation.md)
-- URI: `https://semanticweb.tools/ont/refract#OntologyTransformationProcess`
+- URI: `https://w3id.org/refract#OntologyTransformationProcess`
 
 ## Shapes graph
 A macro-level shapes graph for validating the Transformation Manifest File of an ontology transformation process.
