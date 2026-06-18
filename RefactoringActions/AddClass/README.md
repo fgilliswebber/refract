@@ -1,5 +1,5 @@
 # Add class
-**URI:** `https://semanticweb.tools/ont/refract#AddClass`
+**URI:** `https://w3id.org/refract#AddClass`
 
 **Type:** [Structural action](../../Definitions/StructuralAction.md) · [Semantic action](../../Definitions/SemanticAction.md) · [Atomic action](../../Definitions/AtomicAction.md) \
 **Scope:** [Local action](../../Definitions/LocalAction.md)
