@@ -1,5 +1,5 @@
 # Import ontology
-**URI:** `https://semanticweb.tools/ont/refract#ImportOntology`
+**URI:** `https://w3id.org/refract#ImportOntology`
 
 **Scope:** [Global action](../../Definitions/GlobalAction.md)
 
