@@ -30,10 +30,10 @@ REFrACT provides a controlled vocabulary of refactoring action types, each with 
                             dcterms:bibliographicCitation "Gillis-Webber, F. (2026) “Refactoring Actions Shapes Library (REFrACT)”. Zenodo. doi:10.5281/zenodo.20742085."@en ;
                             dcterms:created "2026-05-16"^^xsd:date ;
                             dcterms:issued "2026-06-16"^^xsd:date ;
-                            dcterms:modified "2026-06-18" ;
+                            dcterms:modified "2026-06-19"^^xsd:date ;
                             dcterms:publisher "Frances Gillis-Webber c/o SemanticWeb.tools" ;
                             dcterms:source <https://github.com/semanticweb-tools/refract> ;
-                            bibo:doi <10.5281/zenodo.20742085> ;
+                            bibo:doi <https://w3id.org/10.5281/zenodo.20742085> ;
                             vann:preferredNamespacePrefix "fract" ;
                             vann:preferredNamespaceUri "https://w3id.org/refract#" ;
                             rdfs:comment "The SHACL shapes graphs, example Transformation Manifest Files, rdfs:comments, and fract:hasParameters annotations for each refactoring action were generated with the assistance of Claude Sonnet 4.6 by Anthropic. If you identify any discrepancies, please contact Frances Gillis-Webber at fgilliswebber@cs.uct.ac.za."@en ;
@@ -692,7 +692,7 @@ prov:Activity rdf:type owl:Class ;
                rdfs:comment "A catch-all annotation action that adds an annotation to an ontology element. For language-tagged string annotations, use fract:AddAnnotationLangString instead."@en ;
                rdfs:isDefinedBy <https://w3id.org/refract> ;
                rdfs:label "Add annotation"@en ;
-               :exampleTMF <https://semanticweb.tools/rdf/tmf/AddAnnotation.ttl> ;
+               :exampleTMF <https://semanticweb.tools/rdf/tmf/TMFAddAnnotation.ttl> ;
                :hasParameters "Either 'source node' or 'target node' must be specified, but not both. A URI is expected for whichever is provided. For 'target annotation', the URI of an annotation property is expected. For 'target annotation value', a plain string is expected. For 'target datatype', a URI is expected specifying the XSD, RDF, or OWL datatype of the annotation value. The algorithm will cast the value to the specified datatype in the target ontology. For language-tagged string annotations, use fract:AddAnnotationLangString instead."@en ;
                :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeAddAnnotation.ttl> .
 
@@ -714,7 +714,7 @@ prov:Activity rdf:type owl:Class ;
                          rdfs:comment "An annotation action that adds a language-tagged string annotation to an ontology element."@en ;
                          rdfs:isDefinedBy <https://w3id.org/refract> ;
                          rdfs:label "Add annotation - langString"@en ;
-                         :exampleTMF <https://semanticweb.tools/rdf/tmf/AddAnnotationLangString.ttl> ;
+                         :exampleTMF <https://semanticweb.tools/rdf/tmf/TMFAddAnnotationLangString.ttl> ;
                          :hasParameters "Either 'source node' or 'target node' must be specified, but not both. A URI is expected for whichever is provided. For 'target annotation', the URI of an annotation property is expected. For 'target annotation value', a plain string is expected. For 'target language tag', a language tag conforming to BCP 47 is expected (e.g. \"en-za\"). The algorithm will cast the value to an rdf:langString in the target ontology."@en ;
                          :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeAddAnnotationLangString.ttl> .
 
@@ -736,7 +736,7 @@ prov:Activity rdf:type owl:Class ;
                        rdfs:comment "A structural action that adds an annotation property to the ontology."@en ;
                        rdfs:isDefinedBy <https://w3id.org/refract> ;
                        rdfs:label "Add annotation property"@en ;
-                       :exampleTMF <https://semanticweb.tools/rdf/tmf/AddAnnotationProperty.ttl> ;
+                       :exampleTMF <https://semanticweb.tools/rdf/tmf/TMFAddAnnotationProperty.ttl> ;
                        :hasParameters "For 'target identifier' and 'target parent', a URI is expected. For 'target label' and 'target language tag', a plain string is expected (no language tag). If 'target parent' is specified, the new annotation property is declared as a sub-property of the given parent; otherwise no explicit parent assertion is made."@en ;
                        :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeAddAnnotationProperty.ttl> .
 
@@ -758,7 +758,7 @@ prov:Activity rdf:type owl:Class ;
           rdfs:comment "A structural and semantic action that adds a class to the ontology."@en ;
           rdfs:isDefinedBy <https://w3id.org/refract> ;
           rdfs:label "Add class"@en ;
-          :exampleTMF <https://semanticweb.tools/rdf/tmf/AddClass.ttl> ;
+          :exampleTMF <https://semanticweb.tools/rdf/tmf/TMFAddClass.ttl> ;
           :hasParameters "For 'target identifier' and 'target parent', a URI is expected. For 'target label' and 'target language tag', a plain string is expected (no language tag). If 'target parent' is specified, the new class is declared as a subclass of the given parent; otherwise it will by default be a subclass of owl:Thing, with no explicit assertion thereof. Multiple parent URIs may be specified."@en ;
           :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeAddClass.ttl> .
 
@@ -780,7 +780,7 @@ prov:Activity rdf:type owl:Class ;
                           rdfs:comment "An annotation action that adds a deprecation comment and optionally a 'see also' reference to the deprecated class as part of a 'Deprecate class with successor class' composite action. If 'target annotation value' is omitted, the algorithm generates the comment from a template. This action is not intended to be used standalone."@en ;
                           rdfs:isDefinedBy <https://w3id.org/refract> ;
                           rdfs:label "Add comment for deprecation"@en ;
-                          :exampleTMF <https://semanticweb.tools/rdf/tmf/AddCommentForDeprecation.ttl> ;
+                          :exampleTMF <https://semanticweb.tools/rdf/tmf/TMFAddCommentForDeprecation.ttl> ;
                           :hasParameters "All parameters are optional. For 'target annotation', the URI of an annotation property is expected; if omitted, defaults to rdfs:comment. For 'target annotation value', a plain string is expected specifying a custom deprecation comment; if omitted, the algorithm generates a comment from one of two templates depending on whether a date can be derived from the composite action: \"Deprecated as of {date}. Use {successor} instead.\" or \"Deprecated. Use {successor} instead.\" For 'target language tag', a plain string conforming to BCP 47 is expected; required if 'target annotation value' is specified. For 'include 'see also'', \"true\" or \"false\" is expected; if omitted, defaults to \"true\", adding an rdfs:seeAlso reference to the successor class. For 'action sequence', an integer is expected specifying the execution order of this action within the composite action."@en ;
                           :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeAddCommentForDeprecation.ttl> .
 
@@ -809,7 +809,7 @@ prov:Activity rdf:type owl:Class ;
                  rdfs:comment "A structural action that adds a data property to the ontology."@en ;
                  rdfs:isDefinedBy <https://w3id.org/refract> ;
                  rdfs:label "Add data property"@en ;
-                 :exampleTMF <https://semanticweb.tools/rdf/tmf/AddDataProperty.ttl> ;
+                 :exampleTMF <https://semanticweb.tools/rdf/tmf/TMFAddDataProperty.ttl> ;
                  :hasParameters "For 'target identifier' and 'target parent', a URI is expected. For 'target label' and 'target language tag', a plain string is expected (no language tag). If 'target parent' is specified, the new data property is declared as a sub-property of the given parent; otherwise it will by default be a sub-property of owl:topDataProperty, with no explicit assertion thereof."@en ;
                  :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeAddDataProperty.ttl> .
 
@@ -830,7 +830,7 @@ prov:Activity rdf:type owl:Class ;
                        rdfs:comment "A semantic action that adds a set-based equivalent class assertion to a class in the ontology, using either an owl:unionOf or owl:intersectionOf property. For simple equivalent class assertions, use 'Add semantic axiom' instead."@en ;
                        rdfs:isDefinedBy <https://w3id.org/refract> ;
                        rdfs:label "Add equivalent class (set-based)"@en ;
-                       :exampleTMF <https://semanticweb.tools/rdf/tmf/AddEquivalentClassSet.ttl> ;
+                       :exampleTMF <https://semanticweb.tools/rdf/tmf/TMFAddEquivalentClassSet.ttl> ;
                        :hasParameters "Either 'source node' or 'target node' must be specified, but not both. A URI is expected for whichever is provided. For 'target members', a list of class URIs is expected. For 'set type', either owl:unionOf or owl:intersectionOf is expected."@en ;
                        :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeAddEquivalentClassSet.ttl> .
 
@@ -851,7 +851,7 @@ prov:Activity rdf:type owl:Class ;
              rdfs:comment "A semantic action that adds a named individual to the ontology as an instance of a specified class."@en ;
              rdfs:isDefinedBy <https://w3id.org/refract> ;
              rdfs:label "Add instance"@en ;
-             :exampleTMF <https://semanticweb.tools/rdf/tmf/AddInstance.ttl> ;
+             :exampleTMF <https://semanticweb.tools/rdf/tmf/TMFAddInstance.ttl> ;
              :hasParameters "For 'target identifier', a URI is expected specifying the new individual. For 'target instance of', a URI is expected specifying the class the individual is an instance of. Multiple classes may be specified. For 'target label', a plain string is expected. For 'target language tag', a plain string conforming to BCP 47 is expected (e.g. \"en-za\", \"fr\")."@en ;
              :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeAddInstance.ttl> .
 
@@ -872,7 +872,7 @@ prov:Activity rdf:type owl:Class ;
                               rdfs:comment "A semantic action that adds an object or data property assertion to a named individual in the ontology."@en ;
                               rdfs:isDefinedBy <https://w3id.org/refract> ;
                               rdfs:label "Add instance property assertion"@en ;
-                              :exampleTMF <https://semanticweb.tools/rdf/tmf/AddInstancePropertyAssertion.ttl> ;
+                              :exampleTMF <https://semanticweb.tools/rdf/tmf/TMFAddInstancePropertyAssertion.ttl> ;
                               :hasParameters "Either 'source node' or 'target node' must be specified, but not both. A URI is expected for whichever is provided, specifying the named individual. For 'target object', a URI is expected specifying the property. For 'target object value', a URI is expected specifying the value of the assertion. For 'property type', either owl:ObjectProperty or owl:DatatypeProperty is expected."@en ;
                               :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeAddInstancePropertyAssertion.ttl> .
 
@@ -894,7 +894,7 @@ prov:Activity rdf:type owl:Class ;
                     rdfs:comment "A global refactoring action that adds a namespace prefix declaration to an ontology."@en ;
                     rdfs:isDefinedBy <https://w3id.org/refract> ;
                     rdfs:label "Add namespace prefix"@en ;
-                    :exampleTMF <https://semanticweb.tools/rdf/tmf/AddNamespacePrefix.ttl> ;
+                    :exampleTMF <https://semanticweb.tools/rdf/tmf/TMFAddNamespacePrefix.ttl> ;
                     :hasParameters "For 'prefix', a plain string is expected specifying the prefix name (e.g. \"skos\"). For 'namespace', a URI is expected specifying the namespace (e.g. http://www.w3.org/2004/02/skos/core#)."@en ;
                     :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeAddNamespacePrefix.ttl> .
 
@@ -913,7 +913,7 @@ prov:Activity rdf:type owl:Class ;
                    rdfs:comment "A structural action that adds an object property to the ontology."@en ;
                    rdfs:isDefinedBy <https://w3id.org/refract> ;
                    rdfs:label "Add object property"@en ;
-                   :exampleTMF <https://semanticweb.tools/rdf/tmf/AddObjectProperty.ttl> ;
+                   :exampleTMF <https://semanticweb.tools/rdf/tmf/TMFAddObjectProperty.ttl> ;
                    :hasParameters "For 'target identifier' and 'target parent', a URI is expected. For 'target label' and 'target language tag', a plain string is expected (no language tag). If 'target parent' is specified, the new object property is declared as a sub-property of the given parent; otherwise it will by default be a sub-property of owl:topObjectProperty, with no explicit assertion thereof."@en ;
                    :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeAddObjectProperty.ttl> .
 
@@ -934,7 +934,7 @@ prov:Activity rdf:type owl:Class ;
                         rdfs:comment "A semantic action that adds a domain or range assertion to an object or data property in the ontology."@en ;
                         rdfs:isDefinedBy <https://w3id.org/refract> ;
                         rdfs:label "Add property domain or range assertion"@en ;
-                        :exampleTMF <https://semanticweb.tools/rdf/tmf/AddPropertyDomainRange.ttl> ;
+                        :exampleTMF <https://semanticweb.tools/rdf/tmf/TMFAddPropertyDomainRange.ttl> ;
                         :hasParameters "For 'source node', a URI is expected specifying the property. For 'target node', a URI is expected specifying the class to be added as the domain or range. For 'axiom type', either rdfs:domain or rdfs:range is expected. For 'property type', either owl:ObjectProperty or owl:DatatypeProperty is expected."@en ;
                         :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeAddPropertyDomainRange.ttl> .
 
@@ -955,7 +955,7 @@ prov:Activity rdf:type owl:Class ;
                         rdfs:comment "A semantic action that adds an existential or universal property restriction to a class in the ontology, using either an object or data property."@en ;
                         rdfs:isDefinedBy <https://w3id.org/refract> ;
                         rdfs:label "Add property restriction"@en ;
-                        :exampleTMF <https://semanticweb.tools/rdf/tmf/AddPropertyRestriction.ttl> ;
+                        :exampleTMF <https://semanticweb.tools/rdf/tmf/TMFAddPropertyRestriction.ttl> ;
                         :hasParameters "Either 'source node' or 'target node' must be specified, but not both. A URI is expected for whichever is provided. For 'target object', a URI is expected specifying the property of the restriction. For 'target object value', a URI is expected specifying the filler class or datatype of the restriction. For 'restriction type', either owl:someValuesFrom (existential) or owl:allValuesFrom (universal) is expected. For 'property type', either owl:ObjectProperty or owl:DatatypeProperty is expected."@en ;
                         :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeAddPropertyRestriction.ttl> .
 
@@ -978,7 +978,7 @@ prov:Activity rdf:type owl:Class ;
                   rdfs:comment "A catch-all semantic action that adds a binary semantic axiom between two ontology elements. Use a dedicated action where one exists for the specific axiom type."@en ;
                   rdfs:isDefinedBy <https://w3id.org/refract> ;
                   rdfs:label "Add semantic axiom"@en ;
-                  :exampleTMF <https://semanticweb.tools/rdf/tmf/AddSemanticAxiom.ttl> ;
+                  :exampleTMF <https://semanticweb.tools/rdf/tmf/TMFAddSemanticAxiom.ttl> ;
                   :hasParameters "For 'source node', a URI is expected specifying the subject of the axiom. For 'target node', a URI is expected specifying the object of the axiom. For 'axiom type', a URI is expected specifying the OWL or RDF axiom type to be added."@en ;
                   :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeAddSemanticAxiom.ttl> .
 
@@ -998,7 +998,7 @@ prov:Activity rdf:type owl:Class ;
                        rdfs:comment "A catch-all semantic action that adds a unary semantic axiom to a single ontology element, such as a property characteristic. Use a dedicated action where one exists for the specific axiom type."@en ;
                        rdfs:isDefinedBy <https://w3id.org/refract> ;
                        rdfs:label "Add semantic axiom - unary"@en ;
-                       :exampleTMF <https://semanticweb.tools/rdf/tmf/AddSemanticAxiomUnary.ttl> ;
+                       :exampleTMF <https://semanticweb.tools/rdf/tmf/TMFAddSemanticAxiomUnary.ttl> ;
                        :hasParameters "Either 'source node' or 'target node' must be specified, but not both. A URI is expected for whichever is provided. For 'axiom type', a URI is expected specifying the OWL or RDF axiom type to be added."@en ;
                        :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeAddSemanticAxiomUnary.ttl> .
 
@@ -1018,7 +1018,7 @@ prov:Activity rdf:type owl:Class ;
                        rdfs:comment "A semantic action that adds a sub-property chain axiom to an object property in the ontology."@en ;
                        rdfs:isDefinedBy <https://w3id.org/refract> ;
                        rdfs:label "Add sub-property chain axiom"@en ;
-                       :exampleTMF <https://semanticweb.tools/rdf/tmf/AddSubPropertyChainOf.ttl> ;
+                       :exampleTMF <https://semanticweb.tools/rdf/tmf/TMFAddSubPropertyChainOf.ttl> ;
                        :hasParameters "For 'source node', a URI is expected specifying the property that is the super-property of the chain. For 'target members', a list of property URIs is expected specifying the chain of properties."@en ;
                        :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeAddSubPropertyChainOf.ttl> .
 
@@ -1037,7 +1037,7 @@ prov:Activity rdf:type owl:Class ;
                         rdfs:comment "A semantic action that adds a superclass assertion to a class in the ontology."@en ;
                         rdfs:isDefinedBy <https://w3id.org/refract> ;
                         rdfs:label "Add superclass assertion"@en ;
-                        :exampleTMF <https://semanticweb.tools/rdf/tmf/AddSuperclassAssertion.ttl> ;
+                        :exampleTMF <https://semanticweb.tools/rdf/tmf/TMFAddSuperclassAssertion.ttl> ;
                         :hasParameters "For 'source node', a URI is expected specifying the class. For 'target parent', a URI is expected specifying the superclass to be asserted."@en ;
                         :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeAddSuperclassAssertion.ttl> .
 
@@ -1119,7 +1119,7 @@ prov:Activity rdf:type owl:Class ;
                   rdfs:comment "An annotation action that changes both the value and the datatype of an existing annotation on an ontology element."@en ;
                   rdfs:isDefinedBy <https://w3id.org/refract> ;
                   rdfs:label "Change annotation"@en ;
-                  :exampleTMF <https://semanticweb.tools/rdf/tmf/ChangeAnnotation.ttl> ;
+                  :exampleTMF <https://semanticweb.tools/rdf/tmf/TMFChangeAnnotation.ttl> ;
                   :hasParameters "Either 'source node' or 'target node' must be specified, but not both. A URI is expected for whichever is provided. For 'target annotation', the URI of an annotation property is expected. For 'target annotation value', a plain string is expected. For 'target datatype', a URI is expected specifying the XSD, RDF, or OWL datatype of the new annotation value. For 'target language tag', a language tag conforming to BCP 47 is expected (e.g. \"en-za\", \"fr\"); this is used to identify the specific annotation to be changed, not to change the language tag itself. The algorithm performs two pre-processing checks: first, whether the annotation exists; second, whether more than one annotation exists for the same annotation property and language tag combination. The behaviour for each check is determined by the value of 'check for annotation'. If omitted, the algorithm defaults to 'If false - add' for the first check and 'If multiple - ignore' for the second check."@en ;
                   :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeChangeAnnotation.ttl> .
 
@@ -1143,7 +1143,7 @@ prov:Activity rdf:type owl:Class ;
                             rdfs:comment "An annotation action that changes the value and/or language tag of an existing language-tagged string annotation on an ontology element."@en ;
                             rdfs:isDefinedBy <https://w3id.org/refract> ;
                             rdfs:label "Change annotation - langString"@en ;
-                            :exampleTMF <https://semanticweb.tools/rdf/tmf/ChangeAnnotationLangString.ttl> ;
+                            :exampleTMF <https://semanticweb.tools/rdf/tmf/TMFChangeAnnotationLangString.ttl> ;
                             :hasParameters "Either 'source node' or 'target node' must be specified, but not both. A URI is expected for whichever is provided. For 'target annotation', the URI of an annotation property is expected. For 'target language tag', a language tag conforming to BCP 47 is expected (e.g. \"en\", \"fr\"); this is used to identify the specific annotation to be changed, not to change the language tag itself. At least one of 'target annotation value' or 'target language tag - new' must be specified. The algorithm performs two pre-processing checks: first, whether the annotation exists; second, whether more than one annotation exists for the same annotation property and language tag combination. The behaviour for each check is determined by the value of 'check for annotation'. If omitted, the algorithm defaults to 'If false - add' for the first check and 'If multiple - ignore' for the second check."@en ;
                             :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeChangeAnnotationLangString.ttl> .
 
@@ -1167,7 +1167,7 @@ prov:Activity rdf:type owl:Class ;
                        rdfs:comment "An annotation action that changes the value of an existing annotation on an ontology element, without changing the datatype. If a language tag is specified, it is used to identify the specific annotation to be changed, not to change the language tag itself."@en ;
                        rdfs:isDefinedBy <https://w3id.org/refract> ;
                        rdfs:label "Change annotation value"@en ;
-                       :exampleTMF <https://semanticweb.tools/rdf/tmf/ChangeAnnotationValue.ttl> ;
+                       :exampleTMF <https://semanticweb.tools/rdf/tmf/TMFChangeAnnotationValue.ttl> ;
                        :hasParameters "Either 'source node' or 'target node' must be specified, but not both. A URI is expected for whichever is provided. For 'target annotation', the URI of an annotation property is expected. For 'target annotation value', a plain string is expected. For 'target language tag', a language tag conforming to BCP 47 is expected (e.g. \"en-za\"); if omitted and more than one annotation is found for the same annotation property, the behaviour is determined by 'If multiple - stop' or 'If multiple - ignore'. The algorithm performs two pre-processing checks: first, whether the annotation exists; second, whether more than one annotation exists for the same annotation property and language tag combination. The behaviour for each check is determined by the value of 'check for annotation'. If omitted, the algorithm defaults to 'If false - add' for the first check and 'If multiple - ignore' for the second check."@en ;
                        :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeChangeAnnotationValue.ttl> .
 
@@ -1190,7 +1190,7 @@ prov:Activity rdf:type owl:Class ;
                          rdfs:comment "A semantic action that changes the class assertion of a named individual in the ontology."@en ;
                          rdfs:isDefinedBy <https://w3id.org/refract> ;
                          rdfs:label "Change instance assertion"@en ;
-                         :exampleTMF <https://semanticweb.tools/rdf/tmf/ChangeInstanceAssertion.ttl> ;
+                         :exampleTMF <https://semanticweb.tools/rdf/tmf/TMFChangeInstanceAssertion.ttl> ;
                          :hasParameters "For 'source node', a URI is expected specifying the individual whose class assertion is to be changed. For 'target node', a URI is expected specifying the new class."@en ;
                          :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeChangeInstanceAssertion.ttl> .
 
@@ -1209,7 +1209,7 @@ prov:Activity rdf:type owl:Class ;
                            rdfs:comment "A semantic action that changes a superclass assertion for a class in the ontology."@en ;
                            rdfs:isDefinedBy <https://w3id.org/refract> ;
                            rdfs:label "Change superclass assertion"@en ;
-                           :exampleTMF <https://semanticweb.tools/rdf/tmf/ChangeSuperclassAssertion.ttl> ;
+                           :exampleTMF <https://semanticweb.tools/rdf/tmf/TMFChangeSuperclassAssertion.ttl> ;
                            :hasParameters "For 'source node', a URI is expected specifying the class. For 'source parent', a URI is expected specifying the existing superclass to be replaced. If omitted, the algorithm will change the first superclass assertion it finds without checking for additional superclass assertions. For 'target parent', a URI is expected specifying the new superclass."@en ;
                            :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeChangeSuperclassAssertion.ttl> .
 
@@ -1245,7 +1245,7 @@ prov:Activity rdf:type owl:Class ;
                   rdfs:comment "An annotation action that deletes an existing annotation from an ontology element. If a language tag is specified, only the annotation with the matching language tag is deleted."@en ;
                   rdfs:isDefinedBy <https://w3id.org/refract> ;
                   rdfs:label "Delete annotation"@en ;
-                  :exampleTMF <https://semanticweb.tools/rdf/tmf/DeleteAnnotation.ttl> ;
+                  :exampleTMF <https://semanticweb.tools/rdf/tmf/TMFDeleteAnnotation.ttl> ;
                   :hasParameters "Either 'source node' or 'target node' must be specified, but not both. A URI is expected for whichever is provided. For 'target annotation', the URI of an annotation property is expected. For 'target language tag', a language tag conforming to BCP 47 is expected (e.g. \"en-za\", \"fr\"); if specified, only the annotation with the matching language tag is deleted. If omitted, all annotations for the specified annotation property on the specified ontology element are deleted."@en ;
                   :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeDeleteAnnotation.ttl> .
 
@@ -1266,7 +1266,7 @@ prov:Activity rdf:type owl:Class ;
                           rdfs:comment "A structural action that deletes an annotation property from the source ontology."@en ;
                           rdfs:isDefinedBy <https://w3id.org/refract> ;
                           rdfs:label "Delete annotation property"@en ;
-                          :exampleTMF <https://semanticweb.tools/rdf/tmf/DeleteAnnotationProperty.ttl> ;
+                          :exampleTMF <https://semanticweb.tools/rdf/tmf/TMFDeleteAnnotationProperty.ttl> ;
                           :hasParameters "For 'source node', a URI is expected. If existing annotations for the annotation property are found during pre-processing (and there is no corresponding deletion refactoring action for those annotations), the behaviour of the transformation algorithm is determined by the value of 'check for assertion'. If 'check for assertion' is omitted, the algorithm defaults to 'If true - delete'."@en ;
                           :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeDeleteAnnotationProperty.ttl> .
 
@@ -1285,7 +1285,7 @@ prov:Activity rdf:type owl:Class ;
                               rdfs:comment "A semantic action that deletes a cardinality restriction from a class in the ontology."@en ;
                               rdfs:isDefinedBy <https://w3id.org/refract> ;
                               rdfs:label "Delete cardinality restriction"@en ;
-                              :exampleTMF <https://semanticweb.tools/rdf/tmf/DeleteCardinalityRestriction.ttl> ;
+                              :exampleTMF <https://semanticweb.tools/rdf/tmf/TMFDeleteCardinalityRestriction.ttl> ;
                               :hasParameters "For 'source node', a URI is expected specifying the class the restriction is on. For 'source property', a URI is expected specifying the property the restriction is on. For 'source on class', a URI is expected specifying the filler class of a qualified cardinality restriction; if omitted, the restriction is assumed to be unqualified."@en ;
                               :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeDeleteCardinalityRestriction.ttl> .
 
@@ -1306,7 +1306,7 @@ prov:Activity rdf:type owl:Class ;
              rdfs:comment "A structural and semantic action that deletes a class from either the source ontology or the target ontology."@en ;
              rdfs:isDefinedBy <https://w3id.org/refract> ;
              rdfs:label "Delete class"@en ;
-             :exampleTMF <https://semanticweb.tools/rdf/tmf/DeleteClass.ttl> ;
+             :exampleTMF <https://semanticweb.tools/rdf/tmf/TMFDeleteClass.ttl> ;
              :hasParameters "Either 'source node' or 'target node' must be specified, but not both. A URI is expected for whichever is provided. In most cases, the class being deleted belongs to the source ontology. A class may also be deleted from the target ontology, for example when a temporary class was created as an intermediate step in the transformation process. For 'check for assertion', a value from 'Algorithm check - assertion' is expected. If existing assertions for the class are found during pre-processing (and there is no corresponding deletion refactoring action for those assertions), the behaviour of the transformation algorithm is determined by the value of 'check for assertion'. If 'check for assertion' is omitted, the algorithm defaults to 'If true - stop'."@en ;
              :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeDeleteClass.ttl> .
 
@@ -1326,7 +1326,7 @@ prov:Activity rdf:type owl:Class ;
                     rdfs:comment "A structural action that deletes a data property from the source ontology."@en ;
                     rdfs:isDefinedBy <https://w3id.org/refract> ;
                     rdfs:label "Delete data property"@en ;
-                    :exampleTMF <https://semanticweb.tools/rdf/tmf/DeleteDataProperty.ttl> ;
+                    :exampleTMF <https://semanticweb.tools/rdf/tmf/TMFDeleteDataProperty.ttl> ;
                     :hasParameters "For 'source node', a URI is expected. If existing assertions for the data property are found during pre-processing (and there is no corresponding deletion refactoring action for those assertions), the behaviour of the transformation algorithm is determined by the value of 'check for assertion'. If 'check for assertion' is omitted, the algorithm defaults to 'If true - stop'."@en ;
                     :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeDeleteDataProperty.ttl> .
 
@@ -1345,7 +1345,7 @@ prov:Activity rdf:type owl:Class ;
                 rdfs:comment "A semantic action that deletes a named individual from the source ontology."@en ;
                 rdfs:isDefinedBy <https://w3id.org/refract> ;
                 rdfs:label "Delete instance"@en ;
-                :exampleTMF <https://semanticweb.tools/rdf/tmf/DeleteInstance.ttl> ;
+                :exampleTMF <https://semanticweb.tools/rdf/tmf/TMFDeleteInstance.ttl> ;
                 :hasParameters "For 'source node', a URI is expected specifying the individual to be deleted. If existing assertions for the individual are found during pre-processing (and there is no corresponding deletion refactoring action for those assertions), the behaviour of the transformation algorithm is determined by the value of 'check for assertion'. If 'check for assertion' is omitted, the algorithm defaults to 'If true - stop'."@en ;
                 :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeDeleteInstance.ttl> .
 
@@ -1364,7 +1364,7 @@ prov:Activity rdf:type owl:Class ;
                                  rdfs:comment "A semantic action that deletes an object or data property assertion from a named individual in the ontology. For class-level property usage, use 'Delete property restriction' or 'Delete semantic axiom' instead."@en ;
                                  rdfs:isDefinedBy <https://w3id.org/refract> ;
                                  rdfs:label "Delete instance property assertion"@en ;
-                                 :exampleTMF <https://semanticweb.tools/rdf/tmf/DeleteInstancePropertyAssertion.ttl> ;
+                                 :exampleTMF <https://semanticweb.tools/rdf/tmf/TMFDeleteInstancePropertyAssertion.ttl> ;
                                  :hasParameters "Either 'source node' or 'target node' must be specified, but not both. A URI is expected for whichever is provided, specifying the named individual. For 'target object', a URI is expected specifying the property. For 'target object value', a URI is expected specifying the value of the assertion to be deleted."@en ;
                                  :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeDeleteInstancePropertyAssertion.ttl> .
 
@@ -1385,7 +1385,7 @@ prov:Activity rdf:type owl:Class ;
                       rdfs:comment "A structural action that deletes an object property from the source ontology."@en ;
                       rdfs:isDefinedBy <https://w3id.org/refract> ;
                       rdfs:label "Delete object property"@en ;
-                      :exampleTMF <https://semanticweb.tools/rdf/tmf/DeleteObjectProperty.ttl> ;
+                      :exampleTMF <https://semanticweb.tools/rdf/tmf/TMFDeleteObjectProperty.ttl> ;
                       :hasParameters "For 'source node', a URI is expected. If existing assertions for the object property are found during pre-processing (and there is no corresponding deletion refactoring action for those assertions), the behaviour of the transformation algorithm is determined by the value of 'check for assertion'. If 'check for assertion' is omitted, the algorithm defaults to 'If true - stop'."@en ;
                       :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeDeleteObjectProperty.ttl> .
 
@@ -1404,7 +1404,7 @@ prov:Activity rdf:type owl:Class ;
                            rdfs:comment "A semantic action that deletes a domain or range assertion from an object or data property in the ontology."@en ;
                            rdfs:isDefinedBy <https://w3id.org/refract> ;
                            rdfs:label "Delete property domain or range assertion"@en ;
-                           :exampleTMF <https://semanticweb.tools/rdf/tmf/DeletePropertyDomainRange.ttl> ;
+                           :exampleTMF <https://semanticweb.tools/rdf/tmf/TMFDeletePropertyDomainRange.ttl> ;
                            :hasParameters "For 'source node', a URI is expected specifying the property. For 'axiom type', either rdfs:domain or rdfs:range is expected."@en ;
                            :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeDeletePropertyDomainRange.ttl> .
 
@@ -1423,7 +1423,7 @@ prov:Activity rdf:type owl:Class ;
                            rdfs:comment "A semantic action that deletes an existential or universal property restriction from a class in the ontology."@en ;
                            rdfs:isDefinedBy <https://w3id.org/refract> ;
                            rdfs:label "Delete property restriction"@en ;
-                           :exampleTMF <https://semanticweb.tools/rdf/tmf/DeletePropertyRestriction.ttl> ;
+                           :exampleTMF <https://semanticweb.tools/rdf/tmf/TMFDeletePropertyRestriction.ttl> ;
                            :hasParameters "For 'source node', a URI is expected specifying the class the restriction is on. For 'target object', a URI is expected specifying the property of the restriction. For 'target object value', a URI is expected specifying the filler class of the restriction. For 'restriction type', either owl:someValuesFrom (existential) or owl:allValuesFrom (universal) is expected."@en ;
                            :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeDeletePropertyRestriction.ttl> .
 
@@ -1444,7 +1444,7 @@ prov:Activity rdf:type owl:Class ;
                      rdfs:comment "A catch-all semantic action that deletes a binary semantic axiom between two ontology elements. Use a dedicated action where one exists for the specific axiom type."@en ;
                      rdfs:isDefinedBy <https://w3id.org/refract> ;
                      rdfs:label "Delete semantic axiom"@en ;
-                     :exampleTMF <https://semanticweb.tools/rdf/tmf/DeleteSemanticAxiom.ttl> ;
+                     :exampleTMF <https://semanticweb.tools/rdf/tmf/TMFDeleteSemanticAxiom.ttl> ;
                      :hasParameters "For 'source node', a URI is expected specifying the subject of the axiom. For 'target node', a URI is expected specifying the object of the axiom. For 'axiom type', a URI is expected specifying the OWL or RDF axiom type to be deleted."@en ;
                      :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeDeleteSemanticAxiom.ttl> .
 
@@ -1464,7 +1464,7 @@ prov:Activity rdf:type owl:Class ;
                            rdfs:comment "A semantic action that deletes a superclass assertion from a class in the ontology. This action does not delete the class itself; to delete a class, use 'Delete class'."@en ;
                            rdfs:isDefinedBy <https://w3id.org/refract> ;
                            rdfs:label "Delete superclass assertion"@en ;
-                           :exampleTMF <https://semanticweb.tools/rdf/tmf/DeleteSuperclassAssertion.ttl> ;
+                           :exampleTMF <https://semanticweb.tools/rdf/tmf/TMFDeleteSuperclassAssertion.ttl> ;
                            :hasParameters "For 'source node', a URI is expected specifying the class. One or more source nodes may be specified. For 'target parent', a URI is expected specifying the superclass assertion to be deleted."@en ;
                            :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeDeleteSuperclassAssertion.ttl> .
 
@@ -1485,7 +1485,7 @@ prov:Activity rdf:type owl:Class ;
                 rdfs:isDefinedBy <https://w3id.org/refract> ;
                 rdfs:label "Deprecate class"@en ;
                 rdfs:seeAlso :DeprecateClassWithSuccessor ;
-                :exampleTMF <https://semanticweb.tools/rdf/tmf/DeprecateClass.ttl> ;
+                :exampleTMF <https://semanticweb.tools/rdf/tmf/TMFDeprecateClass.ttl> ;
                 :hasParameters "For 'source node', a URI is expected. Multiple source nodes may be specified, allowing more than one class to be deprecated by the same refactoring action. The algorithm adds an owl:deprecated annotation with value \"true\"^^xsd:boolean to each specified class."@en ;
                 :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeDeprecateClass.ttl> .
 
@@ -1504,7 +1504,7 @@ prov:Activity rdf:type owl:Class ;
                              rdfs:comment "A composite refactoring action that deprecates a class and adds a successor class."@en ;
                              rdfs:isDefinedBy <https://w3id.org/refract> ;
                              rdfs:label "Deprecate class with successor class"@en ;
-                             :exampleTMF <https://semanticweb.tools/rdf/tmf/DeprecateClassWithSuccessor.ttl> ;
+                             :exampleTMF <https://semanticweb.tools/rdf/tmf/TMFDeprecateClassWithSuccessor.ttl> ;
                              :hasActions "At least one 'Deprecate class' action and one 'Add class' action are required. Optionally, one or more annotation actions may be included, such as 'Add annotation - langString', 'Add annotation', or 'Add comment for deprecation'."@en ;
                              :hasParameters "The constituent atomic actions are linked via 'has action' and executed in the order specified by 'action sequence' in each atomic action.  If two or more actions have the same sequence number, the transformation algorithm resolves the order by their order of appearance in the Transformation Manifest File. At least two actions are required."@en ;
                              :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeDeprecateClassWithSuccessor.ttl> .
@@ -1573,7 +1573,7 @@ prov:Activity rdf:type owl:Class ;
                 rdfs:comment "A global refactoring action that adds an owl:imports statement to an ontology, declaring a dependency on an external ontology."@en ;
                 rdfs:isDefinedBy <https://w3id.org/refract> ;
                 rdfs:label "Import ontology"@en ;
-                :exampleTMF <https://semanticweb.tools/rdf/tmf/ImportOntology.ttl> ;
+                :exampleTMF <https://semanticweb.tools/rdf/tmf/TMFImportOntology.ttl> ;
                 :hasParameters "For 'source node', a URI is expected specifying the ontology to which the import statement is being added. For 'URI', an xsd:anyURI value is expected specifying the ontology to be imported. Note that this action does not add a namespace prefix declaration. To add a namespace prefix, use 'Add namespace prefix'."@en ;
                 :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeImportOntology.ttl> .
 
@@ -1684,7 +1684,7 @@ prov:Activity rdf:type owl:Class ;
              rdfs:comment "A structural action that renames a class in the ontology by replacing its URI (or fragment identifier) with a new URI."@en ;
              rdfs:isDefinedBy <https://w3id.org/refract> ;
              rdfs:label "Rename class"@en ;
-             :exampleTMF <https://semanticweb.tools/rdf/tmf/RenameClass.ttl> ;
+             :exampleTMF <https://semanticweb.tools/rdf/tmf/TMFRenameClass.ttl> ;
              :hasParameters "For 'source node' and 'target identifier', a URI is expected. For 'target label' and 'target language tag', a plain string is expected (no language tag). If existing assertions for the class are found during pre-processing (and there is no corresponding deletion refactoring action for those assertions), the behaviour of the transformation algorithm is determined by the value of 'check for assertion'. If 'check for assertion' is omitted, the algorithm defaults to 'If true - stop'."@en ;
              :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeRenameClass.ttl> .
 
@@ -1706,7 +1706,7 @@ prov:Activity rdf:type owl:Class ;
                 rdfs:comment "A structural action that renames a property (object, data, or annotation) in the ontology by replacing its URI (or fragment identifier) with a new URI."@en ;
                 rdfs:isDefinedBy <https://w3id.org/refract> ;
                 rdfs:label "Rename property"@en ;
-                :exampleTMF <https://semanticweb.tools/rdf/tmf/RenameProperty.ttl> ;
+                :exampleTMF <https://semanticweb.tools/rdf/tmf/TMFRenameProperty.ttl> ;
                 :hasParameters "For 'source node' and 'target identifier', a URI is expected. For 'target label' and 'target language tag', a plain string is expected (no language tag). If existing assertions for the property are found during pre-processing (and there is no corresponding deletion refactoring action for those assertions), the behaviour of the transformation algorithm is determined by the value of 'check for assertion'. If 'check for assertion' is omitted, the algorithm defaults to 'If true - stop'."@en ;
                 :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeRenameProperty.ttl> .
 
