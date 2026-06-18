@@ -6,7 +6,7 @@
 
 A semantic action that adds an object or data property assertion to a named individual in the ontology.
 
-For full documentation including parameters, see the [REFrACT vocabulary](https://semanticweb.tools/ont/refract#AddInstancePropertyAssertion).
+For full documentation including parameters, see the [REFrACT vocabulary](https://w3id.org/refract#AddInstancePropertyAssertion).
 
 ## Shapes graph
 - [ShapeAddInstancePropertyAssertion.ttl](ShapeAddInstancePropertyAssertion.ttl) (local instance)
