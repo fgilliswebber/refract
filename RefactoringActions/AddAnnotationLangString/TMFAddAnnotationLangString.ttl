@@ -1,18 +1,18 @@
-@prefix ref: <https://semanticweb.tools/ont/refract#> .
+@prefix fract: <https://w3id.org/refract#> .
 @prefix dash: <http://datashapes.org/dash#> .
 @prefix shape: <https://semanticweb.tools/rdf/shapes/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix ex: <http://example.org/ontology#> .
 
-ref:tmf_AddAnnotationLangString a ref:Manifest ;
-    ref:transformationType ref:OntologyRefactoringProcess ;
-    ref:transformationSource <http://example.org/ontology> ;
-    ref:hasURIRelationshipToSource ref:SameVersioned ;
-    ref:hasAction ref:action_AddAnnotationLangString_1 .
+fract:tmf_AddAnnotationLangString a fract:Manifest ;
+    fract:transformationType fract:OntologyRefactoringProcess ;
+    fract:transformationSource <http://example.org/ontology> ;
+    fract:hasURIRelationshipToSource fract:SameVersioned ;
+    fract:hasAction fract:action_AddAnnotationLangString_1 .
 
-ref:action_AddAnnotationLangString_1 a ref:AddAnnotationLangString ;
-    ref:sourceNode ex:River ;
-    ref:targetAnnotation rdfs:label ;
-    ref:targetAnnotationValue "River" ;
-    ref:targetLanguageTag "en" ;
+fract:action_AddAnnotationLangString_1 a fract:AddAnnotationLangString ;
+    fract:sourceNode ex:River ;
+    fract:targetAnnotation rdfs:label ;
+    fract:targetAnnotationValue "River" ;
+    fract:targetLanguageTag "en" ;
     dash:shape shape:ShapeAddAnnotationLangString .
