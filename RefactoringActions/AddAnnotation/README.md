@@ -7,7 +7,7 @@
 
 A catch-all annotation action that adds an annotation to an ontology element. For language-tagged string annotations, use [AddAnnotationLangString](../AddAnnotationLangString/README.md) instead.
 
-For full documentation including parameters, see the [REFrACT vocabulary](https://semanticweb.tools/ont/refract#AddAnnotation).
+For full documentation including parameters, see the [REFrACT vocabulary](https://w3id.org/refract#AddAnnotation).
 
 ## Shapes graph
 
