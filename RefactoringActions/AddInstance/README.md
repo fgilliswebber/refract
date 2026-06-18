@@ -6,7 +6,7 @@
 
 A semantic action that adds a named individual to the ontology as an instance of a specified class.
 
-For full documentation including parameters, see the [REFrACT vocabulary](https://semanticweb.tools/ont/refract#AddInstance).
+For full documentation including parameters, see the [REFrACT vocabulary](https://w3id.org/refract#AddInstance).
 
 ## Shapes graph
 - [ShapeAddInstance.ttl](ShapeAddInstance.ttl) (local instance)
