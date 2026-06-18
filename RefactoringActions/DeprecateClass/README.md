@@ -1,5 +1,5 @@
 # Deprecate class
-**URI:** `https://semanticweb.tools/ont/refract#DeprecateClass`
+**URI:** `https://w3id.org/refract#DeprecateClass`
 
 **Type:** [Structural action](../../Definitions/StructuralAction.md) · [Semantic action](../../Definitions/SemanticAction.md) · [Atomic action](../../Definitions/AtomicAction.md) \
 **Scope:** [Local action](../../Definitions/LocalAction.md)
