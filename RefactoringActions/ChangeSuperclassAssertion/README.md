@@ -6,7 +6,7 @@
 
 A semantic action that changes a superclass assertion for a class in the ontology.
 
-For full documentation including parameters, see the [REFrACT vocabulary](https://semanticweb.tools/ont/refract#ChangeSuperclassAssertion).
+For full documentation including parameters, see the [REFrACT vocabulary](https://w3id.org/refract#ChangeSuperclassAssertion).
 
 ## Shapes graph
 - [ShapeChangeSuperclassAssertion.ttl](ShapeChangeSuperclassAssertion.ttl) (local instance)
