@@ -1,17 +1,17 @@
-@prefix ref: <https://semanticweb.tools/ont/refract#> .
+@prefix fract: <https://w3id.org/refract#> .
 @prefix dash: <http://datashapes.org/dash#> .
 @prefix shape: <https://semanticweb.tools/rdf/shapes/> .
 @prefix ex: <http://example.org/ontology#> .
 
-ref:tmf_AddAnnotationProperty a ref:Manifest ;
-    ref:transformationType ref:OntologyRefactoringProcess ;
-    ref:transformationSource <http://example.org/ontology> ;
-    ref:hasURIRelationshipToSource ref:SameVersioned ;
-    ref:hasAction ref:action_AddAnnotationProperty_1 .
+fract:tmf_AddAnnotationProperty a fract:Manifest ;
+    fract:transformationType fract:OntologyRefactoringProcess ;
+    fract:transformationSource <http://example.org/ontology> ;
+    fract:hasURIRelationshipToSource fract:SameVersioned ;
+    fract:hasAction fract:action_AddAnnotationProperty_1 .
 
-ref:action_AddAnnotationProperty_1 a ref:AddAnnotationProperty ;
-    ref:targetIdentifier ex:hasLocalName ;
-    ref:targetParent ex:hasName ;
-    ref:targetLabel "has local name" ;
-    ref:targetLanguageTag "en" ;
+fract:action_AddAnnotationProperty_1 a fract:AddAnnotationProperty ;
+    fract:targetIdentifier ex:hasLocalName ;
+    fract:targetParent ex:hasName ;
+    fract:targetLabel "has local name" ;
+    fract:targetLanguageTag "en" ;
     dash:shape shape:ShapeAddAnnotationProperty .
