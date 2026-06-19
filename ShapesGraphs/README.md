@@ -1,6 +1,6 @@
 # Shapes Graphs
 
-This folder contains the macro-level shapes graphs for validating Transformation Manifest Files (TMFs). Micro-level shapes graphs are co-located with their respective refactoring actions in the [Refactoring Actions](../RefactoringActions/README.md) folder.
+This folder contains the macro-level shapes graphs for validating Transformation Manifest Files (TMFs). Micro-level shapes graphs are co-located with their respective refactoring actions in the [Refactoring Actions](../RefactoringActions) folder.
 
 ## Macro-level shapes graphs
 
