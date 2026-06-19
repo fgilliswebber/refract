@@ -1,7 +1,7 @@
 PREFIX mola: <https://semanticweb.tools/ont/mola#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-ASK {
+SELECT ?domain
+WHERE {
     mola:hasMember rdfs:domain ?domain .
-    ?domain owl:unionOf ?list .
 }
