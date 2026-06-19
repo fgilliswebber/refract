@@ -1,6 +1,6 @@
 {
   "@context": {
-    "ref": "https://semanticweb.tools/ont/refract#",
+    "fract": "https://w3id.org/refract#",
     "dct": "http://purl.org/dc/terms/",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
@@ -12,67 +12,67 @@
   },
   "@graph": [
     {
-      "@id": "ref:tmf_rc4",
-      "@type": "ref:Manifest",
+      "@id": "fract:tmf_rc4",
+      "@type": "fract:Manifest",
       "rdfs:label": {"@value": "Manifest 1.0.0 for refactoring of UCT Organisational Structure ontology", "@language": "en"},
-      "ref:transformationType": {"@id": "ref:OntologyRefactoringProcess"},
-      "ref:transformationSource": {"@id": "https://example.org/uct"},
-      "ref:hasURIRelationshipToSource": {"@id": "ref:SameVersioned"},
-      "ref:versionManifest": {"@id": "ref:tmf_rc4_v1"},
+      "fract:transformationType": {"@id": "fract:OntologyRefactoringProcess"},
+      "fract:transformationSource": {"@id": "https://example.org/uct"},
+      "fract:hasURIRelationshipToSource": {"@id": "fract:SameVersionedRelationship"},
+      "fract:versionManifest": {"@id": "fract:tmf_rc4_v1"},
       "dash:shape": {"@id": "shape:ShapeRefactoring"},
-      "ref:hasAction": {"@id": "ref:action_rc4_1"}
+      "fract:hasAction": {"@id": "fract:action_rc4_1"}
     },
     {
-      "@id": "ref:tmf_rc4_v1",
-      "@type": "ref:Version",
-      "ref:versionNumber": "1.0.0",
-      "dct:date": "2025-05-01",
-      "ref:versionPrevious": {"@id": "ref:NoPreviousVersion"},
-      "dct:contributor": "Frances Gillis-Webber"
-    },
-    {
-      "@id": "ref:action_rc4_1",
-      "@type": "ref:DeprecateClassWithSuccessor",
-      "ref:hasAction": [
-        {"@id": "ref:action_rc4_1a"},
-        {"@id": "ref:action_rc4_1b"},
-        {"@id": "ref:action_rc4_1c"},
-        {"@id": "ref:action_rc4_1d"}
+      "@id": "fract:action_rc4_1",
+      "@type": "fract:DeprecateClassWithSuccessor",
+      "fract:hasAction": [
+        {"@id": "fract:action_rc4_1a"},
+        {"@id": "fract:action_rc4_1b"},
+        {"@id": "fract:action_rc4_1c"},
+        {"@id": "fract:action_rc4_1d"}
       ],
       "dash:shape": {"@id": "shape:ShapeDeprecateClassWithSuccessor"}
     },
     {
-      "@id": "ref:action_rc4_1a",
-      "@type": "ref:DeprecateClass",
-      "ref:sourceNode": {"@id": "uct:SchoolOfLibraryStudies"},
-      "ref:actionSequence": 1,
+      "@id": "fract:tmf_rc4_v1",
+      "@type": "fract:Version",
+      "fract:versionNumber": "1.0.0",
+      "dct:date": "2025-05-01",
+      "fract:versionPrevious": {"@id": "fract:NoPreviousVersion"},
+      "dct:contributor": "Frances Gillis-Webber"
+    },
+    {
+      "@id": "fract:action_rc4_1a",
+      "@type": "fract:DeprecateClass",
+      "fract:sourceNode": {"@id": "uct:SchoolOfLibraryStudies"},
+      "fract:actionSequence": 1,
       "dash:shape": {"@id": "shape:ShapeDeprecateClass"}
     },
     {
-      "@id": "ref:action_rc4_1b",
-      "@type": "ref:AddClass",
-      "ref:targetIdentifier": {"@id": "uct:DepartmentOfKnowledgeAndInformationStewardship"},
-      "ref:targetParent": {"@id": "uct:HumanitiesFaculty"},
-      "ref:targetLabel": "Department of Knowledge and Information Stewardship",
-      "ref:targetLanguageTag": "en",
-      "ref:actionSequence": 2,
+      "@id": "fract:action_rc4_1b",
+      "@type": "fract:AddClass",
+      "fract:targetIdentifier": {"@id": "uct:DepartmentOfKnowledgeAndInformationStewardship"},
+      "fract:targetParent": {"@id": "uct:HumanitiesFaculty"},
+      "fract:targetLabel": "Department of Knowledge and Information Stewardship",
+      "fract:targetLanguageTag": "en",
+      "fract:actionSequence": 2,
       "dash:shape": {"@id": "shape:ShapeAddClass"}
     },
     {
-      "@id": "ref:action_rc4_1c",
-      "@type": "ref:AddCommentForDeprecation",
-      "ref:sourceNode": {"@id": "uct:SchoolOfLibraryStudies"},
-      "ref:actionSequence": 3,
+      "@id": "fract:action_rc4_1c",
+      "@type": "fract:AddCommentForDeprecation",
+      "fract:sourceNode": {"@id": "uct:SchoolOfLibraryStudies"},
+      "fract:actionSequence": 3,
       "dash:shape": {"@id": "shape:ShapeAddCommentForDeprecation"}
     },
     {
-      "@id": "ref:action_rc4_1d",
-      "@type": "ref:AddAnnotation",
-      "ref:sourceNode": {"@id": "uct:SchoolOfLibraryStudies"},
-      "ref:targetAnnotation": {"@id": "prov:atTime"},
-      "ref:targetAnnotationValue": "2016-01-01+02:00",
-      "ref:targetDataType": {"@id": "xsd:date"},
-      "ref:actionSequence": 4,
+      "@id": "fract:action_rc4_1d",
+      "@type": "fract:AddAnnotation",
+      "fract:sourceNode": {"@id": "uct:SchoolOfLibraryStudies"},
+      "fract:targetAnnotation": {"@id": "prov:atTime"},
+      "fract:targetAnnotationValue": "2016-01-01+02:00",
+      "fract:targetDataType": {"@id": "xsd:date"},
+      "fract:actionSequence": 4,
       "dash:shape": {"@id": "shape:ShapeAddAnnotation"}
     }
   ]
