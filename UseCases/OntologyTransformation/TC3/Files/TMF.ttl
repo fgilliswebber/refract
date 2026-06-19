@@ -1,4 +1,4 @@
-@prefix ref: <https://semanticweb.tools/ont/refract#> .
+@prefix fract: <https://w3id.org/refract#> .
 @prefix dash: <http://datashapes.org/dash#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -8,50 +8,50 @@
 @prefix shape: <https://semanticweb.tools/rdf/shapes/> .
 @prefix mola: <https://semanticweb.tools/ont/mola#> .
 
-ref:tmf_tc3 a ref:Manifest ;
+fract:tmf_tc3 a fract:Manifest ;
     rdfs:label "Manifest 1.0.0 for transformation of MoLA Ontology to OWL2_RL Context"@en ;
-    ref:transformationType ref:OntologyTransformationProcess ;
-    ref:transformationSource <https://semanticweb.tools/ont/mola> ;
-    ref:hasURIRelationshipToSource ref:Different ;
-    ref:targetOntologyURI <https://semanticweb.tools/ont/mola/rl> ;
-    ref:targetViewpoint <https://semanticweb.tools/rdf/multi/owl2rl> ;
-    ref:versionManifest ref:tmf_tc3_v1 ;
+    fract:transformationType fract:OntologyTransformationProcess ;
+    fract:transformationSource <https://semanticweb.tools/ont/mola> ;
+    fract:hasURIRelationshipToSource fract:DifferentRelationship ;
+    fract:targetOntologyURI <https://semanticweb.tools/ont/mola/rl> ;
+    fract:targetViewpoint <https://semanticweb.tools/rdf/multi/owl2rl> ;
+    fract:versionManifest fract:tmf_tc3_v1 ;
     dash:shape shape:ShapeTransformation ;
-    ref:hasAction ref:action_tc3_1, ref:action_tc3_2, ref:action_tc3_3, ref:action_tc3_4 ;
-    ref:actionOrder (
-        ref:action_tc3_1
-        ref:action_tc3_2
-        ref:action_tc3_3
-        ref:action_tc3_4
+    fract:hasAction fract:action_tc3_1, fract:action_tc3_2, fract:action_tc3_3, fract:action_tc3_4 ;
+    fract:actionOrder (
+        fract:action_tc3_1
+        fract:action_tc3_2
+        fract:action_tc3_3
+        fract:action_tc3_4
     ) .
 
-ref:tmf_tc3_v1 a ref:Version ;
-    ref:versionNumber "1.0.0" ;
+fract:tmf_tc3_v1 a fract:Version ;
+    fract:versionNumber "1.0.0" ;
     dct:date "2025-05-01" ;
-    ref:versionPrevious ref:NoPreviousVersion ;
+    fract:versionPrevious fract:NoPreviousVersion ;
     dct:contributor "Frances Gillis-Webber" .
 
-ref:action_tc3_1 a ref:DeleteCardinalityRestriction ;
-    ref:sourceNode mola:Region ;
-    ref:sourceProperty mola:hasCoordinate ;
-    ref:sourceOnClass mola:GeographicCoordinate ;
+fract:action_tc3_1 a fract:DeleteCardinalityRestriction ;
+    fract:sourceNode mola:Region ;
+    fract:sourceProperty mola:hasCoordinate ;
+    fract:sourceOnClass mola:GeographicCoordinate ;
     dash:shape shape:ShapeDeleteCardinalityRestriction .
 
-ref:action_tc3_2 a ref:DeletePropertyDomainRange ;
-    ref:sourceNode mola:hasMember ;
-    ref:axiomType rdfs:domain ;
+fract:action_tc3_2 a fract:DeletePropertyDomainRange ;
+    fract:sourceNode mola:hasMember ;
+    fract:axiomType rdfs:domain ;
     dash:shape shape:ShapeDeletePropertyDomainRange .
 
-ref:action_tc3_3 a ref:AddPropertyDomainRange ;
-    ref:sourceNode mola:hasMember ;
-    ref:targetNode mola:DialectCluster ;
-    ref:axiomType rdfs:domain ;
-    ref:propertyType owl:ObjectProperty ;
+fract:action_tc3_3 a fract:AddPropertyDomainRange ;
+    fract:sourceNode mola:hasMember ;
+    fract:targetNode mola:DialectCluster ;
+    fract:axiomType rdfs:domain ;
+    fract:propertyType owl:ObjectProperty ;
     dash:shape shape:ShapeAddPropertyDomainRange .
 
-ref:action_tc3_4 a ref:AddPropertyDomainRange ;
-    ref:sourceNode mola:hasMember ;
-    ref:targetNode mola:LanguageFamily ;
-    ref:axiomType rdfs:domain ;
-    ref:propertyType owl:ObjectProperty ;
+fract:action_tc3_4 a fract:AddPropertyDomainRange ;
+    fract:sourceNode mola:hasMember ;
+    fract:targetNode mola:LanguageFamily ;
+    fract:axiomType rdfs:domain ;
+    fract:propertyType owl:ObjectProperty ;
     dash:shape shape:ShapeAddPropertyDomainRange .
