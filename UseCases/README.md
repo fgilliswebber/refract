@@ -1,7 +1,7 @@
 ## Ontology Refactoring
 
 - **RC1:** [_Normalisation of naming conventions_ - renaming of class name(s)](OntologyRefactoring/RC1)
-- **RC2:** [_Decidability repair_ – partial change of OWL profile from OWL DL to OWL RL](OntologyRefactoring/RC2)
+- **RC2:** [_Decidability repair_ – partial change of OWL profile from OWL2 DL to OWL2 RL](OntologyRefactoring/RC2)
 - **RC3:** [_Lexical enrichment_ – making an ontology multilingual](OntologyRefactoring/RC3)
 - **RC4:** [_Naming convention change_ – deprecation of a class](OntologyRefactoring/RC4)
 
@@ -15,7 +15,7 @@
 
 - **TC1:** [_Regional change_ – change in measurement from metric to imperial](OntologyTransformation/TC1) 
 - **TC2:** [_Provenance reframing_ – change of cultural heritage ontology from acquisition to contested heritage](OntologyTransformation/TC2) 
-- **TC3:** [_Complexity downgrading_ – change of OWL profile from OWL DL to OWL EL](OntologyTransformation/TC3) 
+- **TC3:** [_Complexity downgrading_ – change of OWL profile from OWL2 DL to OWL2 RL](OntologyTransformation/TC3) 
 
 ## Ontology Localisation
 
