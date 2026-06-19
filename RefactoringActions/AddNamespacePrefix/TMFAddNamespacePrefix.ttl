@@ -7,7 +7,7 @@
 fract:tmf_AddNamespacePrefix a fract:Manifest ;
     fract:transformationType fract:OntologyRefactoringProcess ;
     fract:transformationSource <http://example.org/ontology> ;
-    fract:hasURIRelationshipToSource fract:SameVersioned ;
+    fract:hasURIRelationshipToSource fract:SameVersionedRelationship ;
     fract:hasAction fract:action_AddNamespacePrefix_1 .
 
 fract:action_AddNamespacePrefix_1 a fract:AddNamespacePrefix ;
