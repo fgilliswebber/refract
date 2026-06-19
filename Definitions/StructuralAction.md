@@ -8,7 +8,7 @@ An atomic action that adds or removes an ontology element, such as a class, obje
 
 For the list of structural actions, see [Local Action](LocalAction.md).
 
-## Position in hierarchy
+## Position in class hierarchy
 
 `owl:Thing` → `rdfs:Class` → `prov:Activity` → `fract:RefactoringAction` → `fract:LocalAction` → `fract:AtomicAction` → `fract:StructuralAction`
 
