@@ -1,9 +1,9 @@
 ## Ontology Refactoring
 
 - **RC1:** [_Normalisation of naming conventions_ - renaming of class name(s)](OntologyRefactoring/RC1)
-- **RC2:** [_Decidability repair_ – partial change of OWL profile from OWL DL to OWL RL](OntologyEvolution/RC2)
-- **RC3:** [_Lexical enrichment_ – making an ontology multilingual](OntologyEvolution/RC3)
-- **RC4:** [_Naming convention change_ – deprecation of a class](OntologyEvolution/RC4)
+- **RC2:** [_Decidability repair_ – partial change of OWL profile from OWL DL to OWL RL](OntologyRefactoring/RC2)
+- **RC3:** [_Lexical enrichment_ – making an ontology multilingual](OntologyRefactoring/RC3)
+- **RC4:** [_Naming convention change_ – deprecation of a class](OntologyRefactoring/RC4)
 
 ## Ontology Evolution
 
