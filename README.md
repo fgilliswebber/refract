@@ -18,7 +18,7 @@ REFrACT is a vocabulary for describing and validating a Transformation Manifest 
 - [Refactoring Actions](RefactoringActions) — example TMFs and shapes graphs per action
 - [Shapes Graphs](ShapesGraphs/README.md) — SHACL shapes graphs for validating Transformation Manifest Files
 - [Use Cases](UseCases/README.md) — worked examples across four ontology change processes
-- [Definitions](Definitions/README.md) — definitions of key terms used in this repository
+- [Definitions](Definitions) — definitions of key terms used in this repository
 
 ## DASH and SHACL
 
