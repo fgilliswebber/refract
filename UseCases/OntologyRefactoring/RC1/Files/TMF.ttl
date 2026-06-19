@@ -1,4 +1,4 @@
-@prefix ref: <https://semanticweb.tools/ont/refract#> .
+@prefix fract: <https://w3id.org/refract#> .
 @prefix dash: <http://datashapes.org/dash#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -8,24 +8,24 @@
 @prefix shape: <https://semanticweb.tools/rdf/shapes/> .
 @prefix edam: <http://edamontology.org/> .
 
-ref:tmf_rc1 a ref:Manifest ;
+fract:tmf_rc1 a fract:Manifest ;
     rdfs:label "Manifest 1.0.0 for refactoring of EDAM ontology"@en ;
-    ref:transformationType ref:OntologyRefactoringProcess ;
-    ref:transformationSource <http://edamontology.org/> ;
-    ref:hasURIRelationshipToSource ref:SameVersioned ;
-    ref:versionManifest ref:tmf_rc1_v1 ;
+    fract:transformationType fract:OntologyRefactoringProcess ;
+    fract:transformationSource <http://edamontology.org/> ;
+    fract:hasURIRelationshipToSource fract:SameVersionedRelationship ;
+    fract:versionManifest fract:tmf_rc1_v1 ;
     dash:shape shape:ShapeRefactoring ;
-    ref:hasAction ref:action_rc1_1 .
+    fract:hasAction fract:action_rc1_1 .
 
-ref:tmf_rc1_v1 a ref:Version ;
-    ref:versionNumber "1.0.0" ;
+fract:tmf_rc1_v1 a fract:Version ;
+    fract:versionNumber "1.0.0" ;
     dct:date "2025-05-01" ;
-    ref:versionPrevious ref:NoPreviousVersion ;
+    fract:versionPrevious fract:NoPreviousVersion ;
     dct:contributor "Frances Gillis-Webber" .
 
-ref:action_rc1_1 a ref:RenameClass ;
-    ref:sourceNode edam:operation_2928 ;
-    ref:targetIdentifier edam:operationAlignment ;
-    ref:targetLabel "Alignment" ;
-    ref:targetLanguageTag "en" ;
+fract:action_rc1_1 a fract:RenameClass ;
+    fract:sourceNode edam:operation_2928 ;
+    fract:targetIdentifier edam:operationAlignment ;
+    fract:targetLabel "Alignment" ;
+    fract:targetLanguageTag "en" ;
     dash:shape shape:ShapeRenameClass .
