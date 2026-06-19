@@ -6,4 +6,4 @@
 
 - Validated file: [See version](https://github.com/semanticweb-tools/refract/blob/cd914ca4b0741f0ed6a27901a92ed58e2dab166f/ShapesGraphs/ShapeEvolution/ShapeEvolution.ttl)
 - Validator: [ITB SHACL Validator](https://www.itb.ec.europa.eu/shacl/any/upload)
-- Validated against the shapes graphs listed for [EC1](../EC1/README.md)
+- Validated against the shapes graphs listed for [EC1](../README.md)
