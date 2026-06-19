@@ -1,6 +1,6 @@
 {
   "@context": {
-    "ref": "https://semanticweb.tools/ont/refract#",
+    "fract": "https://w3id.org/refract#",
     "dash": "http://datashapes.org/dash#",
     "dct": "http://purl.org/dc/terms/",
     "owl": "http://www.w3.org/2002/07/owl#",
@@ -11,28 +11,28 @@
   },
   "@graph": [
     {
-      "@id": "ref:tmf_rc2",
-      "@type": "ref:Manifest",
+      "@id": "fract:tmf_rc2",
+      "@type": "fract:Manifest",
       "rdfs:label": {"@value": "Manifest 1.0.0 for (partial) refactoring of MoLA ontology to OWL2_RL", "@language": "en"},
-      "ref:transformationType": {"@id": "ref:OntologyRefactoringProcess"},
-      "ref:transformationSource": {"@id": "https://semanticweb.tools/ont/mola"},
-      "ref:hasURIRelationshipToSource": {"@id": "ref:SameVersioned"},
-      "ref:versionManifest": {"@id": "ref:tmf_rc2_v1"},
+      "fract:transformationType": {"@id": "fract:OntologyRefactoringProcess"},
+      "fract:transformationSource": {"@id": "https://semanticweb.tools/ont/mola"},
+      "fract:hasURIRelationshipToSource": {"@id": "fract:SameVersionedRelationship"},
+      "fract:versionManifest": {"@id": "fract:tmf_rc2_v1"},
       "dash:shape": {"@id": "shape:ShapeRefactoring"},
-      "ref:hasAction": [{"@id": "ref:action_rc2_1"}]
+      "fract:hasAction": [{"@id": "fract:action_rc2_1"}]
     },
     {
-      "@id": "ref:tmf_rc2_v1",
-      "@type": "ref:Version",
-      "ref:versionNumber": "1.0.0",
+      "@id": "fract:tmf_rc2_v1",
+      "@type": "fract:Version",
+      "fract:versionNumber": "1.0.0",
       "dct:date": "2025-05-01",
-      "ref:versionPrevious": {"@id": "ref:NoPreviousVersion"},
+      "fract:versionPrevious": {"@id": "fract:NoPreviousVersion"},
       "dct:contributor": "Frances Gillis-Webber"
     },
     {
-      "@id": "ref:action_rc2_1",
-      "@type": "ref:DeleteSuperclassAssertion",
-      "ref:sourceNode": [
+      "@id": "fract:action_rc2_1",
+      "@type": "fract:DeleteSuperclassAssertion",
+      "fract:sourceNode": [
         {"@id": "mola:LanguageCode"},
         {"@id": "mola:Period"},
         {"@id": "mola:LanguoidName"},
@@ -40,8 +40,8 @@
         {"@id": "mola:Languoid"},
         {"@id": "mola:LanguageTag"}
       ],
-      "ref:targetSuperclass": {"@id": "owl:Thing"},
-      "dash:shape": {"@id": "shape: ShapeDeleteSuperclassAssertion"}
+      "fract:targetParent": {"@id": "owl:Thing"},
+      "dash:shape": {"@id": "shape:ShapeDeleteSuperclassAssertion"}
     }
   ]
 }
