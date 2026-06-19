@@ -1648,7 +1648,7 @@ prov:Activity rdf:type owl:Class ;
 ###  https://w3id.org/refract#OntologyTransformationProcess
 :OntologyTransformationProcess rdf:type owl:Class ;
                                rdfs:subClassOf :TransformationProcess ;
-                               rdfs:comment "A transformation process that produces a new ontology from an existing one, representing a different viewpoint or context. Characterised by: different viewpoint, different URI, and semantic changes driven by a different viewpoint or conte"@en ;
+                               rdfs:comment "A transformation process that produces a new ontology from an existing one, representing a different viewpoint or context. Characterised by: different viewpoint, different URI, and semantic changes driven by a different viewpoint or context."@en ;
                                rdfs:isDefinedBy <https://w3id.org/refract> ;
                                rdfs:label "Ontology transformation process"@en ;
                                :hasShapesGraph <https://semanticweb.tools/rdf/shapes/ShapeTransformation.ttl> .
