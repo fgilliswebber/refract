@@ -5,8 +5,8 @@
 - SPARQL for CQs: [CQ1](Files/CQ1.rq) | [CQ2](Files/CQ2.rq)
 - TMF for target viewpoint: [JSON-LD](Files/TMF.json) | [Turtle](Files/TMF.ttl)
 - Shapes graphs:
-  - Macro: [ShapeRefactoring](../../ShapesGraphs/ShapeRefactoring/README.md)
-  - Micro: [ShapeRenameClass](../../RefactoringActions/RenameClass/ShapeRenameClass.ttl)
+  - Macro: [ShapeRefactoring](../../../ShapesGraphs/ShapeRefactoring/README.md)
+  - Micro: [ShapeRenameClass](../../../RefactoringActions/RenameClass/ShapeRenameClass.ttl)
 
 ## Description
 _Example fragment from EDAM:_ \
