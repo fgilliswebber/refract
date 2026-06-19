@@ -1,4 +1,4 @@
-@prefix ref: <https://semanticweb.tools/ont/refract#> .
+@prefix fract: <https://w3id.org/refract#> .
 @prefix dash: <http://datashapes.org/dash#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -7,31 +7,31 @@
 @prefix shape: <https://semanticweb.tools/rdf/shapes/> .
 @prefix multi: <https://w3id.org/MULTI#> .
 
-ref:tmf_rc3 a ref:Manifest ;
+fract:tmf_rc3 a fract:Manifest ;
     rdfs:label "Manifest 1.0.0 for refactoring of MULTI ontology"@en ;
-    ref:transformationType ref:OntologyRefactoringProcess ;
-    ref:transformationSource <https://w3id.org/MULTI> ;
-    ref:hasURIRelationshipToSource ref:SameVersioned ;
-    ref:versionManifest ref:tmf_rc3_v1 ;
+    fract:transformationType fract:OntologyRefactoringProcess ;
+    fract:transformationSource <https://w3id.org/MULTI> ;
+    fract:hasURIRelationshipToSource fract:SameVersionedRelationship ;
+    fract:versionManifest fract:tmf_rc3_v1 ;
     dash:shape shape:ShapeRefactoring ;
-    ref:hasAction ref:action_rc3_1, ref:action_rc3_2 .
+    fract:hasAction fract:action_rc3_1, fract:action_rc3_2 .
 
-ref:tmf_rc3_v1 a ref:Version ;
-    ref:versionNumber "1.0.0" ;
+fract:tmf_rc3_v1 a fract:Version ;
+    fract:versionNumber "1.0.0" ;
     dct:date "2025-05-01" ;
-    ref:versionPrevious ref:NoPreviousVersion ;
+    fract:versionPrevious fract:NoPreviousVersion ;
     dct:contributor "Frances Gillis-Webber" .
 
-ref:action_rc3_1 a ref:AddAnnotationLangString ;
-    ref:sourceNode multi:Viewpoint ;
-    ref:targetAnnotation rdfs:label ;
-    ref:targetAnnotationValue "Standpunt" ;
-    ref:targetLanguageTag "af" ;
+fract:action_rc3_1 a fract:AddAnnotationLangString ;
+    fract:sourceNode multi:Viewpoint ;
+    fract:targetAnnotation rdfs:label ;
+    fract:targetAnnotationValue "Standpunt" ;
+    fract:targetLanguageTag "af" ;
     dash:shape shape:ShapeAddAnnotationLangString .
 
-ref:action_rc3_2 a ref:AddAnnotationLangString ;
-    ref:sourceNode multi:Viewpoint ;
-    ref:targetAnnotation rdfs:label ;
-    ref:targetAnnotationValue "Point de vue" ;
-    ref:targetLanguageTag "fr" ;
+fract:action_rc3_2 a fract:AddAnnotationLangString ;
+    fract:sourceNode multi:Viewpoint ;
+    fract:targetAnnotation rdfs:label ;
+    fract:targetAnnotationValue "Point de vue" ;
+    fract:targetLanguageTag "fr" ;
     dash:shape shape:ShapeAddAnnotationLangString .
