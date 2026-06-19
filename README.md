@@ -1,9 +1,5 @@
 # REFrACT — Refactoring Actions Shapes Library
 
-**Note:** <br />This repository is currently being finalised. Some content may be incomplete or subject to change. <br /> This notice will be removed once finalisation is complete.
-
----
-
 **Persistent URI:** `https://w3id.org/refract` \
 **Redirects to:** `https://semanticweb.tools/ont/refract` 
 
