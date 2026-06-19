@@ -9,8 +9,8 @@ A specialised form of [Ontology Transformation](OntologyTransformation.md), wher
 ## Use cases
 
 * [**LC1**](/UseCases/OntologyLocalisation/LC1) - English to French viewpoint – the concept lexicalised as 'river'
-* [**LC2**](/UseCases/OntologyLocalisation/LC1) - Western to South Africa viewpoint – the concepts Traditional Healer, Traditional Medicine, and Alternative & Complementary Health Practitioners
-* [**LC3**](/UseCases/OntologyLocalisation/LC1) - Western to New Zealand viewpoint – the concept of Whales as recognised legal persons
+* [**LC2**](/UseCases/OntologyLocalisation/LC2) - Western to South Africa viewpoint – the concepts Traditional Healer, Traditional Medicine, and Alternative & Complementary Health Practitioners
+* [**LC3**](/UseCases/OntologyLocalisation/LC3) - Western to New Zealand viewpoint – the concept of Whales as recognised legal persons
 
 ## Position in hierarchy
 
