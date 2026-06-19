@@ -5,8 +5,8 @@
 - SPARQL for CQs: [CQ1](Files/CQ1.rq) | [CQ2](Files/CQ2.rq) | [CQ3](Files/CQ3.rq) | [CQ4](Files/CQ4.rq) | [CQ5](Files/CQ5.rq)
 - TMF for target viewpoint: [JSON-LD](Files/TMF.json) | [Turtle](Files/TMF.ttl)
 - Shapes graphs:
-  - Macro: [ShapeEvolution](../../ShapesGraphs/ShapeEvolution/README.md)
-  - Micro: [ShapeAddClass](../../RefactoringActions/AddClass/ShapeAddClass.ttl) | [ShapeAddSuperclassAssertion](../../RefactoringActions/AddSuperclassAssertion/ShapeAddSuperclassAssertion.ttl) | [ShapeAddPropertyRestriction](../../RefactoringActions/AddPropertyRestriction/ShapeAddPropertyRestriction.ttl) | [ShapeAddAnnotationLangString](../../RefactoringActions/AddAnnotationLangString/ShapeAddAnnotationLangString.ttl) | [ShapeAddInstance](../../RefactoringActions/AddInstance/ShapeAddInstance.ttl)
+  - Macro: [ShapeEvolution](../../../ShapesGraphs/ShapeEvolution/README.md)
+  - Micro: [ShapeAddClass](../../../RefactoringActions/AddClass/ShapeAddClass.ttl) | [ShapeAddSuperclassAssertion](../../../RefactoringActions/AddSuperclassAssertion/ShapeAddSuperclassAssertion.ttl) | [ShapeAddPropertyRestriction](../../../RefactoringActions/AddPropertyRestriction/ShapeAddPropertyRestriction.ttl) | [ShapeAddAnnotationLangString](../../../RefactoringActions/AddAnnotationLangString/ShapeAddAnnotationLangString.ttl) | [ShapeAddInstance](../../../RefactoringActions/AddInstance/ShapeAddInstance.ttl)
 
 ## Description
 The emergence of mRNA vaccine technology as a recognised and distinct vaccine platform necessitates the addition of `ex:mRNAVaccine` as a new subclass of `vo:VO_0000001` (vaccine), along with the Pfizer-BioNTech COVID-19 vaccine as a named individual.
