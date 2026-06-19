@@ -1,6 +1,6 @@
 {
   "@context": {
-    "ref": "https://semanticweb.tools/ont/refract#",
+    "fract": "https://w3id.org/refract#",
     "dct": "http://purl.org/dc/terms/",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
@@ -14,92 +14,92 @@
   },
   "@graph": [
     {
-      "@id": "ref:tmf_lc1",
-      "@type": "ref:Manifest",
+      "@id": "fract:tmf_lc1",
+      "@type": "fract:Manifest",
       "rdfs:label": {"@value": "Manifest 1.0.0 for localisation of SWEET Ontology Realm Hydrosphere Body to French Viewpoint", "@language": "en"},
-      "ref:transformationType": {"@id": "ref:OntologyLocalisationProcess"},
-      "ref:transformationSource": {"@id": "http://sweetontology.net/realmHydroBody"},
-      "ref:startingNode": {"@id": "sweet:BodyOfWater"},
-      "ref:hasURIRelationshipToSource": {"@id": "ref:Different"},
-      "ref:targetOntologyURI": {"@id": "https://example.org/sweet/fr"},
-      "ref:targetViewpoint": {"@id": "https://semanticweb.tools/rdf/multi/language-french"},
-      "ref:versionManifest": {"@id": "ref:tmf_lc1_v1"},
+      "fract:transformationType": {"@id": "fract:OntologyLocalisationProcess"},
+      "fract:transformationSource": {"@id": "http://sweetontology.net/realmHydroBody"},
+      "fract:startingNode": {"@id": "sweet:BodyOfWater"},
+      "fract:hasURIRelationshipToSource": {"@id": "fract:DifferentRelationship"},
+      "fract:targetOntologyURI": {"@id": "https://example.org/sweet/fr"},
+      "fract:targetViewpoint": {"@id": "https://semanticweb.tools/rdf/multi/language-french"},
+      "fract:versionManifest": {"@id": "fract:tmf_lc1_v1"},
       "dash:shape": {"@id": "shape:ShapeLocalisation"},
-      "ref:hasAction": [
-        {"@id": "ref:action_lc1_1"},
-        {"@id": "ref:action_lc1_2"},
-        {"@id": "ref:action_lc1_3"},
-        {"@id": "ref:action_lc1_4"},
-        {"@id": "ref:action_lc1_5"},
-        {"@id": "ref:action_lc1_6"}
+      "fract:hasAction": [
+        {"@id": "fract:action_lc1_1"},
+        {"@id": "fract:action_lc1_2"},
+        {"@id": "fract:action_lc1_3"},
+        {"@id": "fract:action_lc1_4"},
+        {"@id": "fract:action_lc1_5"},
+        {"@id": "fract:action_lc1_6"}
       ],
-      "ref:actionOrder": {
+      "fract:actionOrder": {
         "@list": [
-          {"@id": "ref:action_lc1_1"},
-          {"@id": "ref:action_lc1_2"},
-          {"@id": "ref:action_lc1_3"},
-          {"@id": "ref:action_lc1_4"},
-          {"@id": "ref:action_lc1_5"},
-          {"@id": "ref:action_lc1_6"}
+          {"@id": "fract:action_lc1_1"},
+          {"@id": "fract:action_lc1_2"},
+          {"@id": "fract:action_lc1_3"},
+          {"@id": "fract:action_lc1_4"},
+          {"@id": "fract:action_lc1_5"},
+          {"@id": "fract:action_lc1_6"}
         ]
       }
     },
     {
-      "@id": "ref:tmf_lc1_v1",
-      "@type": "ref:Version",
-      "ref:versionNumber": "1.0.0",
+      "@id": "fract:tmf_lc1_v1",
+      "@type": "fract:Version",
+      "fract:versionNumber": "1.0.0",
       "dct:date": "2025-05-01",
-      "ref:versionPrevious": {"@id": "ref:NoPreviousVersion"},
+      "fract:versionPrevious": {"@id": "fract:NoPreviousVersion"},
       "dct:contributor": "Frances Gillis-Webber"
     },
     {
-      "@id": "ref:action_lc1_1",
-      "@type": "ref:DeleteClass",
-      "ref:sourceNode": {"@id": "sweet:River"},
+      "@id": "fract:action_lc1_1",
+      "@type": "fract:DeleteClass",
+      "fract:sourceNode": {"@id": "sweet:River"},
       "dash:shape": {"@id": "shape:ShapeDeleteClass"}
     },
     {
-      "@id": "ref:action_lc1_2",
-      "@type": "ref:AddClass",
-      "ref:targetIdentifier": {"@id": "sweetfr:Riviere"},
-      "ref:targetParent": {"@id": "sweet:NaturalWaterBody"},
-      "ref:targetLabel": "Rivière",
-      "ref:targetLanguageTag": "fr",
+      "@id": "fract:action_lc1_2",
+      "@type": "fract:AddClass",
+      "fract:targetIdentifier": {"@id": "sweetfr:Riviere"},
+      "fract:targetParent": {"@id": "sweet:NaturalWaterBody"},
+      "fract:targetLabel": "Rivière",
+      "fract:targetLanguageTag": "fr",
       "dash:shape": {"@id": "shape:ShapeAddClass"}
     },
     {
-      "@id": "ref:action_lc1_3",
-      "@type": "ref:AddClass",
-      "ref:targetIdentifier": {"@id": "sweetfr:Fleuve"},
-      "ref:targetParent": {"@id": "sweet:NaturalWaterBody"},
-      "ref:targetLabel": "Fleuve",
-      "ref:targetLanguageTag": "fr",
+      "@id": "fract:action_lc1_3",
+      "@type": "fract:AddClass",
+      "fract:targetIdentifier": {"@id": "sweetfr:Fleuve"},
+      "fract:targetParent": {"@id": "sweet:NaturalWaterBody"},
+      "fract:targetLabel": "Fleuve",
+      "fract:targetLanguageTag": "fr",
       "dash:shape": {"@id": "shape:ShapeAddClass"}
     },
     {
-      "@id": "ref:action_lc1_4",
-      "@type": "ref:AddSemanticAxiom",
-      "ref:sourceNode": {"@id": "sweetfr:Riviere"},
-      "ref:axiomType": {"@id": "owl:disjointWith"},
-      "ref:targetNode": {"@id": "sweetfr:Fleuve"},
+      "@id": "fract:action_lc1_4",
+      "@type": "fract:AddSemanticAxiom",
+      "fract:sourceNode": {"@id": "sweetfr:Riviere"},
+      "fract:axiomType": {"@id": "owl:disjointWith"},
+      "fract:targetNode": {"@id": "sweetfr:Fleuve"},
       "dash:shape": {"@id": "shape:ShapeAddSemanticAxiom"}
     },
     {
-      "@id": "ref:action_lc1_5",
-      "@type": "ref:AddAnnotationLangString",
-      "ref:targetNode": {"@id": "sweetfr:Riviere"},
-      "ref:targetAnnotation": {"@id": "skos:definition"},
-      "ref:targetAnnotationValue": "A river that flows into another river.",
-      "ref:targetLanguageTag": "fr",
+      "@id": "fract:action_lc1_5",
+      "@type": "fract:AddAnnotationLangString",
+      "fract:targetNode": {"@id": "sweetfr:Riviere"},
+      "fract:targetAnnotation": {"@id": "skos:definition"},
+      "fract:targetAnnotationValue": "A river that flows into another river.",
+      "fract:targetLanguageTag": "fr",
       "dash:shape": {"@id": "shape:ShapeAddAnnotationLangString"}
     },
     {
-      "@id": "ref:action_lc1_6",
-      "@type": "ref:AddAnnotationLangString",
-      "ref:targetNode": {"@id": "sweetfr:Fleuve"},
-      "ref:targetAnnotation": {"@id": "skos:definition"},
-      "ref:targetAnnotationValue": "A river that flows into the sea.",
-      "ref:targetLanguageTag": "fr",
+      "@id": "fract:action_lc1_6",
+      "@type": "fract:AddAnnotationLangString",
+      "fract:targetNode": {"@id": "sweetfr:Fleuve"},
+      "fract:targetAnnotation": {"@id": "skos:definition"},
+      "fract:targetAnnotationValue": "A river that flows into the sea.",
+      "fract:targetLanguageTag": "fr",
       "dash:shape": {"@id": "shape:ShapeAddAnnotationLangString"}
     }
   ]
