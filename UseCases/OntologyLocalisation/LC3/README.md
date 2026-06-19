@@ -28,7 +28,6 @@ The goal is to transform a marine ontology to reflect the New Zealand legal fram
 - Target: Yes
 
 ## Evaluation
-- Shapes graph validation: [Using SHACL meta-validation](Evaluation/ShapesGraphValidation.md)
 - TMF validation: [Using SHACL](Evaluation/TMFValidation.md)
 
 ---
