@@ -1,4 +1,4 @@
-@prefix ref: <https://semanticweb.tools/ont/refract#> .
+@prefix fract: <https://w3id.org/refract#> .
 @prefix dash: <http://datashapes.org/dash#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -11,188 +11,188 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 
-ref:tmf_tc2 a ref:Manifest ;
+fract:tmf_tc2 a fract:Manifest ;
     rdfs:label "Manifest 1.0.0 for transformation of Cultural Heritage Ontology to Contested Heritage Viewpoint"@en ;
-    ref:transformationType ref:OntologyTransformationProcess ;
-    ref:transformationSource <https://example.org/ch> ;
-    ref:hasURIRelationshipToSource ref:Different ;
-    ref:targetOntologyURI <https://example.org/ch/contested> ;
-    ref:targetViewpoint <https://semanticweb.tools/rdf/multi/contested> ;
-    ref:versionManifest ref:tmf_tc2_v1 ;
+    fract:transformationType fract:OntologyTransformationProcess ;
+    fract:transformationSource <https://example.org/ch> ;
+    fract:hasURIRelationshipToSource fract:DifferentRelationship ;
+    fract:targetOntologyURI <https://example.org/ch/contested> ;
+    fract:targetViewpoint <https://semanticweb.tools/rdf/multi/contested> ;
+    fract:versionManifest fract:tmf_tc2_v1 ;
     dash:shape shape:ShapeTransformation ;
-    ref:hasAction ref:action_tc2_0, ref:action_tc2_1, ref:action_tc2_2, ref:action_tc2_3,
-                  ref:action_tc2_4, ref:action_tc2_5, ref:action_tc2_6, ref:action_tc2_7,
-                  ref:action_tc2_8, ref:action_tc2_9, ref:action_tc2_10, ref:action_tc2_11,
-                  ref:action_tc2_12, ref:action_tc2_13, ref:action_tc2_14, ref:action_tc2_15,
-                  ref:action_tc2_16, ref:action_tc2_17, ref:action_tc2_18, ref:action_tc2_19,
-                  ref:action_tc2_20 ;
-    ref:actionOrder (
-        ref:action_tc2_0
-        ref:action_tc2_1
-        ref:action_tc2_2
-        ref:action_tc2_3
-        ref:action_tc2_4
-        ref:action_tc2_5
-        ref:action_tc2_6
-        ref:action_tc2_7
-        ref:action_tc2_8
-        ref:action_tc2_9
-        ref:action_tc2_10
-        ref:action_tc2_11
-        ref:action_tc2_12
-        ref:action_tc2_13
-        ref:action_tc2_14
-        ref:action_tc2_15
-        ref:action_tc2_16
-        ref:action_tc2_17
-        ref:action_tc2_18
-        ref:action_tc2_19
-        ref:action_tc2_20
+    fract:hasAction fract:action_tc2_0, fract:action_tc2_1, fract:action_tc2_2, fract:action_tc2_3,
+                  fract:action_tc2_4, fract:action_tc2_5, fract:action_tc2_6, fract:action_tc2_7,
+                  fract:action_tc2_8, fract:action_tc2_9, fract:action_tc2_10, fract:action_tc2_11,
+                  fract:action_tc2_12, fract:action_tc2_13, fract:action_tc2_14, fract:action_tc2_15,
+                  fract:action_tc2_16, fract:action_tc2_17, fract:action_tc2_18, fract:action_tc2_19,
+                  fract:action_tc2_20 ;
+    fract:actionOrder (
+        fract:action_tc2_0
+        fract:action_tc2_1
+        fract:action_tc2_2
+        fract:action_tc2_3
+        fract:action_tc2_4
+        fract:action_tc2_5
+        fract:action_tc2_6
+        fract:action_tc2_7
+        fract:action_tc2_8
+        fract:action_tc2_9
+        fract:action_tc2_10
+        fract:action_tc2_11
+        fract:action_tc2_12
+        fract:action_tc2_13
+        fract:action_tc2_14
+        fract:action_tc2_15
+        fract:action_tc2_16
+        fract:action_tc2_17
+        fract:action_tc2_18
+        fract:action_tc2_19
+        fract:action_tc2_20
     ) .
 
-ref:tmf_tc2_v1 a ref:Version ;
-    ref:versionNumber "1.0.0" ;
+fract:tmf_tc2_v1 a fract:Version ;
+    fract:versionNumber "1.0.0" ;
     dct:date "2025-05-01" ;
-    ref:versionPrevious ref:NoPreviousVersion ;
+    fract:versionPrevious fract:NoPreviousVersion ;
     dct:contributor "Frances Gillis-Webber" .
 
-ref:action_tc2_0 a ref:RenameClass ;
-    ref:sourceNode ch:VenusHottentote ;
-    ref:targetIdentifier ch:SarahBaartman ;
-    ref:targetLabel "Sarah Baartman" ;
-    ref:targetLanguageTag "en" ;
+fract:action_tc2_0 a fract:RenameClass ;
+    fract:sourceNode ch:VenusHottentote ;
+    fract:targetIdentifier ch:SarahBaartman ;
+    fract:targetLabel "Sarah Baartman" ;
+    fract:targetLanguageTag "en" ;
     dash:shape shape:ShapeRenameClass .
 
-ref:action_tc2_1 a ref:AddClass ;
-    ref:targetIdentifier chc:HumanRemains ;
-    ref:targetParent ch:CulturalObject ;
-    ref:targetLabel "Human remains" ;
-    ref:targetLanguageTag "en" ;
+fract:action_tc2_1 a fract:AddClass ;
+    fract:targetIdentifier chc:HumanRemains ;
+    fract:targetParent ch:CulturalObject ;
+    fract:targetLabel "Human remains" ;
+    fract:targetLanguageTag "en" ;
     dash:shape shape:ShapeAddClass .
 
-ref:action_tc2_2 a ref:AddAnnotationLangString ;
-    ref:targetNode chc:HumanRemains ;
-    ref:targetAnnotation skos:definition ;
-    ref:targetAnnotationValue "The physical remains of a person, recognised as deserving dignity and respect regardless of their current location." ;
-    ref:targetLanguageTag "en" ;
+fract:action_tc2_2 a fract:AddAnnotationLangString ;
+    fract:targetNode chc:HumanRemains ;
+    fract:targetAnnotation skos:definition ;
+    fract:targetAnnotationValue "The physical remains of a person, recognised as deserving dignity and respect regardless of their current location." ;
+    fract:targetLanguageTag "en" ;
     dash:shape shape:ShapeAddAnnotationLangString .
 
-ref:action_tc2_3 a ref:AddClass ;
-    ref:targetIdentifier chc:ContestedHeritage ;
-    ref:targetParent ch:CulturalObject ;
-    ref:targetLabel "Contested heritage" ;
-    ref:targetLanguageTag "en" ;
+fract:action_tc2_3 a fract:AddClass ;
+    fract:targetIdentifier chc:ContestedHeritage ;
+    fract:targetParent ch:CulturalObject ;
+    fract:targetLabel "Contested heritage" ;
+    fract:targetLanguageTag "en" ;
     dash:shape shape:ShapeAddClass .
 
-ref:action_tc2_4 a ref:AddAnnotationLangString ;
-    ref:targetNode chc:ContestedHeritage ;
-    ref:targetAnnotation skos:definition ;
-    ref:targetAnnotationValue "Cultural objects or human remains whose ownership, display, or acquisition is disputed on ethical, historical, or cultural grounds." ;
-    ref:targetLanguageTag "en" ;
+fract:action_tc2_4 a fract:AddAnnotationLangString ;
+    fract:targetNode chc:ContestedHeritage ;
+    fract:targetAnnotation skos:definition ;
+    fract:targetAnnotationValue "Cultural objects or human remains whose ownership, display, or acquisition is disputed on ethical, historical, or cultural grounds." ;
+    fract:targetLanguageTag "en" ;
     dash:shape shape:ShapeAddAnnotationLangString .
 
-ref:action_tc2_5 a ref:AddClass ;
-    ref:targetIdentifier chc:Repatriation ;
-    ref:targetParent owl:Thing ;
-    ref:targetLabel "Repatriation" ;
-    ref:targetLanguageTag "en" ;
+fract:action_tc2_5 a fract:AddClass ;
+    fract:targetIdentifier chc:Repatriation ;
+    fract:targetParent owl:Thing ;
+    fract:targetLabel "Repatriation" ;
+    fract:targetLanguageTag "en" ;
     dash:shape shape:ShapeAddClass .
 
-ref:action_tc2_6 a ref:AddAnnotationLangString ;
-    ref:targetNode chc:Repatriation ;
-    ref:targetAnnotation skos:definition ;
-    ref:targetAnnotationValue "The process of returning cultural objects or human remains to their community or country of origin." ;
-    ref:targetLanguageTag "en" ;
+fract:action_tc2_6 a fract:AddAnnotationLangString ;
+    fract:targetNode chc:Repatriation ;
+    fract:targetAnnotation skos:definition ;
+    fract:targetAnnotationValue "The process of returning cultural objects or human remains to their community or country of origin." ;
+    fract:targetLanguageTag "en" ;
     dash:shape shape:ShapeAddAnnotationLangString .
 
-ref:action_tc2_7 a ref:AddClass ;
-    ref:targetIdentifier chc:ConsentStatus ;
-    ref:targetParent owl:Thing ;
-    ref:targetLabel "Consent status" ;
-    ref:targetLanguageTag "en" ;
+fract:action_tc2_7 a fract:AddClass ;
+    fract:targetIdentifier chc:ConsentStatus ;
+    fract:targetParent owl:Thing ;
+    fract:targetLabel "Consent status" ;
+    fract:targetLanguageTag "en" ;
     dash:shape shape:ShapeAddClass .
 
-ref:action_tc2_8 a ref:AddInstance ;
-    ref:targetIdentifier chc:ConsentGivenExplicit ;
-    ref:targetInstanceOf chc:ConsentStatus ;
-    ref:targetLabel "Consent given (explicit)" ;
-    ref:targetLanguageTag "en" ;
+fract:action_tc2_8 a fract:AddInstance ;
+    fract:targetIdentifier chc:ConsentGivenExplicit ;
+    fract:targetInstanceOf chc:ConsentStatus ;
+    fract:targetLabel "Consent given (explicit)" ;
+    fract:targetLanguageTag "en" ;
     dash:shape shape:ShapeAddInstance .
 
-ref:action_tc2_9 a ref:AddInstance ;
-    ref:targetIdentifier chc:ConsentNotGivenExplicit ;
-    ref:targetInstanceOf chc:ConsentStatus ;
-    ref:targetLabel "Consent not given (explicit)" ;
-    ref:targetLanguageTag "en" ;
+fract:action_tc2_9 a fract:AddInstance ;
+    fract:targetIdentifier chc:ConsentNotGivenExplicit ;
+    fract:targetInstanceOf chc:ConsentStatus ;
+    fract:targetLabel "Consent not given (explicit)" ;
+    fract:targetLanguageTag "en" ;
     dash:shape shape:ShapeAddInstance .
 
-ref:action_tc2_10 a ref:AddInstance ;
-    ref:targetIdentifier chc:ConsentNotGivenImplicit ;
-    ref:targetInstanceOf chc:ConsentStatus ;
-    ref:targetLabel "Consent not given (implicit)" ;
-    ref:targetLanguageTag "en" ;
+fract:action_tc2_10 a fract:AddInstance ;
+    fract:targetIdentifier chc:ConsentNotGivenImplicit ;
+    fract:targetInstanceOf chc:ConsentStatus ;
+    fract:targetLabel "Consent not given (implicit)" ;
+    fract:targetLanguageTag "en" ;
     dash:shape shape:ShapeAddInstance .
 
-ref:action_tc2_11 a ref:AddInstance ;
-    ref:targetIdentifier chc:ConsentUnknown ;
-    ref:targetInstanceOf chc:ConsentStatus ;
-    ref:targetLabel "Consent unknown" ;
-    ref:targetLanguageTag "en" ;
+fract:action_tc2_11 a fract:AddInstance ;
+    fract:targetIdentifier chc:ConsentUnknown ;
+    fract:targetInstanceOf chc:ConsentStatus ;
+    fract:targetLabel "Consent unknown" ;
+    fract:targetLanguageTag "en" ;
     dash:shape shape:ShapeAddInstance .
 
-ref:action_tc2_12 a ref:ChangeInstanceAssertion ;
-    ref:sourceNode ch:SarahBaartman ;
-    ref:targetNode chc:HumanRemains ;
+fract:action_tc2_12 a fract:ChangeInstanceAssertion ;
+    fract:sourceNode ch:SarahBaartman ;
+    fract:targetNode chc:HumanRemains ;
     dash:shape shape:ShapeChangeInstanceAssertion .
 
-ref:action_tc2_13 a ref:DeleteAnnotation ;
-    ref:sourceNode ch:SarahBaartman ;
-    ref:targetAnnotation skos:prefLabel ;
+fract:action_tc2_13 a fract:DeleteAnnotation ;
+    fract:sourceNode ch:SarahBaartman ;
+    fract:targetAnnotation skos:prefLabel ;
     dash:shape shape:ShapeDeleteAnnotation .
 
-ref:action_tc2_14 a ref:DeleteAnnotation ;
-    ref:sourceNode ch:SarahBaartman ;
-    ref:targetAnnotation rdfs:label ;
+fract:action_tc2_14 a fract:DeleteAnnotation ;
+    fract:sourceNode ch:SarahBaartman ;
+    fract:targetAnnotation rdfs:label ;
     dash:shape shape:ShapeDeleteAnnotation .
 
-ref:action_tc2_15 a ref:AddAnnotationLangString ;
-    ref:sourceNode ch:SarahBaartman ;
-    ref:targetAnnotation rdfs:label ;
-    ref:targetAnnotationValue "Sarah Baartman" ;
-    ref:targetLanguageTag "en" ;
+fract:action_tc2_15 a fract:AddAnnotationLangString ;
+    fract:sourceNode ch:SarahBaartman ;
+    fract:targetAnnotation rdfs:label ;
+    fract:targetAnnotationValue "Sarah Baartman" ;
+    fract:targetLanguageTag "en" ;
     dash:shape shape:ShapeAddAnnotationLangString .
 
-ref:action_tc2_16 a ref:AddInstancePropertyAssertion ;
-    ref:sourceNode ch:SarahBaartman ;
-    ref:targetObject chc:donationConsentStatus ;
-    ref:targetObjectValue chc:ConsentNotGivenImplicit ;
-    ref:propertyType owl:ObjectProperty ;
+fract:action_tc2_16 a fract:AddInstancePropertyAssertion ;
+    fract:sourceNode ch:SarahBaartman ;
+    fract:targetObject chc:donationConsentStatus ;
+    fract:targetObjectValue chc:ConsentNotGivenImplicit ;
+    fract:propertyType owl:ObjectProperty ;
     dash:shape shape:ShapeAddInstancePropertyAssertion .
 
-ref:action_tc2_17 a ref:AddAnnotationLangString ;
-    ref:sourceNode ch:SarahBaartman ;
-    ref:targetAnnotation skos:historyNote ;
-    ref:targetAnnotationValue "Known in colonial records as 'Venus Hottentote' and 'Saartjie Baartman'. These labels are considered disrespectful and have been removed." ;
-    ref:targetLanguageTag "en" ;
+fract:action_tc2_17 a fract:AddAnnotationLangString ;
+    fract:sourceNode ch:SarahBaartman ;
+    fract:targetAnnotation skos:historyNote ;
+    fract:targetAnnotationValue "Known in colonial records as 'Venus Hottentote' and 'Saartjie Baartman'. These labels are considered disrespectful and have been removed." ;
+    fract:targetLanguageTag "en" ;
     dash:shape shape:ShapeAddAnnotationLangString .
 
-ref:action_tc2_18 a ref:AddAnnotation ;
-    ref:sourceNode ch:SarahBaartman ;
-    ref:targetAnnotation ch:removedFromDisplay ;
-    ref:targetAnnotationValue "1974" ;
-    ref:targetDataType xsd:gYear ;
+fract:action_tc2_18 a fract:AddAnnotation ;
+    fract:sourceNode ch:SarahBaartman ;
+    fract:targetAnnotation ch:removedFromDisplay ;
+    fract:targetAnnotationValue "1974" ;
+    fract:targetDataType xsd:gYear ;
     dash:shape shape:ShapeAddAnnotation .
 
-ref:action_tc2_19 a ref:AddInstancePropertyAssertion ;
-    ref:sourceNode ch:SarahBaartman ;
-    ref:targetObject chc:repatriatedTo ;
-    ref:targetObjectValue <https://example.org/ch/southafrica> ;
-    ref:propertyType owl:ObjectProperty ;
+fract:action_tc2_19 a fract:AddInstancePropertyAssertion ;
+    fract:sourceNode ch:SarahBaartman ;
+    fract:targetObject chc:repatriatedTo ;
+    fract:targetObjectValue <https://example.org/ch/southafrica> ;
+    fract:propertyType owl:ObjectProperty ;
     dash:shape shape:ShapeAddInstancePropertyAssertion .
 
-ref:action_tc2_20 a ref:AddAnnotation ;
-    ref:sourceNode ch:SarahBaartman ;
-    ref:targetAnnotation chc:repatriationDate ;
-    ref:targetAnnotationValue "2002-05-06" ;
-    ref:targetDataType xsd:date ;
+fract:action_tc2_20 a fract:AddAnnotation ;
+    fract:sourceNode ch:SarahBaartman ;
+    fract:targetAnnotation chc:repatriationDate ;
+    fract:targetAnnotationValue "2002-05-06" ;
+    fract:targetDataType xsd:date ;
     dash:shape shape:ShapeAddAnnotation .
