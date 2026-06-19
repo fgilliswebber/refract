@@ -4,6 +4,6 @@
 <img width="1138" height="156" alt="ValidationTMF json" src="https://github.com/user-attachments/assets/82820430-5281-4473-8b60-4501cd9008a7" />
 <img width="1138" height="156" alt="ValidationTMF ttl" src="https://github.com/user-attachments/assets/7a36c491-ce5c-4d93-a74e-f45dc709711e" />
 
-- Validated file: [See JSON version]() | [See TTL version]()
+- Validated file: [See JSON version](https://github.com/semanticweb-tools/refract/blob/c52291cdb31c940eb5670f19fd25aff105e1ae29/UseCases/OntologyEvolution/EC1/Files/TMF.json) | [See TTL version](https://github.com/semanticweb-tools/refract/blob/c52291cdb31c940eb5670f19fd25aff105e1ae29/UseCases/OntologyEvolution/EC1/Files/TMF.ttl)
 - Validator: [ITB SHACL Validator](https://www.itb.ec.europa.eu/shacl/any/upload)
 - Validated against the shapes graphs listed for [EC1](../README.md)
