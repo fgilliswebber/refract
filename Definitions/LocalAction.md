@@ -55,7 +55,7 @@ Local actions include:
 
 ## Position in class hierarchy
 
-`owl:Thing` → `rdfs:Class` → `prov:Activity` → `fract:RefactoringAction` → `fract:LocalAction` → {`fract:AtomicAction`, `fract:CompositeAction`}
+`owl:Thing` → `rdfs:Class` → `prov:Activity` → `fract:RefactoringAction` → `fract:LocalAction`
 
 ## See also
 
