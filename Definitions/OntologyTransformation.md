@@ -14,7 +14,7 @@ The adaptation of a source ontology O_S with a source viewpoint V_S to a target 
 
 ## Position in class hierarchy
 
-`owl:Thing` → `rdfs:Class` → `fract:TransformationProcess` → `fract:OntologyTransformationProcess` → `fract:OntologyLocalisationProcess`
+`owl:Thing` → `rdfs:Class` → `fract:TransformationProcess` → `fract:OntologyTransformationProcess`
 
 ## See also
 
