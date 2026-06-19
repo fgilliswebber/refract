@@ -17,7 +17,6 @@ For `https://semanticweb.tools/ont/multi#Viewpoint`, add a language-specific lab
 - Target: 'Standpunt'
 
 ## Evaluation
-- Shapes graph validation: [Using SHACL meta-validation](Evaluation/ShapesGraphValidation.md)
 - TMF validation: [Using SHACL](Evaluation/TMFValidation.md)
 
 ---
