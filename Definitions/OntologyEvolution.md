@@ -12,7 +12,7 @@ The changes made to a source ontology O_S in response to a change in the domain 
 * [**EC2**](/UseCases/OntologyEvolution/EC2) - Legal changes – removal of UK from European Union
 * [**EC3**](/UseCases/OntologyEvolution/EC3) - New knowledge – adding mRNA vaccine as a sub-class of Vaccine
 
-## Position in hierarchy
+## Position in class hierarchy
 
 `owl:Thing` → `rdfs:Class` → `fract:TransformationProcess` → `fract:OntologyEvolutionProcess`
 
