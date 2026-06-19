@@ -5,8 +5,8 @@
 - SPARQL for CQs: [CQ1](Files/CQ1.rq) | [CQ2](Files/CQ2.rq)
 - TMF for target viewpoint: [JSON-LD](Files/TMF.json) | [Turtle](Files/TMF.ttl)
 - Shapes graphs:
-  - Macro: [ShapeEvolution](../../ShapesGraphs/ShapeEvolution/README.md)
-  - Micro: [ShapeChangeAnnotationValue](../../RefactoringActions/ChangeAnnotationValue/ShapeChangeAnnotationValue.ttl) | [ShapeAddAnnotationLangString](../../RefactoringActions/AddAnnotationLangString/ShapeAddAnnotationLangString.ttl) | [ShapeAddAnnotation](../../RefactoringActions/AddAnnotation/ShapeAddAnnotation.ttl)
+  - Macro: [ShapeEvolution](../../../ShapesGraphs/ShapeEvolution/README.md)
+  - Micro: [ShapeChangeAnnotationValue](../../../RefactoringActions/ChangeAnnotationValue/ShapeChangeAnnotationValue.ttl) | [ShapeAddAnnotationLangString](../../../RefactoringActions/AddAnnotationLangString/ShapeAddAnnotationLangString.ttl) | [ShapeAddAnnotation](../../../RefactoringActions/AddAnnotation/ShapeAddAnnotation.ttl)
 
 ## Description
 The goal is to remove the United Kingdom from the list of countries given in `skos:definition` for `mesh:D005062`, to record the date this class was modified, and to add another annotation - `skos:historyNote` - to describe the change.
