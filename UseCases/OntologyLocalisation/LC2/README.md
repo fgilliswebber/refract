@@ -6,7 +6,7 @@
 - TMF for target viewpoint: [JSON-LD](Files/TMF.json) | [Turtle](Files/TMF.ttl)
 - Shapes graphs:
   - Macro: [ShapeLocalisation](../../ShapesGraphs/ShapeLocalisation/README.md)
-  - Micro: [ShapeChangeAnnotationValue](../../RefactoringActions/ChangeAnnotationValue/ShapeChangeAnnotationValue.ttl) | [ShapeAddClass](../../RefactoringActions/AddClass/ShapeAddClass.ttl) | [ShapeAddSuperclassAssertion](../../RefactoringActions/AddSuperclassAssertion/ShapeAddSuperclassAssertion.ttl) | [ShapeAddAnnotationLangString](../../RefactoringActions/AddAnnotationLangString/ShapeAddAnnotationLangString.ttl)
+  - Micro: [ShapeChangeAnnotationValue](../../../RefactoringActions/ChangeAnnotationValue/ShapeChangeAnnotationValue.ttl) | [ShapeAddClass](../../../RefactoringActions/AddClass/ShapeAddClass.ttl) | [ShapeAddSuperclassAssertion](../../../RefactoringActions/AddSuperclassAssertion/ShapeAddSuperclassAssertion.ttl) | [ShapeAddAnnotationLangString](../../../RefactoringActions/AddAnnotationLangString/ShapeAddAnnotationLangString.ttl)
 
 ## Description
 The goal is to transform the MeSH representation of traditional medicine practitioners to reflect the South African legal and cultural context, where traditional healers are a distinct and legally recognised category of health personnel with specific subcategories.
