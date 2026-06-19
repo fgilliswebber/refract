@@ -29,7 +29,6 @@ The goal is to transform a metric measurement ontology to an imperial measuremen
 - Target: `1.8` and `32`
 
 ## Evaluation
-- Shapes graph validation: [Using SHACL meta-validation](Evaluation/ShapesGraphValidation.md)
 - TMF validation: [Using SHACL](Evaluation/TMFValidation.md)
 
 ---
