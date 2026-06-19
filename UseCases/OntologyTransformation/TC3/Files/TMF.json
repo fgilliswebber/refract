@@ -1,6 +1,6 @@
 {
   "@context": {
-    "ref": "https://semanticweb.tools/ont/refract#",
+    "fract": "https://w3id.org/refract#",
     "dct": "http://purl.org/dc/terms/",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
@@ -12,70 +12,70 @@
   },
   "@graph": [
     {
-      "@id": "ref:tmf_tc3",
-      "@type": "ref:Manifest",
+      "@id": "fract:tmf_tc3",
+      "@type": "fract:Manifest",
       "rdfs:label": {"@value": "Manifest 1.0.0 for transformation of MoLA Ontology to OWL2_RL Context", "@language": "en"},
-      "ref:transformationType": {"@id": "ref:OntologyTransformationProcess"},
-      "ref:transformationSource": {"@id": "https://semanticweb.tools/ont/mola"},
-      "ref:hasURIRelationshipToSource": {"@id": "ref:Different"},
-      "ref:targetOntologyURI": {"@id": "https://semanticweb.tools/ont/mola/rl"},
-      "ref:targetViewpoint": {"@id": "https://semanticweb.tools/rdf/multi/owl2rl"},
-      "ref:versionManifest": {"@id": "ref:tmf_tc3_v1"},
+      "fract:transformationType": {"@id": "fract:OntologyTransformationProcess"},
+      "fract:transformationSource": {"@id": "https://semanticweb.tools/ont/mola"},
+      "fract:hasURIRelationshipToSource": {"@id": "fract:DifferentRelationship"},
+      "fract:targetOntologyURI": {"@id": "https://semanticweb.tools/ont/mola/rl"},
+      "fract:targetViewpoint": {"@id": "https://semanticweb.tools/rdf/multi/owl2rl"},
+      "fract:versionManifest": {"@id": "fract:tmf_tc3_v1"},
       "dash:shape": {"@id": "shape:ShapeTransformation"},
-      "ref:hasAction": [
-        {"@id": "ref:action_tc3_1"},
-        {"@id": "ref:action_tc3_2"},
-        {"@id": "ref:action_tc3_3"},
-        {"@id": "ref:action_tc3_4"}
+      "fract:hasAction": [
+        {"@id": "fract:action_tc3_1"},
+        {"@id": "fract:action_tc3_2"},
+        {"@id": "fract:action_tc3_3"},
+        {"@id": "fract:action_tc3_4"}
       ],
-      "ref:actionOrder": {
+      "fract:actionOrder": {
         "@list": [
-          {"@id": "ref:action_tc3_1"},
-          {"@id": "ref:action_tc3_2"},
-          {"@id": "ref:action_tc3_3"},
-          {"@id": "ref:action_tc3_4"}
+          {"@id": "fract:action_tc3_1"},
+          {"@id": "fract:action_tc3_2"},
+          {"@id": "fract:action_tc3_3"},
+          {"@id": "fract:action_tc3_4"}
         ]
       }
     },
     {
-      "@id": "ref:tmf_tc3_v1",
-      "@type": "ref:Version",
-      "ref:versionNumber": "1.0.0",
+      "@id": "fract:tmf_tc3_v1",
+      "@type": "fract:Version",
+      "fract:versionNumber": "1.0.0",
       "dct:date": "2025-05-01",
-      "ref:versionPrevious": {"@id": "ref:NoPreviousVersion"},
+      "fract:versionPrevious": {"@id": "fract:NoPreviousVersion"},
       "dct:contributor": "Frances Gillis-Webber"
     },
     {
-      "@id": "ref:action_tc3_1",
-      "@type": "ref:DeleteCardinalityRestriction",
-      "ref:sourceNode": {"@id": "mola:Region"},
-      "ref:sourceProperty": {"@id": "mola:hasCoordinate"},
-      "ref:sourceOnClass": {"@id": "mola:GeographicCoordinate"},
+      "@id": "fract:action_tc3_1",
+      "@type": "fract:DeleteCardinalityRestriction",
+      "fract:sourceNode": {"@id": "mola:Region"},
+      "fract:sourceProperty": {"@id": "mola:hasCoordinate"},
+      "fract:sourceOnClass": {"@id": "mola:GeographicCoordinate"},
       "dash:shape": {"@id": "shape:ShapeDeleteCardinalityRestriction"}
     },
     {
-      "@id": "ref:action_tc3_2",
-      "@type": "ref:DeletePropertyDomainRange",
-      "ref:sourceNode": {"@id": "mola:hasMember"},
-      "ref:axiomType": {"@id": "rdfs:domain"},
+      "@id": "fract:action_tc3_2",
+      "@type": "fract:DeletePropertyDomainRange",
+      "fract:sourceNode": {"@id": "mola:hasMember"},
+      "fract:axiomType": {"@id": "rdfs:domain"},
       "dash:shape": {"@id": "shape:ShapeDeletePropertyDomainRange"}
     },
     {
-      "@id": "ref:action_tc3_3",
-      "@type": "ref:AddPropertyDomainRange",
-      "ref:sourceNode": {"@id": "mola:hasMember"},
-      "ref:targetNode": {"@id": "mola:DialectCluster"},
-      "ref:axiomType": {"@id": "rdfs:domain"},
-      "ref:propertyType": {"@id": "owl:ObjectProperty"},
+      "@id": "fract:action_tc3_3",
+      "@type": "fract:AddPropertyDomainRange",
+      "fract:sourceNode": {"@id": "mola:hasMember"},
+      "fract:targetNode": {"@id": "mola:DialectCluster"},
+      "fract:axiomType": {"@id": "rdfs:domain"},
+      "fract:propertyType": {"@id": "owl:ObjectProperty"},
       "dash:shape": {"@id": "shape:ShapeAddPropertyDomainRange"}
     },
     {
-      "@id": "ref:action_tc3_4",
-      "@type": "ref:AddPropertyDomainRange",
-      "ref:sourceNode": {"@id": "mola:hasMember"},
-      "ref:targetNode": {"@id": "mola:LanguageFamily"},
-      "ref:axiomType": {"@id": "rdfs:domain"},
-      "ref:propertyType": {"@id": "owl:ObjectProperty"},
+      "@id": "fract:action_tc3_4",
+      "@type": "fract:AddPropertyDomainRange",
+      "fract:sourceNode": {"@id": "mola:hasMember"},
+      "fract:targetNode": {"@id": "mola:LanguageFamily"},
+      "fract:axiomType": {"@id": "rdfs:domain"},
+      "fract:propertyType": {"@id": "owl:ObjectProperty"},
       "dash:shape": {"@id": "shape:ShapeAddPropertyDomainRange"}
     }
   ]
