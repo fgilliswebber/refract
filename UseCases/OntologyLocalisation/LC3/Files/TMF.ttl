@@ -1,4 +1,4 @@
-@prefix ref: <https://semanticweb.tools/ont/refract#> .
+@prefix fract: <https://w3id.org/refract#> .
 @prefix dash: <http://datashapes.org/dash#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -10,60 +10,60 @@
 @prefix marnz: <https://example.org/marine/nz#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-ref:tmf_lc3 a ref:Manifest ;
+fract:tmf_lc3 a fract:Manifest ;
     rdfs:label "Manifest 1.0.0 for localisation of Marine Life Ontology to New Zealand Viewpoint"@en ;
-    ref:transformationType ref:OntologyLocalisationProcess ;
-    ref:transformationSource <https://example.org/marine> ;
-    ref:hasURIRelationshipToSource ref:Different ;
-    ref:targetOntologyURI <https://example.org/marine/nz> ;
-    ref:targetViewpoint <https://semanticweb.tools/rdf/multi/newzealand> ;
-    ref:versionManifest ref:tmf_lc3_v1 ;
+    fract:transformationType fract:OntologyLocalisationProcess ;
+    fract:transformationSource <https://example.org/marine> ;
+    fract:hasURIRelationshipToSource fract:DifferentRelationship ;
+    fract:targetOntologyURI <https://example.org/marine/nz> ;
+    fract:targetViewpoint <https://semanticweb.tools/rdf/multi/newzealand> ;
+    fract:versionManifest fract:tmf_lc3_v1 ;
     dash:shape shape:ShapeLocalisation ;
-    ref:hasAction ref:action_lc3_1, ref:action_lc3_2, ref:action_lc3_3,
-                  ref:action_lc3_4, ref:action_lc3_5 ;
-    ref:actionOrder (
-        ref:action_lc3_1
-        ref:action_lc3_2
-        ref:action_lc3_3
-        ref:action_lc3_4
-        ref:action_lc3_5
+    fract:hasAction fract:action_lc3_1, fract:action_lc3_2, fract:action_lc3_3,
+                  fract:action_lc3_4, fract:action_lc3_5 ;
+    fract:actionOrder (
+        fract:action_lc3_1
+        fract:action_lc3_2
+        fract:action_lc3_3
+        fract:action_lc3_4
+        fract:action_lc3_5
     ) .
 
-ref:tmf_lc3_v1 a ref:Version ;
-    ref:versionNumber "1.0.0" ;
+fract:tmf_lc3_v1 a fract:Version ;
+    fract:versionNumber "1.0.0" ;
     dct:date "2025-05-01" ;
-    ref:versionPrevious ref:NoPreviousVersion ;
+    fract:versionPrevious fract:NoPreviousVersion ;
     dct:contributor "Frances Gillis-Webber" .
 
-ref:action_lc3_1 a ref:AddObjectProperty ;
-    ref:targetIdentifier marnz:hasGuardian ;
-    ref:targetLabel "has guardian" ;
-    ref:targetLanguageTag "en" ;
+fract:action_lc3_1 a fract:AddObjectProperty ;
+    fract:targetIdentifier marnz:hasGuardian ;
+    fract:targetLabel "has guardian" ;
+    fract:targetLanguageTag "en" ;
     dash:shape shape:ShapeAddObjectProperty .
 
-ref:action_lc3_2 a ref:AddPropertyDomainRange ;
-    ref:sourceNode marnz:hasGuardian ;
-    ref:targetNode mar:Guardian ;
-    ref:axiomType rdfs:range ;
-    ref:propertyType owl:ObjectProperty ;
+fract:action_lc3_2 a fract:AddPropertyDomainRange ;
+    fract:sourceNode marnz:hasGuardian ;
+    fract:targetNode mar:Guardian ;
+    fract:axiomType rdfs:range ;
+    fract:propertyType owl:ObjectProperty ;
     dash:shape shape:ShapeAddPropertyDomainRange .
 
-ref:action_lc3_3 a ref:AddSuperclassAssertion ;
-    ref:sourceNode mar:Whale ;
-    ref:targetParent mar:NaturalLegalPerson ;
+fract:action_lc3_3 a fract:AddSuperclassAssertion ;
+    fract:sourceNode mar:Whale ;
+    fract:targetParent mar:NaturalLegalPerson ;
     dash:shape shape:ShapeAddSuperclassAssertion .
 
-ref:action_lc3_4 a ref:AddPropertyRestriction ;
-    ref:sourceNode mar:Whale ;
-    ref:targetObject marnz:hasGuardian ;
-    ref:targetObjectValue mar:Guardian ;
-    ref:restrictionType owl:someValuesFrom ;
-    ref:propertyType owl:ObjectProperty ;
+fract:action_lc3_4 a fract:AddPropertyRestriction ;
+    fract:sourceNode mar:Whale ;
+    fract:targetObject marnz:hasGuardian ;
+    fract:targetObjectValue mar:Guardian ;
+    fract:restrictionType owl:someValuesFrom ;
+    fract:propertyType owl:ObjectProperty ;
     dash:shape shape:ShapeAddPropertyRestriction .
 
-ref:action_lc3_5 a ref:ChangeAnnotationValue ;
-    ref:sourceNode mar:Whale ;
-    ref:targetAnnotation skos:definition ;
-    ref:targetAnnotationValue "A large marine mammal of the order Cetacea, recognised as a legal person under New Zealand law." ;
-    ref:targetLanguageTag "en" ;
+fract:action_lc3_5 a fract:ChangeAnnotationValue ;
+    fract:sourceNode mar:Whale ;
+    fract:targetAnnotation skos:definition ;
+    fract:targetAnnotationValue "A large marine mammal of the order Cetacea, recognised as a legal person under New Zealand law." ;
+    fract:targetLanguageTag "en" ;
     dash:shape shape:ShapeChangeAnnotationValue .
