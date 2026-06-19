@@ -1,6 +1,6 @@
 {
   "@context": {
-    "ref": "https://semanticweb.tools/ont/refract#",
+    "fract": "https://w3id.org/refract#",
     "dct": "http://purl.org/dc/terms/",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "edam": "http://edamontology.org/",
@@ -9,31 +9,31 @@
   },
   "@graph": [
     {
-      "@id": "ref:tmf_rc1",
-      "@type": "ref:Manifest",
+      "@id": "fract:tmf_rc1",
+      "@type": "fract:Manifest",
       "rdfs:label": {"@value": "Manifest 1.0.0 for refactoring of EDAM ontology", "@language": "en"},
-      "ref:transformationType": {"@id": "ref:OntologyRefactoringProcess"},
-      "ref:transformationSource": {"@id": "http://edamontology.org/"},
-      "ref:hasURIRelationshipToSource": {"@id": "ref:SameVersioned"},
-      "ref:versionManifest": {"@id": "ref:tmf_rc1_v1"},
+      "fract:transformationType": {"@id": "fract:OntologyRefactoringProcess"},
+      "fract:transformationSource": {"@id": "http://edamontology.org/"},
+      "fract:hasURIRelationshipToSource": {"@id": "fract:SameVersionedRelationship"},
+      "fract:versionManifest": {"@id": "fract:tmf_rc1_v1"},
       "dash:shape": {"@id": "shape:ShapeRefactoring"},
-      "ref:hasAction": {"@id": "ref:action_rc1_1"}
+      "fract:hasAction": {"@id": "fract:action_rc1_1"}
     },
     {
-      "@id": "ref:tmf_rc1_v1",
-      "@type": "ref:Version",
-      "ref:versionNumber": "1.0.0",
+      "@id": "fract:tmf_rc1_v1",
+      "@type": "fract:Version",
+      "fract:versionNumber": "1.0.0",
       "dct:date": "2025-05-01",
-      "ref:versionPrevious": {"@id": "ref:NoPreviousVersion"},
+      "fract:versionPrevious": {"@id": "fract:NoPreviousVersion"},
       "dct:contributor": "Frances Gillis-Webber"
     },
     {
-      "@id": "ref:action_rc1_1",
-      "@type": "ref:RenameClass",
-      "ref:sourceNode": {"@id": "edam:operation_2928"},
-      "ref:targetIdentifier": {"@id": "edam:operationAlignment"},
-      "ref:targetLabel": "Alignment",
-      "ref:targetLanguageTag": "en",
+      "@id": "fract:action_rc1_1",
+      "@type": "fract:RenameClass",
+      "fract:sourceNode": {"@id": "edam:operation_2928"},
+      "fract:targetIdentifier": {"@id": "edam:operationAlignment"},
+      "fract:targetLabel": "Alignment",
+      "fract:targetLanguageTag": "en",
       "dash:shape": {"@id": "shape:ShapeRenameClass"}
     }
   ]
