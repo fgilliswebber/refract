@@ -1,6 +1,6 @@
 {
   "@context": {
-    "ref": "https://semanticweb.tools/ont/refract#",
+    "fract": "https://w3id.org/refract#",
     "dct": "http://purl.org/dc/terms/",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
@@ -14,81 +14,81 @@
   },
   "@graph": [
     {
-      "@id": "ref:tmf_ec3",
-      "@type": "ref:Manifest",
+      "@id": "fract:tmf_ec3",
+      "@type": "fract:Manifest",
       "rdfs:label": {"@value": "Manifest 1.0.0 for evolution of Vaccine Ontology", "@language": "en"},
-      "ref:transformationType": {"@id": "ref:OntologyEvolutionProcess"},
-      "ref:transformationSource": {"@id": "http://purl.obolibrary.org/obo/vo.owl"},
-      "ref:hasURIRelationshipToSource": {"@id": "ref:SameVersioned"},
-      "ref:versionManifest": {"@id": "ref:tmf_ec3_v1"},
+      "fract:transformationType": {"@id": "fract:OntologyEvolutionProcess"},
+      "fract:transformationSource": {"@id": "http://purl.obolibrary.org/obo/vo.owl"},
+      "fract:hasURIRelationshipToSource": {"@id": "fract:SameVersionedRelationship"},
+      "fract:versionManifest": {"@id": "fract:tmf_ec3_v1"},
       "dash:shape": {"@id": "shape:ShapeEvolution"},
-      "ref:hasAction": [
-        {"@id": "ref:action_ec3_1"},
-        {"@id": "ref:action_ec3_2"},
-        {"@id": "ref:action_ec3_3"},
-        {"@id": "ref:action_ec3_4"},
-        {"@id": "ref:action_ec3_5"}
+      "fract:hasAction": [
+        {"@id": "fract:action_ec3_1"},
+        {"@id": "fract:action_ec3_2"},
+        {"@id": "fract:action_ec3_3"},
+        {"@id": "fract:action_ec3_4"},
+        {"@id": "fract:action_ec3_5"}
       ],
-      "ref:actionOrder": {
+      "fract:actionOrder": {
         "@list": [
-          {"@id": "ref:action_ec3_1"},
-          {"@id": "ref:action_ec3_2"},
-          {"@id": "ref:action_ec3_3"},
-          {"@id": "ref:action_ec3_4"},
-          {"@id": "ref:action_ec3_5"}
+          {"@id": "fract:action_ec3_1"},
+          {"@id": "fract:action_ec3_2"},
+          {"@id": "fract:action_ec3_3"},
+          {"@id": "fract:action_ec3_4"},
+          {"@id": "fract:action_ec3_5"}
         ]
       }
     },
     {
-      "@id": "ref:tmf_ec3_v1",
-      "@type": "ref:Version",
-      "ref:versionNumber": "1.0.0",
+      "@id": "fract:tmf_ec3_v1",
+      "@type": "fract:Version",
+      "fract:versionNumber": "1.0.0",
       "dct:date": "2025-05-01",
-      "ref:versionPrevious": {"@id": "ref:NoPreviousVersion"},
+      "fract:versionPrevious": {"@id": "fract:NoPreviousVersion"},
       "dct:contributor": "Frances Gillis-Webber"
     },
     {
-      "@id": "ref:action_ec3_1",
-      "@type": "ref:AddClass",
-      "ref:targetIdentifier": {"@id": "ex:mRNAVaccine"},
-      "ref:targetParent": {"@id": "vo:VO_0000001"},
-      "ref:targetLabel": "mRNA vaccine",
-      "ref:targetLanguageTag": "en",
+      "@id": "fract:action_ec3_1",
+      "@type": "fract:AddClass",
+      "fract:targetIdentifier": {"@id": "ex:mRNAVaccine"},
+      "fract:targetParent": {"@id": "vo:VO_0000001"},
+      "fract:targetLabel": "mRNA vaccine",
+      "fract:targetLanguageTag": "en",
       "dash:shape": {"@id": "shape:ShapeAddClass"}
     },
     {
-      "@id": "ref:action_ec3_2",
-      "@type": "ref:AddSuperclassAssertion",
-      "ref:sourceNode": {"@id": "vo:VO_0005198"},
-      "ref:targetParent": {"@id": "ex:mRNAVaccine"},
+      "@id": "fract:action_ec3_2",
+      "@type": "fract:AddSuperclassAssertion",
+      "fract:sourceNode": {"@id": "vo:VO_0005198"},
+      "fract:targetParent": {"@id": "ex:mRNAVaccine"},
       "dash:shape": {"@id": "shape:ShapeAddSuperclassAssertion"}
     },
     {
-      "@id": "ref:action_ec3_3",
-      "@type": "ref:AddPropertyRestriction",
-      "ref:targetNode": {"@id": "ex:mRNAVaccine"},
-      "ref:targetObject": {"@id": "vo:RO_0000087"},
-      "ref:targetObjectValue": {"@id": "vo:VO_0000728"},
-      "ref:restrictionType": {"@id": "owl:someValuesFrom"},
-      "ref:propertyType": {"@id": "owl:ObjectProperty"},
+      "@id": "fract:action_ec3_3",
+      "@type": "fract:AddPropertyRestriction",
+      "fract:targetNode": {"@id": "ex:mRNAVaccine"},
+      "fract:targetObject": {"@id": "vo:RO_0000087"},
+      "fract:targetObjectValue": {"@id": "vo:VO_0000728"},
+      "fract:restrictionType": {"@id": "owl:someValuesFrom"},
+      "fract:propertyType": {"@id": "owl:ObjectProperty"},
       "dash:shape": {"@id": "shape:ShapeAddPropertyRestriction"}
     },
     {
-      "@id": "ref:action_ec3_4",
-      "@type": "ref:AddAnnotationLangString",
-      "ref:targetNode": {"@id": "ex:mRNAVaccine"},
-      "ref:targetAnnotation": {"@id": "skos:definition"},
-      "ref:targetAnnotationValue": "A vaccine that uses messenger RNA (mRNA) technology to instruct cells to produce a protein that triggers an immune response.",
-      "ref:targetLanguageTag": "en",
+      "@id": "fract:action_ec3_4",
+      "@type": "fract:AddAnnotationLangString",
+      "fract:targetNode": {"@id": "ex:mRNAVaccine"},
+      "fract:targetAnnotation": {"@id": "skos:definition"},
+      "fract:targetAnnotationValue": "A vaccine that uses messenger RNA (mRNA) technology to instruct cells to produce a protein that triggers an immune response.",
+      "fract:targetLanguageTag": "en",
       "dash:shape": {"@id": "shape:ShapeAddAnnotationLangString"}
     },
     {
-      "@id": "ref:action_ec3_5",
-      "@type": "ref:AddInstance",
-      "ref:targetIdentifier": {"@id": "ex:PfizerBioNTech"},
-      "ref:targetInstanceOf": {"@id": "ex:mRNAVaccine"},
-      "ref:targetLabel": "Pfizer-BioNTech COVID-19 vaccine",
-      "ref:targetLanguageTag": "en",
+      "@id": "fract:action_ec3_5",
+      "@type": "fract:AddInstance",
+      "fract:targetIdentifier": {"@id": "ex:PfizerBioNTech"},
+      "fract:targetInstanceOf": {"@id": "ex:mRNAVaccine"},
+      "fract:targetLabel": "Pfizer-BioNTech COVID-19 vaccine",
+      "fract:targetLanguageTag": "en",
       "dash:shape": {"@id": "shape:ShapeAddInstance"}
     }
   ]
