@@ -21,7 +21,6 @@ This is a real-world scenario where the name of a department at the University o
 - Target: `uct:HumanitiesFaculty`
 
 ## Evaluation
-- Shapes graph validation: [Using SHACL meta-validation](Evaluation/ShapesGraphValidation.md)
 - TMF validation: [Using SHACL](Evaluation/TMFValidation.md)
 
 ---
