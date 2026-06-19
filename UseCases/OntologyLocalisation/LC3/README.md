@@ -4,8 +4,8 @@
 - SPARQL for CQs: [CQ1](Files/CQ1.rq) | [CQ2](Files/CQ2.rq) | [CQ3](Files/CQ3.rq) | [CQ4](Files/CQ4.rq) | [CQ5](Files/CQ5.rq)
 - TMF for target viewpoint: [JSON-LD](Files/TMF.json) | [Turtle](Files/TMF.ttl)
 - Shapes graphs:
-  - Macro: [ShapeLocalisation](../../ShapesGraphs/ShapeLocalisation/README.md)
-  - Micro: [ShapeAddObjectProperty](../../RefactoringActions/AddObjectProperty/ShapeAddObjectProperty.ttl) | [ShapeAddPropertyDomainRange](../../RefactoringActions/AddPropertyDomainRange/ShapeAddPropertyDomainRange.ttl) | [ShapeAddSuperclassAssertion](../../RefactoringActions/AddSuperclassAssertion/ShapeAddSuperclassAssertion.ttl) | [ShapeAddPropertyRestriction](../../RefactoringActions/AddPropertyRestriction/ShapeAddPropertyRestriction.ttl) | [ShapeChangeAnnotationValue](../../RefactoringActions/ChangeAnnotationValue/ShapeChangeAnnotationValue.ttl)
+  - Macro: [ShapeLocalisation](../../../ShapesGraphs/ShapeLocalisation/README.md)
+  - Micro: [ShapeAddObjectProperty](../../../RefactoringActions/AddObjectProperty/ShapeAddObjectProperty.ttl) | [ShapeAddPropertyDomainRange](../../../RefactoringActions/AddPropertyDomainRange/ShapeAddPropertyDomainRange.ttl) | [ShapeAddSuperclassAssertion](../../../RefactoringActions/AddSuperclassAssertion/ShapeAddSuperclassAssertion.ttl) | [ShapeAddPropertyRestriction](../../../RefactoringActions/AddPropertyRestriction/ShapeAddPropertyRestriction.ttl) | [ShapeChangeAnnotationValue](../../../RefactoringActions/ChangeAnnotationValue/ShapeChangeAnnotationValue.ttl)
 
 ## Description
 The goal is to transform a marine ontology to reflect the New Zealand legal framework, which extends legal personhood to non-human natural entities such as whales, introducing a guardian relationship and reclassifying whales as natural legal persons.
