@@ -8,7 +8,7 @@
 fract:tmf_AddEquivalentClassSet a fract:Manifest ;
     fract:transformationType fract:OntologyEvolutionProcess ;
     fract:transformationSource <http://www.ebi.ac.uk/efo/> ;
-    fract:hasURIRelationshipToSource fract:SameVersioned ;
+    fract:hasURIRelationshipToSource fract:SameVersionedRelationship ;
     fract:hasAction fract:action_AddEquivalentClassSet_1 .
 
 fract:action_AddEquivalentClassSet_1 a fract:AddEquivalentClassSet ;
