@@ -8,7 +8,7 @@
 fract:tmf_AddPropertyRestriction a fract:Manifest ;
     fract:transformationType fract:OntologyLocalisationProcess ;
     fract:transformationSource <https://example.org/marine> ;
-    fract:hasURIRelationshipToSource fract:SameVersioned ;
+    fract:hasURIRelationshipToSource fract:SameVersionedRelationship ;
     fract:hasAction fract:action_AddPropertyRestriction_1 .
 
 fract:action_AddPropertyRestriction_1 a fract:AddPropertyRestriction ;
