@@ -6,7 +6,7 @@
 
 A local action is a refactoring action that operates on individual ontology elements, such as a class, object property, label, etc, or a concept, represented by one or more ontology elements. This is in contrast to [global actions](GlobalAction.md), which act on the ontology as a whole.
 
-Local actions can be classified as either atomic or composite. If atomic, the action cannot be decomposed into smaller refactoring actions. If composite, the action is composed of two or more atomic refactoring actions. There are three types of atomic actions: structural actions, semantic actions, and annotation actions.
+Local actions can be classified as either [atomic](AtomicAction.md) or [composite](CompositeAction.md). If atomic, the action cannot be decomposed into smaller refactoring actions. If composite, the action is composed of two or more atomic refactoring actions. There are three types of atomic actions: [structural actions](StructuralAction.md), [semantic actions](SemanticAction.md), and [annotation actions](AnnotationAction.md).
 
 Local actions include:
 
