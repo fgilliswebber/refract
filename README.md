@@ -1,4 +1,4 @@
-# REFrACT - Refactoring Actions Artefact Repository
+# REFrACT: Refactoring Actions Artefact Repository
 Supporting artefacts for REFrACT (Refactoring Actions Vocabulary), including SHACL shapes, example transformation manifest files, and use cases.
 
 ## Ontology Metadata
