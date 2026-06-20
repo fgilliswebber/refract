@@ -1,13 +1,11 @@
 cff-version: 1.2.0
-message: "If you use artefacts from this repository (excluding the REFrACT vocabulary), please cite it as below."
+message: "If you use artefacts from this repository, please cite it as below."
 title: "REFrACT - Refactoring Actions Artefact Repository"
-preferred-citation:
-  type: data
-  authors:
-    - family-names: "Gillis-Webber"
-      given-names: "Frances"
-      orcid: "https://orcid.org/0000-0002-3740-5904"
-  date-released: "2026-06-16"
-  url: "https://github.com/semanticweb-tools/refract"
-  repository-code: "https://github.com/semanticweb-tools/refract"
-  license: "CC0-1.0"
+authors:
+  - family-names: "Gillis-Webber"
+    given-names: "Frances"
+    orcid: "https://orcid.org/0000-0002-3740-5904"
+date-released: "2026-06-16"
+url: "https://github.com/semanticweb-tools/refract"
+repository-code: "https://github.com/semanticweb-tools/refract"
+license: "CC0-1.0"
