@@ -25,6 +25,8 @@ When ready for release, update the following in `refract-X.Y.Z.ttl`:
 - `owl:versionIRI` → the new versionIRI (e.g. `<https://w3id.org/refract/1.0.1>`)
 - `owl:versionInfo` → the new version string (e.g. `"1.0.1"`)
 
+Also update the **Version** field in the top-level `README.md`'s Ontology Metadata section to match.
+
 ### 3. Commit to GitHub
 
 Copy the contents of the local `refract-X.Y.Z.ttl` into `Ontologies/refract.ttl` on GitHub, committing to the `release/vX.Y.Z` branch - **not** `main`.
