@@ -22,7 +22,8 @@ Gillis-Webber, F. (2026) "REFrACT: Refactoring Actions Vocabulary". Zenodo. doi:
 ----
 
 ## Citation for REFrACT artefact repository
-When using any artefacts or documentation from the REFrACT artefact repository (this excludes the REFrACT vocabulary), please use this citation:
+When using any artefacts or documentation from the REFrACT artefact repository (this excludes the REFrACT vocabulary),<br/>
+please use this citation:
 
 ```
 Gillis-Webber, F. (2026). REFrACT - Refactoring Actions Artefact Repository [Computer software]. https://github.com/semanticweb-tools/refract
