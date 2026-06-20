@@ -8,7 +8,7 @@
 **Version:** 1.0.0 \
 **Licence:** [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) 
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20742085.svg)](https://doi.org/10.5281/zenodo.20742085)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20742084.svg)](https://doi.org/10.5281/zenodo.20742084)
 
 REFrACT is a vocabulary for describing and validating a Transformation Manifest File (TMF). A TMF records the metadata and refactoring actions associated with an ontology transformation process, including refactoring, evolution, transformation, and localisation. REFrACT has been aligned to the [DASH Data Shapes Vocabulary](https://datashapes.org/dash), which in turn imports the Shapes Constraint Language (SHACL).
 
