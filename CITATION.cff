@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use artefacts from this repository, please cite it as below."
-title: "REFrACT - Refactoring Actions Artefact Repository"
+title: "REFrACT: Refactoring Actions Artefact Repository"
 authors:
   - family-names: "Gillis-Webber"
     given-names: "Frances"
