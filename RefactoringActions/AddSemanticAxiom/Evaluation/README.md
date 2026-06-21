@@ -12,8 +12,8 @@
 # Example TMF Shapes Graph Validation
 
 ## 18 June 2026
+<img width="1138" height="156" alt="TMFAddSemanticAxiom" src="https://github.com/user-attachments/assets/77a724f4-eae6-418d-a58b-0f9944a40ae5" />
 
-
-- Validated file: [See version]()
+- Validated file: [See version](https://github.com/semanticweb-tools/refract/blob/929631b8176128930117a11204e34503daf50d78/RefactoringActions/AddSemanticAxiom/TMFAddSemanticAxiom.ttl)
 - Validator: [ITB SHACL Validator](https://www.itb.ec.europa.eu/shacl/any/upload)
-- Validated against [ShapeNameGoesHere.ttl](../ShapeNameGoesHere.ttl)
+- Validated against [ShapeAddSemanticAxiom.ttl](../ShapeAddSemanticAxiom.ttl)
