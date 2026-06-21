@@ -1554,6 +1554,13 @@ prov:Activity rdf:type owl:Class ;
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :DeprecateClassWithSuccessor ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "A composite refactoring action that deprecates a class and adds a successor class."@en ;
+   rdfs:seeAlso :DeprecateClass
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :DeprecateClassWithSuccessor ;
    owl:annotatedProperty :hasActions ;
    owl:annotatedTarget "At least one 'Deprecate class' action and one 'Add class' action are required. Optionally, one or more annotation actions may be included, such as 'Add annotation - langString', 'Add annotation', or 'Add comment for deprecation'."@en ;
    :isOptionalAction :AddAnnotation ,
