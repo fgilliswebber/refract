@@ -9,7 +9,7 @@
 
 ----
 
-# Example TMF Shapes Graph Validation
+# Example TMF Validation
 
 ## 18 June 2026
 <img width="1138" height="156" alt="TMFAddSemanticAxiom" src="https://github.com/user-attachments/assets/77a724f4-eae6-418d-a58b-0f9944a40ae5" />
