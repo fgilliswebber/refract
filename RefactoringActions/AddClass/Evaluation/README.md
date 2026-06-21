@@ -12,8 +12,8 @@
 # Example TMF Shapes Graph Validation
 
 ## 18 June 2026
+<img width="1138" height="156" alt="TMFAddClass" src="https://github.com/user-attachments/assets/70095f24-7d1c-42e2-bb1a-71a52a58038c" />
 
-
-- Validated file: [See version]()
+- Validated file: [See version](https://github.com/semanticweb-tools/refract/blob/1979ac087b206bb5417c8517ce7a89a94b268509/RefactoringActions/AddClass/TMFAddClass.ttl)
 - Validator: [ITB SHACL Validator](https://www.itb.ec.europa.eu/shacl/any/upload)
-- Validated against [ShapeNameGoesHere.ttl](../ShapeNameGoesHere.ttl)
+- Validated against [ShapeAddClass.ttl](../ShapeAddClass.ttl)
