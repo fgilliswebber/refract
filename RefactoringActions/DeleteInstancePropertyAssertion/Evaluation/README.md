@@ -9,11 +9,11 @@
 
 ----
 
-# Example TMF Shapes Graph Validation
+# Example TMF Validation
 
 ## 18 June 2026
+<img width="1138" height="156" alt="TMFDeleteInstancePropertyAssertion" src="https://github.com/user-attachments/assets/7c7c74b8-fa2d-4372-b4b9-e4cc60a74faf" />
 
-
-- Validated file: [See version]()
+- Validated file: [See version](https://github.com/semanticweb-tools/refract/blob/e24edd348e1febf1e44c7c2d2238c427a7c0d1a6/RefactoringActions/DeleteInstancePropertyAssertion/TMFDeleteInstancePropertyAssertion.ttl)
 - Validator: [ITB SHACL Validator](https://www.itb.ec.europa.eu/shacl/any/upload)
-- Validated against [ShapeNameGoesHere.ttl](../ShapeNameGoesHere.ttl)
+- Validated against [ShapeDeleteInstancePropertyAssertion.ttl](../ShapeDeleteInstancePropertyAssertion.ttl)
