@@ -9,11 +9,11 @@
 
 ----
 
-# Example TMF Shapes Graph Validation
+# Example TMF Validation
 
 ## 18 June 2026
+<img width="1138" height="156" alt="TMFDeleteSemanticAxiom" src="https://github.com/user-attachments/assets/b3bd231e-7969-40ad-a876-46eecd8fd708" />
 
-
-- Validated file: [See version]()
+- Validated file: [See version](https://github.com/semanticweb-tools/refract/blob/847e5b723b5d6e87e3417a627d336724e04471ea/RefactoringActions/DeleteSemanticAxiom/TMFDeleteSemanticAxiom.ttl)
 - Validator: [ITB SHACL Validator](https://www.itb.ec.europa.eu/shacl/any/upload)
-- Validated against [ShapeNameGoesHere.ttl](../ShapeNameGoesHere.ttl)
+- Validated against [ShapeDeleteSemanticAxiom.ttl](../ShapeDeleteSemanticAxiom.ttl)
