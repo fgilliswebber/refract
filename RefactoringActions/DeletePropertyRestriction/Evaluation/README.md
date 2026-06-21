@@ -9,11 +9,11 @@
 
 ----
 
-# Example TMF Shapes Graph Validation
+# Example TMF Validation
 
 ## 18 June 2026
+<img width="1138" height="156" alt="TMFDeletePropertyRestriction" src="https://github.com/user-attachments/assets/8916e454-20c1-41b2-b004-2477769f4f37" />
 
-
-- Validated file: [See version]()
+- Validated file: [See version](https://github.com/semanticweb-tools/refract/blob/7245eced9b8562ed57f48fc4974fa8fb62edb773/RefactoringActions/DeletePropertyRestriction/TMFDeletePropertyRestriction.ttl)
 - Validator: [ITB SHACL Validator](https://www.itb.ec.europa.eu/shacl/any/upload)
-- Validated against [ShapeNameGoesHere.ttl](../ShapeNameGoesHere.ttl)
+- Validated against [ShapeDeletePropertyRestriction.ttl](../ShapeDeletePropertyRestriction.ttl)
