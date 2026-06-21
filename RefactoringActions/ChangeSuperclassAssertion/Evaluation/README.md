@@ -10,7 +10,7 @@
 
 ----
 
-# Example TMF Shapes Graph Validation
+# Example TMF Validation
 
 ## 18 June 2026
 <img width="1138" height="156" alt="TMFChangeSuperclassAssertion" src="https://github.com/user-attachments/assets/b6ac4972-1f76-4c13-966f-a4593c7e2963" />
