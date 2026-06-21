@@ -9,7 +9,7 @@
 
 ----
 
-# Example TMF Shapes Graph Validation
+# Example TMF Validation
 
 ## 18 June 2026
 <img width="1138" height="156" alt="TMFAddSubPropertyChainOf" src="https://github.com/user-attachments/assets/0a19effc-2498-4b0f-b590-0226f0c759ad" />
