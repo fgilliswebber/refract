@@ -12,8 +12,8 @@
 # Example TMF Shapes Graph Validation
 
 ## 18 June 2026
+<img width="1138" height="156" alt="TMFDeleteDataProperty" src="https://github.com/user-attachments/assets/9307564f-db90-4c59-9b7b-19411c80c567" />
 
-
-- Validated file: [See version]()
+- Validated file: [See version](https://github.com/semanticweb-tools/refract/blob/89965e91c2c3aea67d92b7d54585fe7f7c0beaf4/RefactoringActions/DeleteDataProperty/TMFDeleteDataProperty.ttl)
 - Validator: [ITB SHACL Validator](https://www.itb.ec.europa.eu/shacl/any/upload)
-- Validated against [ShapeNameGoesHere.ttl](../ShapeNameGoesHere.ttl)
+- Validated against [ShapeDeleteDataProperty.ttl](../ShapeDeleteDataProperty.ttl)
