@@ -9,11 +9,11 @@
 
 ----
 
-# Example TMF Shapes Graph Validation
+# Example TMF Validation
 
 ## 18 June 2026
+<img width="1138" height="156" alt="TMFAddAnnotationLangString" src="https://github.com/user-attachments/assets/a773dea8-07f9-4958-86cf-cfc9d4b160e6" />
 
-
-- Validated file: [See version]()
+- Validated file: [See version](https://github.com/semanticweb-tools/refract/blob/c9a95bd283fc68b9a83c9fad86561ac925736618/RefactoringActions/AddAnnotationLangString/TMFAddAnnotationLangString.ttl)
 - Validator: [ITB SHACL Validator](https://www.itb.ec.europa.eu/shacl/any/upload)
-- Validated against [ShapeNameGoesHere.ttl](../ShapeNameGoesHere.ttl)
+- Validated against [ShapeAddAnnotationLangString.ttl](../ShapeAddAnnotationLangString.ttl)
