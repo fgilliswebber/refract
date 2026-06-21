@@ -9,7 +9,7 @@
 
 ----
 
-# Example TMF Shapes Graph Validation
+# Example TMF Validation
 
 ## 18 June 2026
 <img width="1138" height="156" alt="TMFAddCommentForDeprecation" src="https://github.com/user-attachments/assets/aa4ee09e-4ada-4eb8-86b7-3e9d99cac835" />
