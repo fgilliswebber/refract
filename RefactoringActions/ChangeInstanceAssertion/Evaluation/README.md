@@ -9,7 +9,7 @@
 
 ----
 
-# Example TMF Shapes Graph Validation
+# Example TMF Validation
 
 ## 18 June 2026
 <img width="1138" height="156" alt="TMFChangeInstanceAssertion" src="https://github.com/user-attachments/assets/88530a65-8879-47f3-8798-f7d08e1204a8" />
