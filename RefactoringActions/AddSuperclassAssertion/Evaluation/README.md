@@ -9,7 +9,7 @@
 
 ----
 
-# Example TMF Shapes Graph Validation
+# Example TMF Validation
 
 ## 18 June 2026
 <img width="1138" height="156" alt="TMFAddSuperclassAssertion" src="https://github.com/user-attachments/assets/f1ab0039-99eb-4d09-8829-3e718c9074cf" />
