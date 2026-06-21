@@ -9,11 +9,11 @@
 
 ----
 
-# Example TMF Shapes Graph Validation
+# Example TMF Validation
 
 ## 18 June 2026
+<img width="1138" height="156" alt="TMFRenameProperty" src="https://github.com/user-attachments/assets/9a9f2e29-ac5c-4174-90a4-b32c62e03f64" />
 
-
-- Validated file: [See version]()
+- Validated file: [See version](https://github.com/semanticweb-tools/refract/blob/3545cf86547240817285aaac17a66b523e6d4fa0/RefactoringActions/RenameProperty/TMFRenameProperty.ttl)
 - Validator: [ITB SHACL Validator](https://www.itb.ec.europa.eu/shacl/any/upload)
-- Validated against [ShapeNameGoesHere.ttl](../ShapeNameGoesHere.ttl)
+- Validated against [ShapeRenameProperty.ttl](../ShapeRenameProperty.ttl)
