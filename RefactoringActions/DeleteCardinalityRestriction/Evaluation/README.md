@@ -12,8 +12,8 @@
 # Example TMF Shapes Graph Validation
 
 ## 18 June 2026
+<img width="1138" height="156" alt="TMFDeleteCardinalityRestriction" src="https://github.com/user-attachments/assets/a91dcb3c-49f0-439e-8aa1-5d4bb6320798" />
 
-
-- Validated file: [See version]()
+- Validated file: [See version](https://github.com/semanticweb-tools/refract/blob/ab1c1e406253b5de68521d8fad18e0db0dd03b08/RefactoringActions/DeleteCardinalityRestriction/TMFDeleteCardinalityRestriction.ttl)
 - Validator: [ITB SHACL Validator](https://www.itb.ec.europa.eu/shacl/any/upload)
-- Validated against [ShapeNameGoesHere.ttl](../ShapeNameGoesHere.ttl)
+- Validated against [ShapeDeleteCardinalityRestriction.ttl](../ShapeDeleteCardinalityRestriction.ttl)
