@@ -1,4 +1,4 @@
-<img width="1138" height="156" alt="TMFChangeAnnotation" src="https://github.com/user-attachments/assets/ff14724d-dfcb-4f87-9412-80d0920b37fc" /># Shapes Graph Validation
+# Shapes Graph Validation
 
 ## 17 June 2026
 <img width="1138" height="156" alt="ShapeChangeAnnotation" src="https://github.com/user-attachments/assets/fd8e12fb-43ac-45f1-9394-bc0e4fc3b840" />
@@ -9,7 +9,7 @@
 
 ----
 
-# Example TMF Shapes Graph Validation
+# Example TMF Validation
 
 ## 18 June 2026
 <img width="1138" height="156" alt="TMFChangeAnnotation" src="https://github.com/user-attachments/assets/e2430af8-ac1c-41e6-8ff2-d394ce974906" />
