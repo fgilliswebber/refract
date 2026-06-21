@@ -12,8 +12,8 @@
 # Example TMF Shapes Graph Validation
 
 ## 18 June 2026
+<img width="1138" height="156" alt="TMFAddInstancePropertyAssertion" src="https://github.com/user-attachments/assets/a250d392-7ce4-4df4-b43a-8e2f98bd5c3e" />
 
-
-- Validated file: [See version]()
+- Validated file: [See version](https://github.com/semanticweb-tools/refract/blob/d224c00e82d8c1b198b04facaa7add000f0e8b95/RefactoringActions/AddInstancePropertyAssertion/TMFAddInstancePropertyAssertion.ttl)
 - Validator: [ITB SHACL Validator](https://www.itb.ec.europa.eu/shacl/any/upload)
-- Validated against [ShapeNameGoesHere.ttl](../ShapeNameGoesHere.ttl)
+- Validated against [ShapeAddInstancePropertyAssertion.ttl](../ShapeAddInstancePropertyAssertion.ttl)
