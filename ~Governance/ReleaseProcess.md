@@ -75,7 +75,7 @@ Commit `CHANGELOG.md` to the `release/vX.Y.Z` branch (not in `main`).
 3. Push the tag.
 4. Create a GitHub Release for the tag:
    - Title: `vX.Y.Z`
-   - Release notes: the same summary written for the `CHANGELOG.md` entry
+   - Release notes: `See CHANGELOG.md for details.`
    - Attach `refract-X.Y.Z.ttl` as a binary asset, named to match the version (not the generic `refract.ttl`), so the file is self-identifying if downloaded outside the context of the release page
 
 ### 6. Update the semanticweb.tools `.htaccess`
@@ -105,7 +105,7 @@ This mints a new version-specific DOI for the release (archived permanently, for
 
 When completing the deposit form for the new version:
 
-- **Publication Date**: leave as the original first-publication date (matching `dcterms:issued`) — do **not** change this to the current release date
+- **Publication Date**: use today's date (matching `dcterms:modified`) - this is the version-specific release date shown in Zenodo's version history, not the original publication date
 - **Version**: add the latest release version number
 - **Dates** (optional field): add a date of type "Updated" with today's date, and description "See CHANGELOG.md on GitHub"
 

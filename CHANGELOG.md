@@ -1,7 +1,14 @@
+## [1.0.2.1] - 2026-06-22
+
+### Repository
+- Updated `~Governance/ReleaseProcess.md`: corrected Zenodo Publication Date guidance to use today's date (matching `dcterms:modified`) rather than the original publication date (`dcterms:issued`).
+
+----
+
 ## [1.0.2] - 2026-06-22
 
 ### Ontology
-- - Corrected `cc:license` URI from the HTML endpoint to the RDF-resolvable endpoint (`/rdf`), resolving FOOPS! OM4.2 failure.
+- Corrected `cc:license` URI from the HTML endpoint to the RDF-resolvable endpoint (`/rdf`), resolving FOOPS! OM4.2 failure.
 
 ### Repository
 - Updated `README.md`: bumped version number to 1.0.2.
