@@ -1,3 +1,10 @@
+## [1.0.2.1] - 2026-06-22
+
+### Repository
+- Updated `~Governance/ReleaseProcess.md`: corrected Zenodo Publication Date guidance to use today's date (matching `dcterms:modified`) rather than the original publication date (`dcterms:issued`).
+
+----
+
 ## [1.0.2] - 2026-06-22
 
 ### Ontology
